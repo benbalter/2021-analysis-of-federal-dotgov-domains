@@ -1,0 +1,5 @@
+---
+layout: null
+---
+
+{{ site.domains | extract_data | jsonify }}

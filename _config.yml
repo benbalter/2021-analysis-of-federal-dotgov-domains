@@ -1,0 +1,18 @@
+collections:
+  domains:
+    output: true
+
+exclude:
+  - script
+  - node_modules
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE.md
+  - README.md
+
+defaults:
+  - scope:
+      path: ""
+      type: domains
+    values:
+      layout: domain

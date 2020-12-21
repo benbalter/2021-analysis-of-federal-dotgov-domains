@@ -1,0 +1,33 @@
+---
+layout: default
+---
+
+<h1>{{ page.domain_name }}</h1>
+<h3 class="lead">{{ page.agency }}</h3>
+
+<ul class="list-inline text-center">
+  <li class="list-inline-item mx-2"><a href="#domain">Domain</a></li>
+  <li class="list-inline-item mx-2"><a href="#canonical-endpoint">Canonical endpoint</a></li>
+  {% for check in page.checks %}
+  <li class="list-inline-item mx-2"><a href="#{{ check[0] | slugify}}">{{ check[0] | format_key }}</a></li>
+  {% endfor %}
+</ul>
+
+<div class="row row-cols-2">
+  <div class="col">
+    <h2 id="domain">Domain</h2>
+    {{ page.domain | format_table }}
+  </div>
+
+  <div class="col">
+    <h2 id="canonical_endpoint">Canonical Endpoint</h2>
+    {{ page.canonical_endpoint | format_table }}
+  </div>
+
+  {% for check in page.checks %}
+    <div class="col pt-4">
+      <h2 id="{{ check[0] | slugify }}">{{ check[0] | format_key }}</h2>
+      {{ check[1] | format_table }}
+    </div>
+  {% endfor %}
+</div>
