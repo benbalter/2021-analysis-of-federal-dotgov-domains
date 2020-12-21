@@ -1,7 +1,7 @@
 module Jekyll
   module DataExtractor
     IGNORED_FIELDS = %w[
-      date draft categories layout title slug ext tags excerpt
+      date draft categories layout title slug ext tags title excerpt
     ].freeze
 
     def extract_data(documents)

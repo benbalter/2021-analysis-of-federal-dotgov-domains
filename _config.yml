@@ -1,3 +1,5 @@
+title: Analysis of Federal Executive .gov domains
+
 collections:
   domains:
     output: true
@@ -9,6 +11,11 @@ exclude:
   - Gemfile.lock
   - LICENSE.md
   - README.md
+  - src
+  - package.json
+  - tsconfig.json
+  - package-lock.json
+  - webpack.config.js
 
 defaults:
   - scope:
@@ -16,3 +23,6 @@ defaults:
       type: domains
     values:
       layout: domain
+
+plugins:
+  - jekyll-seo-tag
