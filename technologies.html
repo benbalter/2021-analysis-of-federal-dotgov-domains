@@ -1,0 +1,19 @@
+---
+layout: default
+title: Technologies
+---
+
+<h2>{{ page.title }}</h2>
+
+{% assign num_live_domains = site.domains | where: "domain.up", true | size %}
+{% for hash in site.data.technologies %}
+  {% assign cat = hash[0] %}
+  <h3>{{ cat | format_key }}</h3>
+
+  <ul>
+    {% for tech in hash[1] %}
+      {% assign count = site.domains | where_exp:"domain", "domain.checks.wappalyzer[cat] contains tech" | size %}
+      <li>{{ tech }}: {% include num-with-percent.html num=count denom=num_live_domains %}</li>
+    {% endfor %}
+  </ul>
+{% endfor %}

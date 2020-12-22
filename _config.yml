@@ -26,3 +26,5 @@ defaults:
 
 plugins:
   - jekyll-seo-tag
+
+true: true

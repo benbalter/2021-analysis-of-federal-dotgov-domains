@@ -34,7 +34,66 @@ fields:
 
 Download as <a href="data.csv">CSV</a> or <a href="data.json">JSON</a>.
 
-<table class="table table-striped" id="table" 
+{% assign num_domains = site.domains | size %}
+{% assign num_live_domains = site.domains | where: "domain.up", true | size %}
+<ul>
+  <li>Total number of domains: {{ num_domains }}</li>
+  <li>Number of live domains: {% include num-with-percent.html num=num_live_domains denom=num_domains %}</li>
+  <li>{% assign num_root = site.domains | where: "domain.root", true | size %}
+    Reachable without <code>www.</code>: {% include num-with-percent.html num=num_root denom=num_live_domains %}
+  </li>
+  <li>{% assign num_ipv6 = site.domains | where: "checks.dns.ipv6", true | size %}
+    IPV6: {% include num-with-percent.html num=num_ipv6 denom=num_live_domains %}
+  </li>
+  <li>{% assign num_https = site.domains | where: "domain.https", true | size %}
+    HTTPS: {% include num-with-percent.html num=num_https denom=num_live_domains %}
+   </li>
+  <li>{% assign num_enforces_https = site.domains | where: "domain.enforces_https", true | size %}
+    Enforce HTTPS: {% include num-with-percent.html num=num_enforces_https denom=num_live_domains %}
+   </li>
+  <li>{% assign num_redirect = site.domains | where: "domain.redirect", true | size %}
+    Redirect: {% include num-with-percent.html num=num_redirect denom=num_live_domains %}
+   </li>
+    <li>{% assign num_hsts = site.domains | where: "checks.hsts.valid", true | size %}
+    HSTS: {% include num-with-percent.html num=num_hsts denom=num_domains %}
+   </li>
+    <li>{% assign num_hsts_preloaded = site.domains | where: "checks.hsts.preload_list_status", "preloaded" | size %}
+    HSTS Preloaded: {% include num-with-percent.html num=num_hsts_preloaded denom=num_domains %}
+   </li>
+    <li>{% assign num_dnssec = site.domains | where: "checks.dns.dnssec", true | size %}
+    DNSSEC: {% include num-with-percent.html num=num_dnssec denom=num_domains %}
+   </li>
+    <li>{% assign num_drupal = site.domains | where_exp:"domain", "domain.checks.wappalyzer.cms contains 'Drupal'" | size %}
+    Drupal: {% include num-with-percent.html num=num_drupal denom=num_live_domains %}
+   </li>
+    <li>{% assign num_wp = site.domains | where_exp:"domain", "domain.checks.wappalyzer.cms contains 'WordPress'" | size %}
+     WordPress: {% include num-with-percent.html num=num_wp denom=num_live_domains %}
+   </li>
+       <li>{% assign num_joomla = site.domains | where_exp:"domain", "domain.checks.wappalyzer.cms contains 'Joomla'" | size %}
+     Joomla: {% include num-with-percent.html num=num_joomla denom=num_live_domains %}
+   </li>
+    <li>{% assign num_ga = site.domains | where_exp:"domain", "domain.checks.wappalyzer.analytics contains 'Google Analytics'" | size %}
+     GA: {% include num-with-percent.html num=num_ga denom=num_live_domains %}
+   </li>
+    <li>{% assign num_aws = site.domains | where_exp:"domain", "domain.checks.wappalyzer.paas contains 'Amazon Web Services'" | size %}
+     AWS: {% include num-with-percent.html num=num_aws denom=num_live_domains %}
+  </li> 
+      <li>{% assign num_azure = site.domains | where_exp:"domain", "domain.checks.wappalyzer.paas contains 'Azure'" | size %}
+     Azure: {% include num-with-percent.html num=num_azure denom=num_live_domains %}
+   </li>
+       <li>{% assign num_ghp = site.domains | where_exp:"domain", "domain.checks.wappalyzer.paas contains 'GitHub Pages'" | size %}
+     GHP: {% include num-with-percent.html num=num_ghp denom=num_live_domains %}
+   </li>
+      </li>
+       <li>{% assign num_o365 = site.domains | where_exp:"domain", "domain.checks.wappalyzer.webmail contains 'Microsoft 365'" | size %}
+     O365: {% include num-with-percent.html num=num_o365 denom=num_domains %}
+   </li>
+      </li>
+       <li>{% assign num_gsuite = site.domains | where_exp:"domain", "domain.checks.wappalyzer.webmail contains 'Google Workspace'" | size %}
+     GSuite: {% include num-with-percent.html num=num_gsuite denom=num_domains %}
+  </ul>
+
+  <table class="table table-striped" id="table" 
   data-toggle="table" 
   data-search="true"
   data-filter-control="true"
