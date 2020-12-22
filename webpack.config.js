@@ -1,6 +1,5 @@
 const path = require("path");
 const srcDir = "./src/";
-var webpack = require("webpack");
 
 module.exports = {
   mode: "production",
@@ -24,10 +23,4 @@ module.exports = {
   resolve: {
     extensions: [".ts", ".tsx", ".js"],
   },
-  plugins: [
-        new webpack.ProvidePlugin({
-           $: "jquery",
-           jQuery: "jquery"
-       })
-    ],
 };
