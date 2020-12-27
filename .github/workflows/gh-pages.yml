@@ -28,7 +28,7 @@ jobs:
           bundle install --jobs 4 --retry 3
 
       - name: Build Jekyll
-        run: bundle exec jekyll Build
+        run: bundle exec jekyll build
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
