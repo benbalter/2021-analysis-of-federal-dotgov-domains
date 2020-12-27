@@ -20,8 +20,9 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-gems-
 
+      - uses: actions/setup-ruby@v1
+        
       - name: Setup Ruby
-        uses: actions/setup-ruby@v1
         run: |
           gem install bundler
           bundle config path vendor/bundle
