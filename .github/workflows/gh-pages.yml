@@ -30,10 +30,10 @@ jobs:
 
       - name: Build Jekyll
         run: bundle exec jekyll build
-        with:
-          jekyll_github_token: ${{ secrets.GITHUB_TOKEN }}
-          pages_repo_nwo: ${{ github.repository }}
-          pages_env: production
+        env:
+          JEKYLL_GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PAGES_REPO_NWO: ${{ github.repository }}
+          PAGES_ENV: production
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
