@@ -33,8 +33,8 @@ layout: default
 * {% include num-with-percent.html num=num_hsts denom=num_domains %} support HSTS, with {% include num-with-percent.html num=num_hsts_preloaded denom=num_domains %} .govs on the HSTS preload list.
 * {% include num-with-percent.html num=num_redirect denom=num_live_domains %} domains simply redirect to another domain.
 * Of those live, non-redirected domains, {% include num-with-percent.html num=num_drupal denom=num_live_non_redirect_domains %} use the Drupal CMS, up from 10% in 2015. Usage of WordPress doubled in percentage going from 29 to {% include num-with-percent.html num=num_wp denom=num_live_domains %} sites since 2015. Joomla usage went from 8 to {% include num-with-percent.html num=num_joomla denom=num_live_domains %} domains.
-* {% include num-with-percent.html num=num_ga denom=num_live_non_redirect_domains %} unique domains use Google Analytics. Up from about one in four in 2014.
-* It's not always possible to detect the hosting provider, but at least {% include num-with-percent.html num=num_aws denom=num_live_domains %} live domains use AWS, {% include num-with-percent.html num=num_azure denom=num_live_domains %} uses Azure, and {% include num-with-percent.html num=num_ghp denom=num_live_domains %} uses GitHub Pages.
+* {% include num-with-percent.html num=num_ga denom=num_live_non_redirect_domains %} unique domains use Google Analytics. Up from about one in four in 2014 and just 86 ten years ago.
+* It's not always possible to detect the hosting provider, but at least {% include num-with-percent.html num=num_aws denom=num_live_domains %} live domains use AWS (up from just 10 in 2011), {% include num-with-percent.html num=num_azure denom=num_live_domains %} uses Azure, and {% include num-with-percent.html num=num_ghp denom=num_live_domains %} uses GitHub Pages.
 * In terms of mail providers, {% include num-with-percent.html num=num_o365 denom=num_domains %} use Office 365 and {% include num-with-percent.html num=num_gsuite denom=num_domains %} use GSuite.
 
 
@@ -44,4 +44,6 @@ To investigate:
 * No detectable CMS
 * Open source server
 * Any open source / no open source
+* CDN
+* Developer.json, data.json, etc.
   
