@@ -6,23 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     <!-- Begin Jekyll SEO tag v2.7.1 -->
-<title>Analysis of Federal Executive .gov domains</title>
+<title>Analysis of federal .gov domains | Analysis of what technologies power federal .gov websites - 2021 edition.</title>
 <meta name="generator" content="Jekyll v4.2.0" />
-<meta property="og:title" content="Analysis of Federal Executive .gov domains" />
+<meta property="og:title" content="Analysis of federal .gov domains" />
 <meta property="og:locale" content="en_US" />
+<meta name="description" content="Analysis of what technologies power federal .gov websites - 2021 edition." />
+<meta property="og:description" content="Analysis of what technologies power federal .gov websites - 2021 edition." />
 <link rel="canonical" href="https://ben.balter.com/dotgov-2020/" />
 <meta property="og:url" content="https://ben.balter.com/dotgov-2020/" />
-<meta property="og:site_name" content="Analysis of Federal Executive .gov domains" />
+<meta property="og:site_name" content="Analysis of federal .gov domains" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="Analysis of Federal Executive .gov domains" />
+<meta property="twitter:title" content="Analysis of federal .gov domains" />
 <script type="application/ld+json">
-{"headline":"Analysis of Federal Executive .gov domains","url":"https://ben.balter.com/dotgov-2020/","@type":"WebSite","name":"Analysis of Federal Executive .gov domains","@context":"https://schema.org"}</script>
+{"description":"Analysis of what technologies power federal .gov websites - 2021 edition.","headline":"Analysis of federal .gov domains","url":"https://ben.balter.com/dotgov-2020/","@type":"WebSite","name":"Analysis of federal .gov domains","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
     <meta name="robots" content="noindex, nofollow">
     <body>
       <div class="container">
-        <h1><a href="/dotgov-2020/">Analysis of Federal Executive .gov domains</a></h1>
+        <h1><a href="/dotgov-2020/">Analysis of federal .gov domains</a></h1>
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
@@ -51,6 +53,16 @@
                 <li class="nav-item">
                   <a class="nav-link" href="/dotgov-2020/technologies/">Breakdown by technology</a>
                 </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Previous scans
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="https://ben.balter.com/2015/05/11/third-analysis-of-federal-executive-dotgovs/">2015</a>
+                    <a class="dropdown-item" href="https://ben.balter.com/2014/07/07/analysis-of-federal-executive-domains-part-deux/">2014</a>
+                    <a class="dropdown-item" href="https://ben.balter.com/2011/09/07/analysis-of-federal-executive-domains/">2011</a>
+                  </div>
+                </li>
               </ul>
 
               <form class="form-inline" id="jump-to-domain">
@@ -60,67 +72,31 @@
             </div>
         </nav>
 
-        <h3>Highlights:</h3>
-
-
+        <h3 id="highlights">Highlights</h3>
 
 <ul>
-  <li>Total number of domains: 1121</li>
-  <li>Number of live domains: 936 (83.5%)</li>
-  <li>
-    Reachable without <code>www.</code>: 864 (92.31%)
-  </li>
-  <li>
-    IPV6: 0 (0.0%)
-  </li>
-  <li>
-    HTTPS: 892 (95.3%)
-   </li>
-  <li>
-    Enforce HTTPS: 860 (91.88%)
-   </li>
-  <li>
-    Redirect: 263 (28.1%)
-   </li>
-    <li>
-    HSTS: 1118 (99.73%)
-   </li>
-    <li>
-    HSTS Preloaded: 497 (44.34%)
-   </li>
-    <li>
-    DNSSEC: 0 (0.0%)
-   </li>
-    <li>
-    Drupal: 203 (21.69%)
-   </li>
-    <li>
-     WordPress: 39 (4.17%)
-   </li>
-    <li>
-     Joomla: 5 (0.53%)
-   </li>
-    <li>
-     GA: 389 (41.56%)
-   </li>
-    <li>
-     AWS: 111 (11.86%)
-    </li> 
-    <li>
-     Azure: 6 (0.64%)
-    </li>
-    <li>
-     GHP: 1 (0.11%)
-    </li>
-    <li>
-     O365: 105 (9.37%)
-    </li>
-    <li>
-     GSuite: 33 (2.94%)
-     </li>
-  </ul>
+  <li>There are 1121 federally-managed .gov domains. That’s about 250 fewer than there was five years ago.</li>
+  <li>Of those domains, 936 (83.5%) are live. That’s about the same percentage as we saw in 2014 and 2015, and has gone up about 10% over the past 10 years.</li>
+  <li>Of those live domains, 864 (92.31%) are reachable without the <code class="language-plaintext highlighter-rouge">www.</code> prefix. That’s 20 fewer than in 2015, but about a 17% increase.</li>
+  <li>892 (95.3%) domains support HTTPS, a 2.5x increase since the last analysis, and an incredible jump from the one in four we last saw. Even more surprisingly 860 (91.88%) <em>enforce</em> HTTPS, up from one in 10 last time.</li>
+  <li>1118 (99.73%) support HSTS, with 497 (44.34%) .govs on the HSTS preload list.</li>
+  <li>263 (28.1%) domains simply redirect to another domain.</li>
+  <li>Of those live, non-redirected domains, 203 (30.16%) use the Drupal CMS, up from 10% in 2015. Usage of WordPress doubled in percentage going from 29 to 39 (4.17%) sites since 2015. Joomla usage went from 8 to 5 (0.53%) domains.</li>
+  <li>389 (57.8%) unique domains use Google Analytics. Up from about one in four in 2014.</li>
+  <li>It’s not always possible to detect the hosting provider, but at least 111 (11.86%) live domains use AWS, 6 (0.64%) uses Azure, and 1 (0.11%) uses GitHub Pages.</li>
+  <li>In terms of mail providers, 105 (9.37%) use Office 365 and 33 (2.94%) use GSuite.</li>
+</ul>
 
-  
+<p>To investigate:</p>
+<ul>
+  <li>IPV6: 0 (0.0%)</li>
+  <li>DNSSEC: 0 (0.0%)</li>
+  <li>No detectable CMS</li>
+  <li>Open source server</li>
+  <li>Any open source / no open source</li>
+</ul>
+
+
 
         <div class="navbar navbar-expand-lg border-top navbar-light justify-content-end">
           <ul class="navbar-nav " role="navigation">
@@ -129,11 +105,14 @@
                   Source
                 </a>
               </li>
-            
-              
               <li class="nav-item">
                 <a href="https://github.com/benbalter/dotgov-2020"/issues/new" class="nav-link text-muted">
                   Feedback
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="/dotgov-2020/fine-print/" class="nav-link text-muted">
+                  Fine print
                 </a>
               </li>
               <li class="nav-item">
