@@ -38,6 +38,16 @@
                 <li class="nav-item">
                   <a class="nav-link" href="{{ "technologies/" | relative_url}}">Breakdown by technology</a>
                 </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Previous scans
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="https://ben.balter.com/2015/05/11/third-analysis-of-federal-executive-dotgovs/">2015</a>
+                    <a class="dropdown-item" href="https://ben.balter.com/2014/07/07/analysis-of-federal-executive-domains-part-deux/">2014</a>
+                    <a class="dropdown-item" href="https://ben.balter.com/2011/09/07/analysis-of-federal-executive-domains/">2011</a>
+                  </div>
+                </li>
               </ul>
 
               <form class="form-inline" id="jump-to-domain">
@@ -56,11 +66,14 @@
                   Source
                 </a>
               </li>
-            
-              
               <li class="nav-item">
                 <a href="https://github.com/{{site.repository}}"/issues/new" class="nav-link text-muted">
                   Feedback
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="{{ "fine-print/" | relative_url }}" class="nav-link text-muted">
+                  Fine print
                 </a>
               </li>
               <li class="nav-item">
