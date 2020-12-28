@@ -12,7 +12,10 @@
   "author": "",
   "license": "UNLICENSED",
   "dependencies": {
-    "bootstrap-table": "^1.18.1"
+    "bootstrap": "^4.5.3",
+    "bootstrap-table": "^1.18.1",
+    "jquery": "^3.5.1",
+    "popper.js": "^1.16.1"
   },
   "devDependencies": {
     "@babel/cli": "^7.10.5",
