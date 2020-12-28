@@ -1,3 +1,6 @@
+
+# Jekyll mixes YAML front matter and its own metadata. This plugin extracts only
+# the domain's YAML front matter from the document object
 module Jekyll
   module DataExtractor
     IGNORED_FIELDS = %w[

@@ -31,8 +31,6 @@ jobs:
       - name: Build Jekyll
         run: bundle exec jekyll build
         env:
-          JEKYLL_GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          PAGES_REPO_NWO: ${{ github.repository }}
           PAGES_ENV: production
           JEKYLL_ENV: production
 

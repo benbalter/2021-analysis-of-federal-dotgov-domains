@@ -1,0 +1,54 @@
+#!/usr/bin/env ruby
+
+# Writes _data/fields.json and _data/technology.json with unique fields
+# and technologies across all domains. Used to generate consistent CSVs and 
+# to iterate over technologies which change from domain to domain.
+
+require 'yaml'
+require 'json'
+require 'pp'
+fields = {}
+CHECKS_TO_EXCLUDE = %w[whois headers].freeze
+
+def collect_keys(documents, field, subfield = nil)
+  keys = documents.map do |doc|
+    if subfield
+      doc[field][subfield].keys
+    else
+      doc[field].keys
+    end
+  end
+
+  keys.flatten.sort.uniq
+end
+
+def write_data(data, relative_path)
+  path = File.expand_path relative_path, __dir__
+  json = JSON.dump(data)
+  File.write(path, json)
+end
+
+paths = Dir[File.expand_path('../_domains/*', __dir__)]
+domains = paths.map { |path| YAML.load(File.read(path)) }
+
+fields['domain'] = collect_keys(domains, 'domain')
+fields['canonical_endpoint'] = collect_keys(domains, 'canonical_endpoint')
+fields['checks'] = {}
+
+checks = collect_keys(domains, 'checks')
+checks.each do |check|
+  next if CHECKS_TO_EXCLUDE.include?(check)
+
+  fields['checks'][check] = collect_keys(domains, 'checks', check)
+end
+write_data(fields, '../_data/fields.json')
+
+technologies = {}
+fields['checks']['wappalyzer'].each do |technology|
+  values = domains.map do |domain|
+    domain['checks']['wappalyzer'][technology]
+  end
+  technologies[technology] = values.flatten.compact.sort.uniq
+end
+
+write_data(technologies, '../_data/technologies.json')

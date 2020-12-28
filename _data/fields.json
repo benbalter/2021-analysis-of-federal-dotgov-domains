@@ -1,0 +1,14 @@
+{
+  "domain": ["canonically_https", "canonically_www", "downgrades_https", "enforces_https", "host", "hsts", "hsts_preload_ready", "hsts_subdomains", "https", "redirect", "responds", "root", "sld", "tld", "trd", "up", "www"],
+  "canonical_endpoint": ["external_redirect", "host", "redirect", "resolves_to", "responds", "scheme", "timed_out", "up", "uri", "www"],
+  "checks": {
+    "content": ["developer_json", "doctype", "generator", "humans_txt", "proper_404s", "robots_txt", "security_txt", "sitemap_xml", "vulnerability_disclosure_policy"],
+    "cookies": ["cookie?", "secure?"],
+    "dns": ["cdn", "cloud_provider", "dnssec", "google_apps", "hostname", "ip", "ipv6"],
+    "hsts": ["enabled", "include_subdomains", "max_age", "preload", "preload_list_status", "preload_ready", "valid"],
+    "https": ["return_code", "valid"],
+    "sniffer": ["advertising", "analytics", "framework", "javascript"],
+    "wappalyzer": ["a/b_testing", "accessibility", "advertising", "analytics", "caching", "cdn", "cms", "comment_systems", "cookie_compliance", "crm", "databases", "ecommerce", "editors", "email", "font_scripts", "issue_trackers", "javascript_frameworks", "javascript_graphics", "javascript_libraries", "lms", "load_balancers", "maps", "marketing_automation", "miscellaneous", "mobile_frameworks", "operating_systems", "paas", "page_builders", "programming_languages", "reverse_proxies", "rich_text_editors", "saas", "search_engines", "security", "seo", "social_logins", "ssl/tls_certificate_authorities", "static_site_generator", "tag_managers", "ui_frameworks", "video_players", "web_frameworks", "web_server_extensions", "web_servers", "webmail", "widgets"],
+    "wellknown": ["acme_challenge", "amphtml", "ashrae", "assetlinks_json", "brski", "caldav", "carddav", "coap", "core", "csvm", "dnt", "dnt_policy_txt", "dots", "ecips", "enterprise_transport_security", "est", "genid", "gs1resolver", "hoba", "host_meta", "host_meta_json", "hosting_provider", "http_opportunistic", "idp_proxy", "jmap", "keybase_txt", "looking_glass", "matrix", "mta_sts_txt", "nfv_oauth_server_configuration", "ni", "oauth_authorization_server", "openid_configuration", "openorg", "pki_validation", "posh", "pvd", "reload_config", "repute_template", "resourcesync", "sshfp", "stun_key", "thread", "time", "timezone", "tor_relay", "uma2_configuration", "void", "webfinger"]
+  }
+}

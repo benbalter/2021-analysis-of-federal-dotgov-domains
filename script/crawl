@@ -1,0 +1,52 @@
+#!/bin/env ruby
+# frozen_string_literal: true
+
+# Crawl all domains in _data/domains.json using site inspector
+
+require 'site-inspector'
+require 'json'
+require 'logger'
+require 'yaml'
+require 'jekyll'
+require 'active_support/core_ext/hash/keys'
+
+logger = Logger.new(STDOUT)
+domain_path = File.expand_path '../_data/domains.json', __dir__
+json = File.read(domain_path)
+domains = JSON.parse(json, symbolize_names: true).shuffle
+crawled = Dir[File.expand_path('../_domains/*', __dir__)]
+logger.info "Crawling #{domains.count} domains (#{crawled.count} already crawled)"
+
+domains.each do |data|
+  slug = Jekyll::Utils.slugify(data[:domain_name])
+  path = File.expand_path "../_domains/#{slug}.html", __dir__
+
+  if File.exist?(path)
+    logger.info "#{data[:domain_name]} already crawled. Skipping."
+    next
+  end
+
+  logger.info "Crawling #{data[:domain_name]}"
+  domain = SiteInspector.inspect(data[:domain_name]).to_h
+  canonical_endpoint = domain.delete(:canonical_endpoint)
+
+  unless canonical_endpoint
+    logger.warn "Can't crawl #{data[:domain_name]}"
+    next
+  end
+
+  checks = {}
+  SiteInspector::Endpoint.checks.map(&:name).each do |check|
+    checks[check] = canonical_endpoint.delete(check)
+  end
+
+  data = data.merge({
+                      domain: domain,
+                      canonical_endpoint: canonical_endpoint,
+                      checks: checks,
+                      title: data[:domain_name]
+                    }).deep_stringify_keys
+  yaml = YAML.dump(data) + "---\n"
+
+  File.write path, yaml
+end

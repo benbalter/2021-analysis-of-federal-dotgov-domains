@@ -6,10 +6,6 @@ fields:
    - hsts
   checks:
     content:
-      - proper_404s
-      - robots_txt
-      - sitemap_xml
-      - humans_txt
       - vulnerability_disclosure_policy
       - security_txt
       - developer_json
@@ -25,9 +21,7 @@ fields:
       - web_servers
       - analytics
       - webmail
-      - ssl/tls_certificate_authorities
-    wellknown:
-      - acme_challenge
+permalink: /
 ---
 
 Download as <a href="data.csv">CSV</a> or <a href="data.json">JSON</a>.
@@ -113,7 +107,9 @@ Download as <a href="data.csv">CSV</a> or <a href="data.json">JSON</a>.
     </tr>
   </thead>
   <tbody>
-{% for domain in site.domains | where: "domain.up", true | where: "domain.redirect", false %}
+    {% assign domains = site.domains | where: "domain.up", true %}
+    {% assign domains = domains | where: "domain.redirect", false %}
+    {% for domain in domains %}
     <tr>
       <td><a href="{% link {{ domain.path }} %}">{{ domain.domain_name }}</a></td>
       <td>{{ domain.agency }}</td>

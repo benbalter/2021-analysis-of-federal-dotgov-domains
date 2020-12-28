@@ -26,6 +26,6 @@ defaults:
 
 plugins:
   - jekyll-seo-tag
-  - jekyll-github-metadata
 
-true: true
+url: https://ben.balter.com
+baseurl: /dotgov-2020

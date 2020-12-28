@@ -1,0 +1,42 @@
+#!/bin/env ruby
+# frozen_string_literal: true
+
+# Fetches latest federal executive .gov domain list from GSA
+
+require 'open-uri'
+require 'json'
+require 'csv'
+require 'jekyll'
+
+uri = 'https://raw.githubusercontent.com/GSA/data/master/dotgov-domains/current-federal.csv'
+data = URI.open(uri).read
+rows = CSV.new(data, headers: true)
+rows = rows.select { |row| row['Domain Type'] =~ /executive/i }
+
+rows = rows.map do |row|
+  hash = {}
+
+  row.headers.each do |header|
+    slug = Jekyll::Utils.slugify(header).tr('-', '_').to_sym
+    next if slug == :security_contact_email
+
+    hash[slug] = if slug == :domain_name
+                   row[header].downcase
+                 elsif slug == :organization && row[header] == row[header].upcase
+                   row[header].gsub(/\w+/) do |word|
+                     word.capitalize
+                   end
+                 else
+                   hash[slug] = row[header]
+                 end
+
+    hash
+  end
+
+  hash
+end
+
+domain_path = File.expand_path '../_data/domains.json', __dir__
+File.write domain_path, JSON.pretty_generate(rows)
+
+puts "Wrote #{rows.count} domains to #{domain_path}"
