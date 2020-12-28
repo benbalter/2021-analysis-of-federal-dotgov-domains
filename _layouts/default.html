@@ -10,14 +10,13 @@
     <body>
       <div class="container">
         <h1><a href="{{ "/" | relative_url }}">{{ site.title }}</a></h1>
+        
         <p>
           <img class="text-center" src="https://user-images.githubusercontent.com/282759/84681715-8c7cb580-af02-11ea-85a4-05d069c72121.gif" alt="Under construction"/>
         </p>
 
         {{ content }}
       </div>
-      {% if page.path == "domains.html" %}
-        <script src="{{ "assets/script.js" | relative_path }}"></script>
-      {% endif %}
+      <script src="{{ "assets/script.js" | relative_url }}"></script>
   </body>
 </html>

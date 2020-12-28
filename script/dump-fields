@@ -1,7 +1,7 @@
 #!/usr/bin/env ruby
 
 # Writes _data/fields.json and _data/technology.json with unique fields
-# and technologies across all domains. Used to generate consistent CSVs and 
+# and technologies across all domains. Used to generate consistent CSVs and
 # to iterate over technologies which change from domain to domain.
 
 require 'yaml'

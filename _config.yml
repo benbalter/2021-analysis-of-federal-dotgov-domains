@@ -3,7 +3,7 @@ title: Analysis of Federal Executive .gov domains
 collections:
   domains:
     output: true
-    permalink: /:collection/:name
+    permalink: /:collection/:name/
 
 exclude:
   - script
