@@ -1,30 +1,27 @@
 ---
-layout: default
-fields:
-  domain:
-   - www
-   - hsts
-  checks:
-    content:
-      - vulnerability_disclosure_policy
-      - security_txt
-      - developer_json
-    dns:
-      - dnssec
-      - ipv6
-    hsts:
-      - preload
-    wappalyzer:
-      - cms
-      - programming_languages
-      - paas
-      - web_servers
-      - analytics
-      - webmail
 permalink: /
 ---
 
-Download as <a href="data.csv">CSV</a> or <a href="data.json">JSON</a>.
+<ul>
+  <li>
+    Download as <a href="data.csv">CSV</a> or <a href="data.json">JSON</a>
+  </li>
+  <li>
+    Brekdown <a href="./technologies/">by technology</a>
+  </li>
+  <li>
+    Browse <a href="domains/">All domains</a>
+  </li>
+  <li>
+    Explore via <a href="https://docs.google.com/spreadsheets/d/1GFtlveMzj5WRrsJN88Ti_3PikZEV7N6SIhQJtLqfXYM/edit#gid=763376621">Google Docs</a>.
+  </li>
+</ul>
+
+<p>Search for a domain:</p>
+<form>
+  <input type="text" id="domain-search"/>
+  <input type="submit" value="Go" />
+</form>
 
 {% assign num_domains = site.domains | size %}
 {% assign num_live_domains = site.domains | where: "domain.up", true | size %}
@@ -84,45 +81,4 @@ Download as <a href="data.csv">CSV</a> or <a href="data.json">JSON</a>.
      </li>
   </ul>
 
-  <table class="table table-striped" id="table" 
-  data-toggle="table" 
-  data-search="true"
-  data-filter-control="true"
-  data-pagination="true"
-  data-page-size="25"
-  >
-  <thead>
-    <tr>
-      <th data-field="domain" data-sortable="true" data-switchable="false" data-filter-control="input">Domain</th>
-      <th data-field="agency" data-sortable="true" data-filter-control="input">Agency</th>
-      {%- for field in page.fields.domain -%}
-        <th data-field="{{ field }}" data-sortable="true" data-filter-control="select">{{ field | format_key }}</th>
-      {%- endfor -%}
-      {%- for check in page.fields.checks -%}
-        {%- for field in check[1] -%}
-          <th data-field="{{ field }}" data-sortable="true" data-filter-control="select">{{ field | format_key }}</th>
-        {%- endfor -%}
-      {%- endfor -%}
-    </tr>
-  </thead>
-  <tbody>
-    {%- assign domains = site.domains | where: "domain.up", true -%}
-    {%- assign domains = domains | where: "domain.redirect", false -%}
-    {%- for domain in domains -%}
-      <tr>
-        <td><a href="{% link {{ domain.path }} %}">{{ domain.domain_name }}</a></td>
-        <td>{{ domain.agency }}</td>
-        {%- for field in page.fields.domain -%}
-          <td>{{ domain.domain[field] | format_value }}</td>
-        {%- endfor -%}
-        {%- for check in page.fields.checks -%}
-          {%- assign check_name = check[0] -%}
-          {%- assign check_data = domain.checks[check_name] -%}
-          {%- for field in check[1] -%}
-            <td>{{ check_data[field] | format_value }}</td>
-          {%- endfor -%}
-        {%- endfor -%}
-      </tr>
-    {%- endfor -%}
-  </tbody>
-</table>
+  

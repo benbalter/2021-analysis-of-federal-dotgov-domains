@@ -3,6 +3,7 @@ title: Analysis of Federal Executive .gov domains
 collections:
   domains:
     output: true
+    permalink: /:collection/:name
 
 exclude:
   - script
@@ -18,6 +19,10 @@ exclude:
   - webpack.config.js
 
 defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default
   - scope:
       path: ""
       type: domains
