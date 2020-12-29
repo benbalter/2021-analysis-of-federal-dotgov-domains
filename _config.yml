@@ -34,5 +34,5 @@ plugins:
   - jekyll-seo-tag
 
 url: https://ben.balter.com
-baseurl: /dotgov-2020
-repository: benbalter/dotgov-2020
+baseurl: /2021-analysis-of-federal-dotgov-domains
+repository: /benbalter/2021-analysis-of-federal-dotgov-domains
