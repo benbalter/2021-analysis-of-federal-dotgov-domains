@@ -37,8 +37,9 @@ layout: default
 * It's not always possible to detect the hosting provider, but at least {% include num-with-percent.html num=num_aws denom=num_live_domains %} live domains use AWS (up from just 10 in 2011), {% include num-with-percent.html num=num_azure denom=num_live_domains %} uses Azure, and {% include num-with-percent.html num=num_ghp denom=num_live_domains %} uses GitHub Pages.
 * In terms of mail providers, {% include num-with-percent.html num=num_o365 denom=num_domains %} use Office 365 and {% include num-with-percent.html num=num_gsuite denom=num_domains %} use GSuite.
 
+### Methodology
 
-To investigate:
+### To investigate
 * IPV6: {% include num-with-percent.html num=num_ipv6 denom=num_live_domains %}
 * DNSSEC: {% include num-with-percent.html num=num_dnssec denom=num_domains %}
 * No detectable CMS
