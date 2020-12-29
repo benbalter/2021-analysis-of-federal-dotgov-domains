@@ -36,15 +36,14 @@ layout: default
 * {% include num-with-percent.html num=num_ga denom=num_live_non_redirect_domains %} unique domains use Google Analytics. Up from about one in four in 2014 and just 86 ten years ago.
 * It's not always possible to detect the hosting provider, but at least {% include num-with-percent.html num=num_aws denom=num_live_domains %} live domains use AWS (up from just 10 in 2011), {% include num-with-percent.html num=num_azure denom=num_live_domains %} uses Azure, and {% include num-with-percent.html num=num_ghp denom=num_live_domains %} uses GitHub Pages.
 * In terms of mail providers, {% include num-with-percent.html num=num_o365 denom=num_domains %} use Office 365 and {% include num-with-percent.html num=num_gsuite denom=num_domains %} use GSuite.
+* {% include num-with-percent.html num=541 denom=num_live_domains %} of live domains used some form of detectable open source software (operating system, server, or framework), meaning overall, federal domains relied on 2.8 open source projects on average, with those relying on at least one open source project relying on just shy of 5 open source projects on average.
+* {% include num-with-percent.html num=305 denom=num_live_domains %} had a detectable CMS (up from 13% in 2015). Of them, {% include num-with-percent.html num=251 denom=305 %} relied on an open source CMS.
 
 ### Methodology
 
 ### To investigate
 * IPV6: {% include num-with-percent.html num=num_ipv6 denom=num_live_domains %}
 * DNSSEC: {% include num-with-percent.html num=num_dnssec denom=num_domains %}
-* No detectable CMS
-* Open source server
-* Any open source / no open source
 * CDN
 * Developer.json, data.json, etc.
   

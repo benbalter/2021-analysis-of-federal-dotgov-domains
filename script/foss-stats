@@ -1,0 +1,60 @@
+#!/usr/bin/env ruby
+
+# Parse Wappalyzer data to determine which domains are using open source
+
+require 'yaml'
+require 'pp'
+
+# Maping of technologies that are distributed under an OSI-approved license
+# Full list of detected technologies is in _data/technologies.json
+OPEN_SOURCE_TECH = {
+  "cms": %w[Drupal ExpressionEngine Joomla Liferay SilverStripe WordPress],
+  "databases": %w[MariaDB MySQL Percona Redis],
+  "font_scripts": ['Font Awesome', 'Ionicons'],
+  "javascript_frameworks": ['Angular', 'AngularJS', 'Backbone.js', 'Ember.js', 'Handlebars',
+                            'Hogan.js', 'Knockout.js', 'Marionette.js', 'Mustache', 'React', 'RequireJS', 'RxJS', 'Vue.js', 'Zone.js', 'styled-components'],
+  "javascript_graphics": ['Chart.js', 'D3', 'MathJax', 'Mermaid', 'NVD3', 'Paths.js', 'Raphael',
+                          'three.js'],
+  "javascript_libraries": ['AOS', 'Axios', 'Bootstrap Table', 'DataTables', 'Dojo', 'Hammer.js',
+                           'List.js', 'Lodash', 'Modernizr', 'Moment.js', 'Polyfill', 'Select2', 'Slick', 'Snap.svg', 'SweetAlert2', 'Underscore.js', 'YUI', 'Zepto', 'jQuery', 'jQuery Migrate', 'jQuery UI', 'prettyPhoto', 'script.aculo.us'],
+  "miscellaneous": ['Babel', 'Clipboard.js', 'Highlight.js', 'Popper', 'Prism',
+                    'SWFObject', 'Swiper Slider', 'parcel', 'webpack'],
+  "mobile_frameworks": ['jQuery Mobile'],
+  "operating_systems": ['CentOS', 'Debian', 'Red Hat', 'UNIX', 'Ubuntu'],
+  "programming_languages": ['Lua', 'Node.js', 'PHP', 'Python'],
+  "rich_text_editors": %w[CKEditor TinyMCE],
+  "static_site_generator": %w[Gatsby Hugo Jekyll],
+  "ui_frameworks": ['Bootstrap', 'Material Design Lite', 'Pure CSS', 'ZURB Foundation', 'animate.css'],
+  "video_players": ['MediaElement.js', 'Plyr', 'VideoJS'],
+  "web_frameworks": ['Django', 'Express', 'Laravel', 'Ruby on Rails'],
+  "web_server_extensions": ['OpenSSL'],
+  "web_servers": ['Apache', 'Apache Tomcat', 'Kestrel', 'Nginx', 'OpenResty', 'Phusion Passenger']
+}.freeze
+
+paths = Dir[File.expand_path('../_domains/*', __dir__)]
+domains = paths.map { |path| YAML.load(File.read(path)) }
+domains_with_foss = {}
+
+# Loop through each detected technology, comparing to the list above
+# to determine which domains use a known open source technology
+domains.each do |domain|
+  OPEN_SOURCE_TECH.each do |category, technologies|
+    in_use = domain['checks']['wappalyzer'][category.to_s]
+    next unless in_use
+
+    foss_in_use = in_use.select { |t| technologies.include?(t) }
+
+    next if foss_in_use.empty?
+
+    domains_with_foss[domain['domain_name']] ||= []
+    domains_with_foss[domain['domain_name']].concat foss_in_use
+  end
+end
+
+num_with_foss = domains_with_foss.count
+puts "Domains using FOSS: #{num_with_foss}"
+sum = domains_with_foss.sum { |_d, tech| tech.count }
+avg = 1.0 * sum / num_with_foss
+puts "Avg. FOSS per FOSS domain: #{avg.round(2)}"
+avg = 1.0 * sum / domains.select { |d| d['domain']['up'] }.count
+puts "Avg. FOSS overall: #{avg.round(2)}"
