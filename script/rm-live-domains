@@ -1,0 +1,15 @@
+#!/usr/bin/env ruby
+
+# Deletes the `_domains/*.html` file for any domain that is:
+# 1. Up
+# 2. Not a redirect
+# With the intention of then recrawling those domains
+
+require 'yaml'
+
+paths = Dir[File.expand_path('../_domains/*', __dir__)]
+
+paths.each do |path|
+  data = YAML.load(File.read(path))
+  File.delete(path) if data['domain']['up'] && !data['domain']['redirect']
+end
