@@ -4,6 +4,10 @@ import "bootstrap-table";
 import "bootstrap-table/dist/bootstrap-table.min.css";
 import 'bootstrap-table/dist/extensions/filter-control/bootstrap-table-filter-control.min.js';
 
+const anchorJS = require('anchor-js');
+const anchors = new anchorJS();
+anchors.add();
+
 const form = document.getElementById('jump-to-domain');
 const base_url_tag = document.getElementById('base-url');
 let base_url = ""
