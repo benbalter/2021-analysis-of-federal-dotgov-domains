@@ -44,18 +44,18 @@ checks:
     humans_txt: false
     vulnerability_disclosure_policy: false
     security_txt: false
-    developer_json: false
+    data_json: false
   cookies:
     cookie?: false
     secure?: false
   dns:
-    dnssec: false
-    ipv6: false
+    dnssec: true
+    ipv6: true
     cdn: :akamai
     cloud_provider:
     google_apps: false
-    hostname: a23-12-145-133.deploy.static.akamaitechnologies.com
-    ip: 23.12.145.133
+    hostname: a23-222-12-162.deploy.static.akamaitechnologies.com
+    ip: 23.222.12.162
   headers:
     strict-transport-security: max-age=31536000 ; includeSubDomains ; preload
     content-security-policy: false
@@ -104,13 +104,14 @@ checks:
     - Cloud Platform
     font_scripts:
     - Google Font API
-    analytics:
-    - Crazy Egg
-    - New Relic
-    - Adobe Analytics
     javascript_libraries:
     - jQuery UI
     - jQuery
+    analytics:
+    - New Relic
+    - Google Analytics
+    - Crazy Egg
+    - Adobe Analytics
     tag_managers:
     - Adobe Experience Platform Launch
     ssl/tls_certificate_authorities:
@@ -167,36 +168,36 @@ checks:
     webfinger: false
   whois:
     domain:
-      ">>> Last update of whois database": 2020-12-21T22:08:51Z <<<
+      ">>> Last update of whois database": 2020-12-31T18:13:40Z <<<
     ip:
       "# available at": https://www.arin.net/resources/registry/whois/tou/
       "# https": "//www.arin.net/resources/registry/whois/inaccuracy_reporting/"
-      NetRange: 23.0.0.0 - 23.15.255.255
-      CIDR: 23.0.0.0/12
-      NetName: AKAMAI
-      NetHandle: NET-23-0-0-0-1
-      Parent: NET23 (NET-23-0-0-0-0)
-      NetType: Direct Allocation
-      OriginAS: 'Organization:   Akamai Technologies, Inc. (AKAMAI)'
-      RegDate: '1999-01-21'
-      Updated: '2020-08-26'
-      Ref: https://rdap.arin.net/registry/entity/AKAMAI
-      OrgName: Akamai Technologies, Inc.
-      OrgId: AKAMAI
-      Address: 145 Broadway
-      City: Cambridge
-      StateProv: MA
+      NetRange: 23.222.0.0 - 23.222.15.255
+      CIDR: 23.222.0.0/20
+      NetName: AIBV
+      NetHandle: NET-23-222-0-0-1
+      Parent: AKAMAI (NET-23-192-0-0-1)
+      NetType: Reassigned
+      OriginAS: 'Organization:   Akamai International, BV (AIB-17)'
+      RegDate: '2013-09-19'
+      Updated: '2016-12-14'
+      Ref: https://rdap.arin.net/registry/entity/AIB-17
+      OrgName: Akamai International, BV
+      OrgId: AIB-17
+      Address: Prins Bernhardplein 200
+      City: Amsterdam
+      StateProv: 'PostalCode:     1097 JB'
       PostalCode: '02142'
-      Country: US
+      Country: NL
+      OrgTechHandle: AIBVH-ARIN
+      OrgTechName: AIBV Hostmaster
+      OrgTechPhone: "+1.617.444.4699 "
+      OrgTechEmail: ip-admin@akamai.com
+      OrgTechRef: https://rdap.arin.net/registry/entity/AIBVH-ARIN
       OrgAbuseHandle: NUS-ARIN
       OrgAbuseName: NOC United States
       OrgAbusePhone: "+1-617-444-2535 "
       OrgAbuseEmail: abuse@akamai.com
       OrgAbuseRef: https://rdap.arin.net/registry/entity/NUS-ARIN
-      OrgTechHandle: IPADM11-ARIN
-      OrgTechName: ipadmin
-      OrgTechPhone: "+1-617-444-0017 "
-      OrgTechEmail: ip-admin@akamai.com
-      OrgTechRef: https://rdap.arin.net/registry/entity/IPADM11-ARIN
 title: cancer.gov
 ---

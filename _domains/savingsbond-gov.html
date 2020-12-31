@@ -6,33 +6,33 @@ organization: Department of the Treasury - BPD
 city: Mclean
 state: VA
 domain:
-  host: savingsbond.gov
+  host: www.savingsbond.gov
   tld: gov
   sld: savingsbond
-  trd:
+  trd: www
   up: true
   responds: true
-  www: false
-  root: true
+  www: true
+  root: false
   https: true
   enforces_https: true
   downgrades_https: false
-  canonically_www: false
+  canonically_www: true
   canonically_https: true
   redirect: false
   hsts: true
-  hsts_subdomains: true
+  hsts_subdomains: false
   hsts_preload_ready: false
 canonical_endpoint:
-  uri: https://savingsbond.gov/
-  host: savingsbond.gov
-  www: false
+  uri: https://www.savingsbond.gov/
+  host: www.savingsbond.gov
+  www: true
   scheme: https
   up: true
   responds: true
   timed_out: false
   redirect: false
-  resolves_to: https://savingsbond.gov/
+  resolves_to: https://www.savingsbond.gov/
   external_redirect: false
 checks:
   content:
@@ -44,13 +44,13 @@ checks:
     humans_txt: false
     vulnerability_disclosure_policy: false
     security_txt: false
-    developer_json: false
+    data_json: false
   cookies:
     cookie?: true
     secure?: true
   dns:
-    dnssec: false
-    ipv6: false
+    dnssec: true
+    ipv6: true
     cdn:
     cloud_provider:
     google_apps: false
@@ -70,7 +70,7 @@ checks:
     preload: false
     enabled: true
     preload_ready: false
-    preload_list_status: rejected
+    preload_list_status: unknown
   https:
     valid: true
     return_code: :ok
@@ -82,6 +82,8 @@ checks:
   wappalyzer:
     javascript_libraries:
     - jQuery
+    analytics:
+    - Google Analytics
   wellknown:
     acme_challenge: false
     amphtml: false
@@ -134,10 +136,7 @@ checks:
     webfinger: false
   whois:
     domain:
-      Domain Name: SAVINGSBOND.GOV
-      Status: ACTIVE
-      Security Contact Email: domainsecurity@treasury.gov
-      ">>> Last update of whois database": 2020-12-21T21:13:18Z <<<
+      ">>> Last update of whois database": 2020-12-30T23:14:09Z <<<
     ip:
       "# available at": https://www.arin.net/resources/registry/whois/tou/
       "# https": "//www.arin.net/resources/registry/whois/inaccuracy_reporting/"
@@ -159,6 +158,11 @@ checks:
       StateProv: DC
       PostalCode: '20006'
       Country: US
+      OrgNOCHandle: SOC35-ARIN
+      OrgNOCName: Security Operations Center
+      OrgNOCPhone: "+1-202-927-9777 "
+      OrgNOCEmail: soc@gsoc.treas.gov
+      OrgNOCRef: https://rdap.arin.net/registry/entity/SOC35-ARIN
       OrgTechHandle: DLS46-ARIN
       OrgTechName: Smicker, Daniel L
       OrgTechPhone: "+1-304-480-7779 "
@@ -169,11 +173,6 @@ checks:
       OrgAbusePhone: "+1-202-927-9777 "
       OrgAbuseEmail: soc@gsoc.treas.gov
       OrgAbuseRef: https://rdap.arin.net/registry/entity/SOC35-ARIN
-      OrgNOCHandle: SOC35-ARIN
-      OrgNOCName: Security Operations Center
-      OrgNOCPhone: "+1-202-927-9777 "
-      OrgNOCEmail: soc@gsoc.treas.gov
-      OrgNOCRef: https://rdap.arin.net/registry/entity/SOC35-ARIN
       RTechHandle: DLS46-ARIN
       RTechName: Smicker, Daniel L
       RTechPhone: "+1-304-480-7779 "

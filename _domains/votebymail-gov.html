@@ -38,16 +38,16 @@ checks:
   content: {}
   cookies: {}
   dns:
-    dnssec: false
-    ipv6: false
+    dnssec: true
+    ipv6: true
     cdn:
     cloud_provider:
     google_apps: false
     hostname: ''
-    ip: 3.233.171.147
+    ip: 3.232.116.190
   headers: {}
   hsts:
-    valid: true
+    valid: false
     max_age: 0
     include_subdomains: false
     preload: false
@@ -62,21 +62,19 @@ checks:
   wellknown: {}
   whois:
     domain:
-      ">>> Last update of whois database": 2020-12-21T21:11:33Z <<<
+      ">>> Last update of whois database": 2020-12-31T18:46:12Z <<<
     ip:
       "# available at": https://www.arin.net/resources/registry/whois/tou/
       "# https": "//www.arin.net/resources/registry/whois/inaccuracy_reporting/"
-      NetRange: 3.80.0.0 - 3.95.255.255
-      CIDR: 3.80.0.0/12
+      NetRange: 3.224.0.0 - 3.239.255.255
+      CIDR: 3.224.0.0/12
       NetName: AMAZON-IAD
-      NetHandle: NET-3-80-0-0-1
-      Parent: AT-88-Z (NET-3-0-0-0-1)
+      NetHandle: NET-3-224-0-0-1
+      Parent: AT-88-Z (NET-3-128-0-0-1)
       NetType: Reallocated
       OriginAS: AS16509, AS14618
       RegDate: '2018-04-25'
       Updated: '2019-08-02'
-      Comment: "* Your contact details (phone and email) Without these we will be
-        unable to identify the correct owner of the IP address at that point in time."
       Ref: https://rdap.arin.net/registry/entity/ADSN-1
       OrgName: Amazon Data Services NoVa
       OrgId: ADSN-1
@@ -85,11 +83,18 @@ checks:
       StateProv: VA
       PostalCode: '20171'
       Country: US
-      OrgRoutingHandle: ADR29-ARIN
-      OrgRoutingName: AWS Dogfish Routing
+      Comment: "* Your contact details (phone and email) Without these we will be
+        unable to identify the correct owner of the IP address at that point in time."
+      OrgTechHandle: ANO24-ARIN
+      OrgTechName: Amazon EC2 Network Operations
+      OrgTechPhone: "+1-206-266-4064 "
+      OrgTechEmail: amzn-noc-contact@amazon.com
+      OrgTechRef: https://rdap.arin.net/registry/entity/ANO24-ARIN
+      OrgRoutingHandle: IPROU3-ARIN
+      OrgRoutingName: IP Routing
       OrgRoutingPhone: "+1-206-266-4064 "
-      OrgRoutingEmail: aws-dogfish-routing-poc@amazon.com
-      OrgRoutingRef: https://rdap.arin.net/registry/entity/ADR29-ARIN
+      OrgRoutingEmail: aws-routing-poc@amazon.com
+      OrgRoutingRef: https://rdap.arin.net/registry/entity/IPROU3-ARIN
       OrgAbuseHandle: AEA8-ARIN
       OrgAbuseName: Amazon EC2 Abuse
       OrgAbusePhone: "+1-206-266-4064 "
@@ -100,11 +105,6 @@ checks:
       OrgNOCPhone: "+1-206-266-4064 "
       OrgNOCEmail: amzn-noc-contact@amazon.com
       OrgNOCRef: https://rdap.arin.net/registry/entity/AANO1-ARIN
-      OrgTechHandle: ANO24-ARIN
-      OrgTechName: Amazon EC2 Network Operations
-      OrgTechPhone: "+1-206-266-4064 "
-      OrgTechEmail: amzn-noc-contact@amazon.com
-      OrgTechRef: https://rdap.arin.net/registry/entity/ANO24-ARIN
       Organization: Amazon Data Services NoVa (ADSN-1)
 title: votebymail.gov
 ---

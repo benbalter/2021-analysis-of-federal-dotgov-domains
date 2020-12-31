@@ -44,13 +44,13 @@ checks:
     humans_txt:
     vulnerability_disclosure_policy:
     security_txt: false
-    developer_json:
+    data_json:
   cookies:
     cookie?: true
     secure?: true
   dns:
-    dnssec: false
-    ipv6: false
+    dnssec: true
+    ipv6: true
     cdn:
     cloud_provider:
     google_apps: false
@@ -146,12 +146,12 @@ checks:
     webfinger:
   whois:
     domain:
-      ">>> Last update of whois database": 2020-12-22T18:01:41Z <<<
+      ">>> Last update of whois database": 2020-12-30T21:01:47Z <<<
     ip:
       "# available at": https://www.arin.net/resources/registry/whois/tou/
       "# https": "//www.arin.net/resources/registry/whois/inaccuracy_reporting/"
       NetRange: 156.40.198.0 - 156.40.255.255
-      CIDR: 156.40.208.0/20, 156.40.224.0/19, 156.40.200.0/21, 156.40.198.0/23
+      CIDR: 156.40.224.0/19, 156.40.198.0/23, 156.40.208.0/20, 156.40.200.0/21
       NetName: NIHNET-3
       NetHandle: NET-156-40-198-0-1
       Parent: NET156 (NET-156-0-0-0-0)
@@ -168,21 +168,21 @@ checks:
       StateProv: MD
       PostalCode: '20817'
       Country: US
-      OrgAbuseHandle: NIHIR-ARIN
-      OrgAbuseName: NIH IRT
-      OrgAbusePhone: "+1-301-881-9726 "
-      OrgAbuseEmail: irt@nih.gov
-      OrgAbuseRef: https://rdap.arin.net/registry/entity/NIHIR-ARIN
-      OrgTechHandle: NIHTE-ARIN
-      OrgTechName: NIHtechs
-      OrgTechPhone: "+1-301-402-3141 "
-      OrgTechEmail: citnsarin@mail.nih.gov
-      OrgTechRef: https://rdap.arin.net/registry/entity/NIHTE-ARIN
       OrgDNSHandle: NDAND-ARIN
       OrgDNSName: 'NIH DNS Administrators, NIH DNS '
       OrgDNSPhone: "+1-301-435-1970 "
       OrgDNSEmail: hostmaster@list.nih.gov
       OrgDNSRef: https://rdap.arin.net/registry/entity/NDAND-ARIN
+      OrgTechHandle: NIHTE-ARIN
+      OrgTechName: NIHtechs
+      OrgTechPhone: "+1-301-402-3141 "
+      OrgTechEmail: citnsarin@mail.nih.gov
+      OrgTechRef: https://rdap.arin.net/registry/entity/NIHTE-ARIN
+      OrgAbuseHandle: NIHIR-ARIN
+      OrgAbuseName: NIH IRT
+      OrgAbusePhone: "+1-301-881-9726 "
+      OrgAbuseEmail: irt@nih.gov
+      OrgAbuseRef: https://rdap.arin.net/registry/entity/NIHIR-ARIN
       OrgNOCHandle: NOC228-ARIN
       OrgNOCName: Network Operations Center
       OrgNOCPhone: "+1-301-402-3141 "

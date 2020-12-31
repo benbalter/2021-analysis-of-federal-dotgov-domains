@@ -44,18 +44,18 @@ checks:
     humans_txt: false
     vulnerability_disclosure_policy: false
     security_txt: false
-    developer_json: false
+    data_json: false
   cookies:
     cookie?: true
     secure?: true
   dns:
-    dnssec: false
-    ipv6: false
+    dnssec: true
+    ipv6: true
     cdn: :akamai
     cloud_provider:
     google_apps: false
-    hostname: a104-102-200-119.deploy.static.akamaitechnologies.com
-    ip: 104.102.200.119
+    hostname: a104-82-17-163.deploy.static.akamaitechnologies.com
+    ip: 104.82.17.163
   headers:
     strict-transport-security: max-age=31536000 ; preload
     content-security-policy: false
@@ -84,10 +84,9 @@ checks:
     - Bootstrap
     tag_managers:
     - Tealium
+    - Google Tag Manager
     font_scripts:
     - Google Font API
-    analytics:
-    - Google Analytics
     security:
     - Akamai Bot Manager
     javascript_libraries:
@@ -95,6 +94,10 @@ checks:
     - Lodash
     a/b_testing:
     - Optimizely
+    analytics:
+    - New Relic
+    - Google Analytics
+    - Chartbeat
     cdn:
     - Akamai
   wellknown:
@@ -149,7 +152,7 @@ checks:
     webfinger: false
   whois:
     domain:
-      ">>> Last update of whois database": 2020-12-21T21:23:03Z <<<
+      ">>> Last update of whois database": 2020-12-30T22:31:51Z <<<
     ip:
       "# available at": https://www.arin.net/resources/registry/whois/tou/
       "# https": "//www.arin.net/resources/registry/whois/inaccuracy_reporting/"
@@ -170,15 +173,15 @@ checks:
       StateProv: MA
       PostalCode: '02142'
       Country: US
-      OrgTechHandle: SJS98-ARIN
-      OrgTechName: Schecter, Steven Jay
-      OrgTechPhone: "+1-617-274-7134 "
-      OrgTechEmail: ip-admin@akamai.com
-      OrgTechRef: https://rdap.arin.net/registry/entity/SJS98-ARIN
       OrgAbuseHandle: NUS-ARIN
       OrgAbuseName: NOC United States
       OrgAbusePhone: "+1-617-444-2535 "
       OrgAbuseEmail: abuse@akamai.com
       OrgAbuseRef: https://rdap.arin.net/registry/entity/NUS-ARIN
+      OrgTechHandle: IPADM11-ARIN
+      OrgTechName: ipadmin
+      OrgTechPhone: "+1-617-444-0017 "
+      OrgTechEmail: ip-admin@akamai.com
+      OrgTechRef: https://rdap.arin.net/registry/entity/IPADM11-ARIN
 title: healthcare.gov
 ---

@@ -19,8 +19,8 @@ domain:
   downgrades_https: false
   canonically_www: true
   canonically_https: true
-  redirect: true
-  hsts: true
+  redirect: false
+  hsts: false
   hsts_subdomains: true
   hsts_preload_ready: false
 canonical_endpoint:
@@ -28,12 +28,12 @@ canonical_endpoint:
   host: www.learndoj.gov
   www: true
   scheme: https
-  up: true
-  responds: true
+  up: false
+  responds: false
   timed_out: false
-  redirect: true
-  resolves_to: https://www.justice.gov/
-  external_redirect: true
+  redirect: false
+  resolves_to: https://www.learndoj.gov/
+  external_redirect: false
 checks:
   content: {}
   cookies: {}
@@ -45,24 +45,29 @@ checks:
     google_apps: false
     hostname: ''
     ip: 149.101.82.219
-  headers: {}
+  headers:
+    strict-transport-security: false
+    content-security-policy: false
+    x-frame-options: false
+    server: false
+    x-xss-protection: false
   hsts:
-    valid: true
-    max_age: 31536000
-    include_subdomains: true
+    valid: false
+    max_age: 0
+    include_subdomains: false
     preload: false
-    enabled: true
+    enabled: false
     preload_ready: false
     preload_list_status: unknown
   https:
-    valid: true
-    return_code: :ok
+    valid: false
+    return_code: :couldnt_resolve_host
   sniffer: {}
   wappalyzer: {}
   wellknown: {}
   whois:
     domain:
-      ">>> Last update of whois database": 2020-12-22T17:05:08Z <<<
+      ">>> Last update of whois database": 2020-12-30T22:47:22Z <<<
     ip:
       "# available at": https://www.arin.net/resources/registry/whois/tou/
       "# https": "//www.arin.net/resources/registry/whois/inaccuracy_reporting/"
@@ -83,16 +88,16 @@ checks:
       StateProv: MD
       PostalCode: '20859'
       Country: US
-      OrgAbuseHandle: EXJ-ARIN
-      OrgAbuseName: JMD-STS, EMWS X
-      OrgAbusePhone: "+1-202-616-7100 "
-      OrgAbuseEmail: george.a.cramer@usdoj.gov
-      OrgAbuseRef: https://rdap.arin.net/registry/entity/EXJ-ARIN
       OrgTechHandle: EXJ-ARIN
       OrgTechName: JMD-STS, EMWS X
       OrgTechPhone: "+1-202-616-7100 "
       OrgTechEmail: george.a.cramer@usdoj.gov
       OrgTechRef: https://rdap.arin.net/registry/entity/EXJ-ARIN
+      OrgAbuseHandle: EXJ-ARIN
+      OrgAbuseName: JMD-STS, EMWS X
+      OrgAbusePhone: "+1-202-616-7100 "
+      OrgAbuseEmail: george.a.cramer@usdoj.gov
+      OrgAbuseRef: https://rdap.arin.net/registry/entity/EXJ-ARIN
       RTechHandle: EXJ-ARIN
       RTechName: JMD-STS, EMWS X
       RTechPhone: "+1-202-616-7100 "

@@ -10,136 +10,67 @@ domain:
   tld: gov
   sld: treasurydirect
   trd:
-  up: true
-  responds: true
-  www: true
-  root: true
-  https: true
-  enforces_https: true
+  up: false
+  responds: false
+  www: false
+  root: false
+  https: false
+  enforces_https: false
   downgrades_https: false
   canonically_www: false
-  canonically_https: true
+  canonically_https: false
   redirect: false
-  hsts: true
-  hsts_subdomains: true
+  hsts: false
+  hsts_subdomains: false
   hsts_preload_ready: false
 canonical_endpoint:
-  uri: https://treasurydirect.gov/
+  uri: http://treasurydirect.gov/
   host: treasurydirect.gov
   www: false
-  scheme: https
-  up: true
-  responds: true
+  scheme: http
+  up: false
+  responds: false
   timed_out: false
   redirect: false
-  resolves_to: https://treasurydirect.gov/
+  resolves_to: http://treasurydirect.gov/
   external_redirect: false
 checks:
-  content:
-    doctype: "-//W3C//DTD XHTML 1.0 Strict//EN"
-    generator:
-    proper_404s: true
-    robots_txt: false
-    sitemap_xml: false
-    humans_txt: false
-    vulnerability_disclosure_policy: false
-    security_txt: false
-    developer_json: false
-  cookies:
-    cookie?: true
-    secure?: true
+  content: {}
+  cookies: {}
   dns:
-    dnssec: false
-    ipv6: false
+    dnssec: true
+    ipv6: true
     cdn:
     cloud_provider:
     google_apps: false
     hostname: ''
     ip: 166.123.219.80
   headers:
-    strict-transport-security: max-age=31536000; includeSubDomains
+    strict-transport-security: false
     content-security-policy: false
-    x-frame-options: SAMEORIGIN
+    x-frame-options: false
     server: false
-    x-xss-protection: 1; mode=block
-    x-content-type-options: nosniff
+    x-xss-protection: false
   hsts:
-    valid: true
-    max_age: 31536000
-    include_subdomains: true
+    valid: false
+    max_age: 0
+    include_subdomains: false
     preload: false
-    enabled: true
+    enabled: false
     preload_ready: false
     preload_list_status: removed
   https:
-    valid: true
-    return_code: :ok
-  sniffer:
-    framework:
-    analytics:
-    javascript: :jquery
-    advertising:
-  wappalyzer:
-    javascript_libraries:
-    - jQuery
-    analytics:
-    - Google Analytics
-  wellknown:
-    acme_challenge: false
-    amphtml: false
-    ashrae: false
-    assetlinks_json: false
-    brski: false
-    caldav: false
-    carddav: false
-    coap: false
-    core: false
-    csvm: false
-    dnt: false
-    dnt_policy_txt: false
-    dots: false
-    ecips: false
-    enterprise_transport_security: false
-    est: false
-    genid: false
-    gs1resolver: false
-    hoba: false
-    host_meta: false
-    host_meta_json: false
-    hosting_provider: false
-    http_opportunistic: false
-    idp_proxy: false
-    jmap: false
-    keybase_txt: false
-    looking_glass: false
-    matrix: false
-    mta_sts_txt: false
-    nfv_oauth_server_configuration: false
-    ni: false
-    oauth_authorization_server: false
-    openid_configuration: false
-    openorg: false
-    pki_validation: false
-    posh: false
-    pvd: false
-    reload_config: false
-    repute_template: false
-    resourcesync: false
-    sshfp: false
-    stun_key: false
-    thread: false
-    time: false
-    timezone: false
-    tor_relay: false
-    uma2_configuration: false
-    void: false
-    webfinger: false
+    valid: false
+    return_code: :couldnt_resolve_host
+  sniffer: {}
+  wappalyzer: {}
+  wellknown: {}
   whois:
     domain:
       Domain Name: TREASURYDIRECT.GOV
       Status: ACTIVE
       Security Contact Email: domainsecurity@treasury.gov
-      ">>> Last update of whois database": 2020-12-22T18:02:41Z <<<
+      ">>> Last update of whois database": 2020-12-31T18:19:26Z <<<
     ip:
       "# available at": https://www.arin.net/resources/registry/whois/tou/
       "# https": "//www.arin.net/resources/registry/whois/inaccuracy_reporting/"
@@ -161,6 +92,11 @@ checks:
       StateProv: DC
       PostalCode: '20006'
       Country: US
+      OrgTechHandle: DLS46-ARIN
+      OrgTechName: Smicker, Daniel L
+      OrgTechPhone: "+1-304-480-7779 "
+      OrgTechEmail: ecb-hosting@bpd.treas.gov
+      OrgTechRef: https://rdap.arin.net/registry/entity/DLS46-ARIN
       OrgNOCHandle: SOC35-ARIN
       OrgNOCName: Security Operations Center
       OrgNOCPhone: "+1-202-927-9777 "
@@ -171,11 +107,6 @@ checks:
       OrgAbusePhone: "+1-202-927-9777 "
       OrgAbuseEmail: soc@gsoc.treas.gov
       OrgAbuseRef: https://rdap.arin.net/registry/entity/SOC35-ARIN
-      OrgTechHandle: DLS46-ARIN
-      OrgTechName: Smicker, Daniel L
-      OrgTechPhone: "+1-304-480-7779 "
-      OrgTechEmail: ecb-hosting@bpd.treas.gov
-      OrgTechRef: https://rdap.arin.net/registry/entity/DLS46-ARIN
       RTechHandle: DLS46-ARIN
       RTechName: Smicker, Daniel L
       RTechPhone: "+1-304-480-7779 "

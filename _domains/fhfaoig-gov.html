@@ -44,13 +44,13 @@ checks:
     humans_txt: false
     vulnerability_disclosure_policy: false
     security_txt: false
-    developer_json: false
+    data_json: false
   cookies:
     cookie?: false
     secure?: false
   dns:
-    dnssec: false
-    ipv6: false
+    dnssec: true
+    ipv6: true
     cdn:
     cloud_provider:
     google_apps: false
@@ -95,12 +95,14 @@ checks:
     web_servers:
     - Microsoft HTTPAPI
     - Apache
-    tag_managers:
-    - Google Tag Manager
     font_scripts:
     - Google Font API
     javascript_libraries:
     - jQuery
+    tag_managers:
+    - Google Tag Manager
+    analytics:
+    - Google Analytics
     webmail:
     - Microsoft 365
     ssl/tls_certificate_authorities:
@@ -157,7 +159,7 @@ checks:
     webfinger: false
   whois:
     domain:
-      ">>> Last update of whois database": 2020-12-21T20:07:15Z <<<
+      ">>> Last update of whois database": 2020-12-30T23:03:53Z <<<
     ip:
       "# available at": https://www.arin.net/resources/registry/whois/tou/
       "# https": "//www.arin.net/resources/registry/whois/inaccuracy_reporting/"

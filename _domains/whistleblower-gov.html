@@ -6,114 +6,210 @@ organization: U.S. Commodity Futures Trading Commission
 city: Washington
 state: DC
 domain:
-  host: www.whistleblower.gov
+  host: whistleblower.gov
   tld: gov
   sld: whistleblower
-  trd: www
+  trd:
   up: true
   responds: true
   www: true
-  root: false
-  https: false
-  enforces_https: false
+  root: true
+  https: true
+  enforces_https: true
   downgrades_https: false
-  canonically_www: true
-  canonically_https: false
+  canonically_www: false
+  canonically_https: true
   redirect: false
-  hsts: false
-  hsts_subdomains: false
-  hsts_preload_ready: false
+  hsts: true
+  hsts_subdomains: true
+  hsts_preload_ready: true
 canonical_endpoint:
-  uri: http://www.whistleblower.gov/
-  host: www.whistleblower.gov
-  www: true
-  scheme: http
+  uri: https://whistleblower.gov/
+  host: whistleblower.gov
+  www: false
+  scheme: https
   up: true
   responds: true
   timed_out: false
-  redirect: true
-  resolves_to: https://www.whistleblower.gov/
+  redirect: false
+  resolves_to: https://whistleblower.gov/
   external_redirect: false
 checks:
-  content: {}
-  cookies: {}
+  content:
+    doctype:
+    generator:
+    proper_404s: true
+    robots_txt: false
+    sitemap_xml: false
+    humans_txt: false
+    vulnerability_disclosure_policy: false
+    security_txt: false
+    data_json: false
+  cookies:
+    cookie?: false
+    secure?: false
   dns:
-    dnssec: false
+    dnssec: true
     ipv6: false
     cdn:
     cloud_provider:
     google_apps: false
     hostname: ''
-    ip: 104.16.203.230
-  headers: {}
+    ip: 54.156.221.157
+  headers:
+    strict-transport-security: max-age=31536000; includeSubDomains; preload
+    content-security-policy: false
+    x-frame-options: SAMEORIGIN
+    server: nginx
+    x-xss-protection: false
+    x-drupal-dynamic-cache: HIT
+    x-ua-compatible: IE=edge
+    x-content-type-options: nosniff
+    x-generator: Drupal 8 (https://www.drupal.org)
+    x-drupal-cache: HIT
+    x-request-id: v-49f67fce-4ae4-11eb-b278-8bcaa0f90b36
+    x-ah-environment: prod
+    x-cache: MISS
   hsts:
     valid: true
-    max_age: 0
-    include_subdomains: false
-    preload: false
-    enabled: false
-    preload_ready: false
+    max_age: 31536000
+    include_subdomains: true
+    preload: true
+    enabled: true
+    preload_ready: true
     preload_list_status: preloaded
   https:
-    valid: false
+    valid: true
     return_code: :ok
-  sniffer: {}
-  wappalyzer: {}
-  wellknown: {}
+  sniffer:
+    framework:
+    analytics:
+    javascript:
+    advertising:
+  wappalyzer:
+    cms:
+    - Drupal
+    programming_languages:
+    - PHP
+    databases:
+    - Percona
+    ui_frameworks:
+    - Bootstrap
+    caching:
+    - Varnish
+    web_servers:
+    - Amazon EC2
+    - Apache
+    - Nginx
+    paas:
+    - Cloud Platform
+    font_scripts:
+    - Google Font API
+    javascript_libraries:
+    - jQuery
+    - Lodash
+    analytics:
+    - New Relic
+    - Google Analytics
+    tag_managers:
+    - Google Tag Manager
+  wellknown:
+    acme_challenge: false
+    amphtml: false
+    ashrae: false
+    assetlinks_json: false
+    brski: false
+    caldav: false
+    carddav: false
+    coap: false
+    core: false
+    csvm: false
+    dnt: false
+    dnt_policy_txt: false
+    dots: false
+    ecips: false
+    enterprise_transport_security: false
+    est: false
+    genid: false
+    gs1resolver: false
+    hoba: false
+    host_meta: false
+    host_meta_json: false
+    hosting_provider: false
+    http_opportunistic: false
+    idp_proxy: false
+    jmap: false
+    keybase_txt: false
+    looking_glass: false
+    matrix: false
+    mta_sts_txt: false
+    nfv_oauth_server_configuration: false
+    ni: false
+    oauth_authorization_server: false
+    openid_configuration: false
+    openorg: false
+    pki_validation: false
+    posh: false
+    pvd: false
+    reload_config: false
+    repute_template: false
+    resourcesync: false
+    sshfp: false
+    stun_key: false
+    thread: false
+    time: false
+    timezone: false
+    tor_relay: false
+    uma2_configuration: false
+    void: false
+    webfinger: false
   whois:
     domain:
-      ">>> Last update of whois database": 2020-12-21T22:08:06Z <<<
+      Domain Name: WHISTLEBLOWER.GOV
+      Status: ACTIVE
+      Security Contact Email: Security_VDP@cftc.gov
+      ">>> Last update of whois database": 2020-12-30T21:16:33Z <<<
     ip:
       "# available at": https://www.arin.net/resources/registry/whois/tou/
       "# https": "//www.arin.net/resources/registry/whois/inaccuracy_reporting/"
-      NetRange: 104.16.0.0 - 104.31.255.255
-      CIDR: 104.16.0.0/12
-      NetName: CLOUDFLARENET
-      NetHandle: NET-104-16-0-0-1
-      Parent: NET104 (NET-104-0-0-0-0)
-      NetType: Direct Assignment
-      OriginAS: AS13335
-      Organization: Cloudflare, Inc. (CLOUD14)
-      RegDate: '2010-07-09'
-      Updated: '2019-09-25'
-      Comment: All Cloudflare abuse reporting can be done via https://www.cloudflare.com/abuse
-      Ref: https://rdap.arin.net/registry/entity/CLOUD14
-      OrgName: Cloudflare, Inc.
-      OrgId: CLOUD14
-      Address: 101 Townsend Street
-      City: San Francisco
-      StateProv: CA
-      PostalCode: '94107'
+      NetRange: 54.144.0.0 - 54.159.255.255
+      CIDR: 54.144.0.0/12
+      NetName: AMAZON
+      NetHandle: NET-54-144-0-0-1
+      Parent: NET54 (NET-54-0-0-0-0)
+      NetType: Direct Allocation
+      OriginAS: 'Organization:   Amazon Technologies Inc. (AT-88-Z)'
+      RegDate: '2011-12-08'
+      Updated: '2020-03-31'
+      Ref: https://rdap.arin.net/registry/entity/AT-88-Z
+      OrgName: Amazon Technologies Inc.
+      OrgId: AT-88-Z
+      Address: 410 Terry Ave N.
+      City: Seattle
+      StateProv: WA
+      PostalCode: '98109'
       Country: US
-      OrgAbuseHandle: ABUSE2916-ARIN
-      OrgAbuseName: Abuse
-      OrgAbusePhone: "+1-650-319-8930 "
-      OrgAbuseEmail: abuse@cloudflare.com
-      OrgAbuseRef: https://rdap.arin.net/registry/entity/ABUSE2916-ARIN
-      OrgNOCHandle: NOC11962-ARIN
-      OrgNOCName: NOC
-      OrgNOCPhone: "+1-650-319-8930 "
-      OrgNOCEmail: noc@cloudflare.com
-      OrgNOCRef: https://rdap.arin.net/registry/entity/NOC11962-ARIN
-      OrgTechHandle: ADMIN2521-ARIN
-      OrgTechName: Admin
-      OrgTechPhone: "+1-650-319-8930 "
-      OrgTechEmail: rir@cloudflare.com
-      OrgTechRef: https://rdap.arin.net/registry/entity/ADMIN2521-ARIN
-      RAbuseHandle: ABUSE2916-ARIN
-      RAbuseName: Abuse
-      RAbusePhone: "+1-650-319-8930 "
-      RAbuseEmail: abuse@cloudflare.com
-      RAbuseRef: https://rdap.arin.net/registry/entity/ABUSE2916-ARIN
-      RNOCHandle: NOC11962-ARIN
-      RNOCName: NOC
-      RNOCPhone: "+1-650-319-8930 "
-      RNOCEmail: noc@cloudflare.com
-      RNOCRef: https://rdap.arin.net/registry/entity/NOC11962-ARIN
-      RTechHandle: ADMIN2521-ARIN
-      RTechName: Admin
-      RTechPhone: "+1-650-319-8930 "
-      RTechEmail: rir@cloudflare.com
-      RTechRef: https://rdap.arin.net/registry/entity/ADMIN2521-ARIN
+      Comment: "* Your contact details (phone and email) Without these we will be
+        unable to identify the correct owner of the IP address at that point in time."
+      OrgNOCHandle: AANO1-ARIN
+      OrgNOCName: Amazon AWS Network Operations
+      OrgNOCPhone: "+1-206-266-4064 "
+      OrgNOCEmail: amzn-noc-contact@amazon.com
+      OrgNOCRef: https://rdap.arin.net/registry/entity/AANO1-ARIN
+      OrgTechHandle: ANO24-ARIN
+      OrgTechName: Amazon EC2 Network Operations
+      OrgTechPhone: "+1-206-266-4064 "
+      OrgTechEmail: amzn-noc-contact@amazon.com
+      OrgTechRef: https://rdap.arin.net/registry/entity/ANO24-ARIN
+      OrgRoutingHandle: IPROU3-ARIN
+      OrgRoutingName: IP Routing
+      OrgRoutingPhone: "+1-206-266-4064 "
+      OrgRoutingEmail: aws-routing-poc@amazon.com
+      OrgRoutingRef: https://rdap.arin.net/registry/entity/IPROU3-ARIN
+      OrgAbuseHandle: AEA8-ARIN
+      OrgAbuseName: Amazon EC2 Abuse
+      OrgAbusePhone: "+1-206-266-4064 "
+      OrgAbuseEmail: abuse@amazonaws.com
+      OrgAbuseRef: https://rdap.arin.net/registry/entity/AEA8-ARIN
 title: whistleblower.gov
 ---

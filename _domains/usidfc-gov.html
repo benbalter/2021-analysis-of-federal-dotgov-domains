@@ -6,10 +6,10 @@ organization: US International Development Finance Corporation
 city: Washington
 state: DC
 domain:
-  host: www.usidfc.gov
+  host: usidfc.gov
   tld: gov
   sld: usidfc
-  trd: www
+  trd:
   up: true
   responds: true
   www: true
@@ -17,28 +17,28 @@ domain:
   https: true
   enforces_https: true
   downgrades_https: false
-  canonically_www: true
+  canonically_www: false
   canonically_https: true
   redirect: false
   hsts: false
   hsts_subdomains: false
   hsts_preload_ready: false
 canonical_endpoint:
-  uri: https://www.usidfc.gov/
-  host: www.usidfc.gov
-  www: true
+  uri: https://usidfc.gov/
+  host: usidfc.gov
+  www: false
   scheme: https
   up: false
   responds: false
   timed_out: false
   redirect: false
-  resolves_to: https://www.usidfc.gov/
+  resolves_to: https://usidfc.gov/
   external_redirect: false
 checks:
   content: {}
   cookies: {}
   dns:
-    dnssec: false
+    dnssec: true
     ipv6: false
     cdn:
     cloud_provider:
@@ -52,7 +52,7 @@ checks:
     server: false
     x-xss-protection: false
   hsts:
-    valid: true
+    valid: false
     max_age: 0
     include_subdomains: false
     preload: false
@@ -67,7 +67,10 @@ checks:
   wellknown: {}
   whois:
     domain:
-      ">>> Last update of whois database": 2020-12-21T22:52:53Z <<<
+      Domain Name: USIDFC.GOV
+      Status: ACTIVE
+      Security Contact Email: CISO@opic.gov
+      ">>> Last update of whois database": 2020-12-30T20:59:17Z <<<
     ip:
       "# available at": https://www.arin.net/resources/registry/whois/tou/
       "# https": "//www.arin.net/resources/registry/whois/inaccuracy_reporting/"
@@ -90,25 +93,25 @@ checks:
       Country: US
       Comment: "* Your contact details (phone and email) Without these we will be
         unable to identify the correct owner of the IP address at that point in time."
-      OrgRoutingHandle: ADR29-ARIN
-      OrgRoutingName: AWS Dogfish Routing
-      OrgRoutingPhone: "+1-206-266-4064 "
-      OrgRoutingEmail: aws-dogfish-routing-poc@amazon.com
-      OrgRoutingRef: https://rdap.arin.net/registry/entity/ADR29-ARIN
       OrgAbuseHandle: AEA8-ARIN
       OrgAbuseName: Amazon EC2 Abuse
       OrgAbusePhone: "+1-206-266-4064 "
       OrgAbuseEmail: abuse@amazonaws.com
       OrgAbuseRef: https://rdap.arin.net/registry/entity/AEA8-ARIN
-      OrgNOCHandle: AANO1-ARIN
-      OrgNOCName: Amazon AWS Network Operations
-      OrgNOCPhone: "+1-206-266-4064 "
-      OrgNOCEmail: amzn-noc-contact@amazon.com
-      OrgNOCRef: https://rdap.arin.net/registry/entity/AANO1-ARIN
+      OrgRoutingHandle: ADR29-ARIN
+      OrgRoutingName: AWS Dogfish Routing
+      OrgRoutingPhone: "+1-206-266-4064 "
+      OrgRoutingEmail: aws-dogfish-routing-poc@amazon.com
+      OrgRoutingRef: https://rdap.arin.net/registry/entity/ADR29-ARIN
       OrgTechHandle: ANO24-ARIN
       OrgTechName: Amazon EC2 Network Operations
       OrgTechPhone: "+1-206-266-4064 "
       OrgTechEmail: amzn-noc-contact@amazon.com
       OrgTechRef: https://rdap.arin.net/registry/entity/ANO24-ARIN
+      OrgNOCHandle: AANO1-ARIN
+      OrgNOCName: Amazon AWS Network Operations
+      OrgNOCPhone: "+1-206-266-4064 "
+      OrgNOCEmail: amzn-noc-contact@amazon.com
+      OrgNOCRef: https://rdap.arin.net/registry/entity/AANO1-ARIN
 title: usidfc.gov
 ---

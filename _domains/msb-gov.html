@@ -6,103 +6,71 @@ organization: Department of the Treasury - FINCEN
 city: Vienna
 state: VA
 domain:
-  host: www.msb.gov
+  host: msb.gov
   tld: gov
   sld: msb
-  trd: www
-  up: true
-  responds: true
-  www: true
-  root: true
+  trd:
+  up: false
+  responds: false
+  www: false
+  root: false
   https: false
   enforces_https: false
   downgrades_https: false
-  canonically_www: true
+  canonically_www: false
   canonically_https: false
-  redirect: true
-  hsts: true
+  redirect: false
+  hsts: false
   hsts_subdomains: false
   hsts_preload_ready: false
 canonical_endpoint:
-  uri: http://www.msb.gov/
-  host: www.msb.gov
-  www: true
+  uri: http://msb.gov/
+  host: msb.gov
+  www: false
   scheme: http
-  up: true
-  responds: true
+  up: false
+  responds: false
   timed_out: false
-  redirect: true
-  resolves_to: https://www.fincen.gov/
-  external_redirect: true
+  redirect: false
+  resolves_to: http://msb.gov/
+  external_redirect: false
 checks:
   content: {}
   cookies: {}
   dns:
-    dnssec: false
-    ipv6: false
+    dnssec: true
+    ipv6: true
     cdn:
     cloud_provider:
     google_apps: false
     hostname: msb.gov
     ip: 166.123.218.116
-  headers: {}
+  headers:
+    strict-transport-security: false
+    content-security-policy: false
+    x-frame-options: false
+    server: false
+    x-xss-protection: false
   hsts:
-    valid: true
-    max_age: 31536000
-    include_subdomains: true
+    valid: false
+    max_age: 0
+    include_subdomains: false
     preload: false
-    enabled: true
+    enabled: false
     preload_ready: false
     preload_list_status: unknown
   https:
     valid: false
-    return_code: :ok
+    return_code: :couldnt_connect
   sniffer: {}
   wappalyzer: {}
   wellknown: {}
   whois:
     domain:
-      ">>> Last update of whois database": 2020-12-21T21:41:49Z <<<
+      Domain Name: MSB.GOV
+      Status: ACTIVE
+      Security Contact Email: domainsecurity@treasury.gov
+      ">>> Last update of whois database": 2020-12-30T22:49:53Z <<<
     ip:
-      "# available at": https://www.arin.net/resources/registry/whois/tou/
-      "# https": "//www.arin.net/resources/registry/whois/inaccuracy_reporting/"
-      NetRange: 166.123.0.0 - 166.123.255.255
-      CIDR: 166.123.0.0/16
-      NetName: US-DEPARTMENT-OF-THE-TREASURY
-      NetHandle: NET-166-123-0-0-1
-      Parent: NET166 (NET-166-0-0-0-0)
-      NetType: Direct Assignment
-      OriginAS: AS13506
-      Organization: US Department of the Treasury (UDT-6)
-      RegDate: '1999-06-23'
-      Updated: '2017-01-28'
-      Ref: https://rdap.arin.net/registry/entity/UDT-6
-      OrgName: US Department of the Treasury
-      OrgId: UDT-6
-      Address: 1750 Pennsylvania Ave., NW
-      City: Washington
-      StateProv: DC
-      PostalCode: '20006'
-      Country: US
-      OrgTechHandle: DLS46-ARIN
-      OrgTechName: Smicker, Daniel L
-      OrgTechPhone: "+1-304-480-7779 "
-      OrgTechEmail: ecb-hosting@bpd.treas.gov
-      OrgTechRef: https://rdap.arin.net/registry/entity/DLS46-ARIN
-      OrgAbuseHandle: SOC35-ARIN
-      OrgAbuseName: Security Operations Center
-      OrgAbusePhone: "+1-202-927-9777 "
-      OrgAbuseEmail: soc@gsoc.treas.gov
-      OrgAbuseRef: https://rdap.arin.net/registry/entity/SOC35-ARIN
-      OrgNOCHandle: SOC35-ARIN
-      OrgNOCName: Security Operations Center
-      OrgNOCPhone: "+1-202-927-9777 "
-      OrgNOCEmail: soc@gsoc.treas.gov
-      OrgNOCRef: https://rdap.arin.net/registry/entity/SOC35-ARIN
-      RTechHandle: DLS46-ARIN
-      RTechName: Smicker, Daniel L
-      RTechPhone: "+1-304-480-7779 "
-      RTechEmail: ecb-hosting@bpd.treas.gov
-      RTechRef: https://rdap.arin.net/registry/entity/DLS46-ARIN
 title: msb.gov
 ---

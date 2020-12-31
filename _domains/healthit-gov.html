@@ -44,13 +44,13 @@ checks:
     humans_txt: false
     vulnerability_disclosure_policy: false
     security_txt: false
-    developer_json: false
+    data_json: false
   cookies:
     cookie?: false
     secure?: false
   dns:
-    dnssec: false
-    ipv6: false
+    dnssec: true
+    ipv6: true
     cdn:
     cloud_provider:
     google_apps: false
@@ -64,12 +64,12 @@ checks:
     x-xss-protection: false
     x-ah-environment: prod
     x-cache: HIT
-    x-cache-hits: '22'
+    x-cache-hits: '40'
     x-content-type-options: nosniff
     x-drupal-cache: HIT
-    x-drupal-dynamic-cache: HIT
+    x-drupal-dynamic-cache: MISS
     x-generator: Drupal 8 (https://www.drupal.org)
-    x-request-id: v-3b626854-4474-11eb-ae9c-3b3a06014bdb
+    x-request-id: v-b77665a0-4b75-11eb-a802-5b70f4aa5251
     x-ua-compatible: IE=edge
   hsts:
     valid: true
@@ -167,15 +167,16 @@ checks:
     webfinger: false
   whois:
     domain:
-      ">>> Last update of whois database": 2020-12-22T17:52:41Z <<<
+      ">>> Last update of whois database": 2020-12-31T18:01:40Z <<<
     ip:
       "# available at": https://www.arin.net/resources/registry/whois/tou/
       "# https": "//www.arin.net/resources/registry/whois/inaccuracy_reporting/"
-      NetRange: 54.160.0.0 - 54.175.255.255
-      CIDR: 54.160.0.0/12
-      NetName: AMAZON-2011L
-      NetHandle: NET-54-160-0-0-1
-      Parent: NET54 (NET-54-0-0-0-0)
+      NetRange: 52.192.0.0 - 52.223.191.255
+      CIDR: 52.192.0.0/12, 52.223.0.0/17, 52.220.0.0/15, 52.222.0.0/16, 52.223.128.0/18,
+        52.208.0.0/13, 52.216.0.0/14
+      NetName: AT-88-Z
+      NetHandle: NET-52-192-0-0-1
+      Parent: NET52 (NET-52-0-0-0-0)
       NetType: Direct Allocation
       OriginAS: 'Organization:   Amazon Technologies Inc. (AT-88-Z)'
       RegDate: '2011-12-08'
@@ -190,6 +191,11 @@ checks:
       Country: US
       Comment: "* Your contact details (phone and email) Without these we will be
         unable to identify the correct owner of the IP address at that point in time."
+      OrgTechHandle: ANO24-ARIN
+      OrgTechName: Amazon EC2 Network Operations
+      OrgTechPhone: "+1-206-266-4064 "
+      OrgTechEmail: amzn-noc-contact@amazon.com
+      OrgTechRef: https://rdap.arin.net/registry/entity/ANO24-ARIN
       OrgRoutingHandle: IPROU3-ARIN
       OrgRoutingName: IP Routing
       OrgRoutingPhone: "+1-206-266-4064 "
@@ -205,10 +211,5 @@ checks:
       OrgNOCPhone: "+1-206-266-4064 "
       OrgNOCEmail: amzn-noc-contact@amazon.com
       OrgNOCRef: https://rdap.arin.net/registry/entity/AANO1-ARIN
-      OrgTechHandle: ANO24-ARIN
-      OrgTechName: Amazon EC2 Network Operations
-      OrgTechPhone: "+1-206-266-4064 "
-      OrgTechEmail: amzn-noc-contact@amazon.com
-      OrgTechRef: https://rdap.arin.net/registry/entity/ANO24-ARIN
 title: healthit.gov
 ---

@@ -38,18 +38,18 @@ checks:
   content:
     doctype:
     generator:
-    proper_404s: true
-    robots_txt: true
-    sitemap_xml: true
-    humans_txt: false
-    vulnerability_disclosure_policy: false
+    proper_404s: false
+    robots_txt:
+    sitemap_xml:
+    humans_txt:
+    vulnerability_disclosure_policy:
     security_txt: false
-    developer_json: false
+    data_json:
   cookies:
     cookie?: false
     secure?: false
   dns:
-    dnssec: false
+    dnssec: true
     ipv6: false
     cdn:
     cloud_provider:
@@ -66,9 +66,9 @@ checks:
     x-ua-compatible: IE=edge
     x-content-type-options: nosniff
     x-generator: Drupal 8 (https://www.drupal.org)
-    x-varnish: 16579263 16654274
+    x-varnish: 6490014 6489364
     x-varnish-cache: HIT
-    x-akamai-transformed: 9 14462 0 pmb=mRUM,1
+    x-akamai-transformed: 9 - 0 pmb=mRUM,1
   hsts:
     valid: true
     max_age: 31536000
@@ -118,66 +118,66 @@ checks:
     cdn:
     - Akamai
   wellknown:
-    acme_challenge: false
-    amphtml: false
-    ashrae: false
-    assetlinks_json: false
-    brski: false
-    caldav: false
-    carddav: false
-    coap: false
-    core: false
-    csvm: false
-    dnt: false
-    dnt_policy_txt: false
-    dots: false
-    ecips: false
-    enterprise_transport_security: false
-    est: false
-    genid: false
-    gs1resolver: false
-    hoba: false
-    host_meta: false
-    host_meta_json: false
-    hosting_provider: false
-    http_opportunistic: false
-    idp_proxy: false
-    jmap: false
-    keybase_txt: false
-    looking_glass: false
-    matrix: false
-    mta_sts_txt: false
-    nfv_oauth_server_configuration: false
-    ni: false
-    oauth_authorization_server: false
-    openid_configuration: false
-    openorg: false
-    pki_validation: false
-    posh: false
-    pvd: false
-    reload_config: false
-    repute_template: false
-    resourcesync: false
-    sshfp: false
-    stun_key: false
-    thread: false
-    time: false
-    timezone: false
-    tor_relay: false
-    uma2_configuration: false
-    void: false
-    webfinger: false
+    acme_challenge:
+    amphtml:
+    ashrae:
+    assetlinks_json:
+    brski:
+    caldav:
+    carddav:
+    coap:
+    core:
+    csvm:
+    dnt:
+    dnt_policy_txt:
+    dots:
+    ecips:
+    enterprise_transport_security:
+    est:
+    genid:
+    gs1resolver:
+    hoba:
+    host_meta:
+    host_meta_json:
+    hosting_provider:
+    http_opportunistic:
+    idp_proxy:
+    jmap:
+    keybase_txt:
+    looking_glass:
+    matrix:
+    mta_sts_txt:
+    nfv_oauth_server_configuration:
+    ni:
+    oauth_authorization_server:
+    openid_configuration:
+    openorg:
+    pki_validation:
+    posh:
+    pvd:
+    reload_config:
+    repute_template:
+    resourcesync:
+    sshfp:
+    stun_key:
+    thread:
+    time:
+    timezone:
+    tor_relay:
+    uma2_configuration:
+    void:
+    webfinger:
   whois:
     domain:
       Domain Name: DONACIONDEORGANOS.GOV
       Status: ACTIVE
       Security Contact Email: responsibledisclosure@hhs.gov
-      ">>> Last update of whois database": 2020-12-21T22:52:38Z <<<
+      ">>> Last update of whois database": 2020-12-30T22:56:53Z <<<
     ip:
       "# available at": https://www.arin.net/resources/registry/whois/tou/
       "# https": "//www.arin.net/resources/registry/whois/inaccuracy_reporting/"
       NetRange: 66.70.36.140 - 66.70.36.149
-      CIDR: 66.70.36.144/30, 66.70.36.148/31, 66.70.36.140/30
+      CIDR: 66.70.36.144/30, 66.70.36.140/30, 66.70.36.148/31
       NetName: DP-66-70-36-140
       NetHandle: NET-66-70-36-140-1
       Parent: DATAPIPE-BLK3 (NET-66-70-0-0-1)
@@ -204,16 +204,16 @@ checks:
       OrgAbusePhone: "+1-800-961-4454 "
       OrgAbuseEmail: abuse@rackspace.com
       OrgAbuseRef: https://rdap.arin.net/registry/entity/DAC95-ARIN
+      RTechHandle: DH1029-ARIN
+      RTechName: DataPipe Hostmaster
+      RTechPhone: "+1-201-792-1918 "
+      RTechEmail: hostmaster@datapipe.com
+      RTechRef: https://rdap.arin.net/registry/entity/DH1029-ARIN
       RAbuseHandle: DATAP-ARIN
       RAbuseName: DataPipe Abuse
       RAbusePhone: "+1-201-792-1918 "
       RAbuseEmail: abuse@rackspace.com
       RAbuseRef: https://rdap.arin.net/registry/entity/DATAP-ARIN
-      RTechHandle: DH1029-ARIN
-      RTechName: DataPipe Hostmaster
-      RTechPhone: "+1-201-792-1918 "
-      RTechEmail: hostmaster@rackspace.com
-      RTechRef: https://rdap.arin.net/registry/entity/DH1029-ARIN
       CustName: Chris Calabrese
 title: donaciondeorganos.gov
 ---

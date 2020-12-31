@@ -44,18 +44,18 @@ checks:
     humans_txt: false
     vulnerability_disclosure_policy: false
     security_txt: false
-    developer_json: false
+    data_json: false
   cookies:
     cookie?: true
     secure?: false
   dns:
-    dnssec: false
-    ipv6: false
+    dnssec: true
+    ipv6: true
     cdn: :akamai
     cloud_provider:
     google_apps: false
-    hostname: a104-127-254-39.deploy.static.akamaitechnologies.com
-    ip: 104.127.254.39
+    hostname: a104-111-84-124.deploy.static.akamaitechnologies.com
+    ip: 104.111.84.124
   headers:
     strict-transport-security: max-age=31536000 ; includeSubDomains ; preload
     content-security-policy: false
@@ -67,9 +67,10 @@ checks:
     x-content-type-options: nosniff
     x-generator: Drupal 8 (https://www.drupal.org)
     x-drupal-cache: MISS
-    x-request-id: v-4f34a4e4-3fee-11eb-834f-0b305c50eb01
+    x-request-id: v-f725ce2a-3a63-11eb-a325-5f9f13dae03d
     x-ah-environment: prod
-    x-age: '0'
+    x-cache-hits: '1'
+    x-age: '103'
   hsts:
     valid: true
     max_age: 31536000
@@ -104,8 +105,6 @@ checks:
     - RxJS
     paas:
     - Cloud Platform
-    tag_managers:
-    - Google Tag Manager
     font_scripts:
     - Google Font API
     javascript_libraries:
@@ -113,6 +112,9 @@ checks:
     - Lodash
     analytics:
     - New Relic
+    - Google Analytics
+    tag_managers:
+    - Google Tag Manager
   wellknown:
     acme_challenge: false
     amphtml: false
@@ -165,7 +167,7 @@ checks:
     webfinger: false
   whois:
     domain:
-      ">>> Last update of whois database": 2020-12-21T21:22:18Z <<<
+      ">>> Last update of whois database": 2020-12-30T22:32:06Z <<<
     ip:
       "# available at": https://www.arin.net/resources/registry/whois/tou/
       "# https": "//www.arin.net/resources/registry/whois/inaccuracy_reporting/"
@@ -186,15 +188,15 @@ checks:
       StateProv: MA
       PostalCode: '02142'
       Country: US
+      OrgTechHandle: SJS98-ARIN
+      OrgTechName: Schecter, Steven Jay
+      OrgTechPhone: "+1-617-274-7134 "
+      OrgTechEmail: ip-admin@akamai.com
+      OrgTechRef: https://rdap.arin.net/registry/entity/SJS98-ARIN
       OrgAbuseHandle: NUS-ARIN
       OrgAbuseName: NOC United States
       OrgAbusePhone: "+1-617-444-2535 "
       OrgAbuseEmail: abuse@akamai.com
       OrgAbuseRef: https://rdap.arin.net/registry/entity/NUS-ARIN
-      OrgTechHandle: IPADM11-ARIN
-      OrgTechName: ipadmin
-      OrgTechPhone: "+1-617-444-0017 "
-      OrgTechEmail: ip-admin@akamai.com
-      OrgTechRef: https://rdap.arin.net/registry/entity/IPADM11-ARIN
 title: trafficsafetymarketing.gov
 ---

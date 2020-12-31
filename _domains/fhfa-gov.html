@@ -38,24 +38,24 @@ checks:
   content:
     doctype:
     generator:
-    proper_404s: true
-    robots_txt: false
-    sitemap_xml: false
-    humans_txt: false
-    vulnerability_disclosure_policy: false
+    proper_404s: false
+    robots_txt:
+    sitemap_xml:
+    humans_txt:
+    vulnerability_disclosure_policy:
     security_txt: false
-    developer_json: true
+    data_json:
   cookies:
     cookie?: false
     secure?: false
   dns:
-    dnssec: false
-    ipv6: false
+    dnssec: true
+    ipv6: true
     cdn: :cloudfront
     cloud_provider:
     google_apps: false
-    hostname: server-99-86-230-89.iad79.r.cloudfront.net
-    ip: 99.86.230.89
+    hostname: server-13-32-204-73.iad66.r.cloudfront.net
+    ip: 13.32.204.73
   headers:
     strict-transport-security: max-age=31536000
     content-security-policy: false
@@ -68,8 +68,8 @@ checks:
     x-content-type-options: nosniff
     x-ms-invokeapp: 1; RequireReadOnly
     x-cache: Miss from cloudfront
-    x-amz-cf-pop: IAD79-C3
-    x-amz-cf-id: B-DpBsW72nHPJPPL6gzpGVGaJvAqo8G8kEQxvDzX1TjYwBCtM-EtDw==
+    x-amz-cf-pop: IAD66-C1
+    x-amz-cf-id: R5uKdYlFXcHEm_3mcDTxo26RHC_O3Yu-8c5cNW8VMZ7wk9iuYWGdPA==
   hsts:
     valid: true
     max_age: 31536000
@@ -109,69 +109,68 @@ checks:
     cdn:
     - Amazon Cloudfront
   wellknown:
-    acme_challenge: false
-    amphtml: false
-    ashrae: false
-    assetlinks_json: true
-    brski: false
-    caldav: false
-    carddav: false
-    coap: false
-    core: false
-    csvm: false
-    dnt: false
-    dnt_policy_txt: false
-    dots: false
-    ecips: false
-    enterprise_transport_security: false
-    est: false
-    genid: false
-    gs1resolver: false
-    hoba: false
-    host_meta: false
-    host_meta_json: true
-    hosting_provider: false
-    http_opportunistic: false
-    idp_proxy: false
-    jmap: false
-    keybase_txt: false
-    looking_glass: false
-    matrix: false
-    mta_sts_txt: false
-    nfv_oauth_server_configuration: false
-    ni: false
-    oauth_authorization_server: false
-    openid_configuration: false
-    openorg: false
-    pki_validation: false
-    posh: false
-    pvd: false
-    reload_config: false
-    repute_template: false
-    resourcesync: false
-    sshfp: false
-    stun_key: false
-    thread: false
-    time: false
-    timezone: false
-    tor_relay: false
-    uma2_configuration: false
-    void: false
-    webfinger: false
+    acme_challenge:
+    amphtml:
+    ashrae:
+    assetlinks_json:
+    brski:
+    caldav:
+    carddav:
+    coap:
+    core:
+    csvm:
+    dnt:
+    dnt_policy_txt:
+    dots:
+    ecips:
+    enterprise_transport_security:
+    est:
+    genid:
+    gs1resolver:
+    hoba:
+    host_meta:
+    host_meta_json:
+    hosting_provider:
+    http_opportunistic:
+    idp_proxy:
+    jmap:
+    keybase_txt:
+    looking_glass:
+    matrix:
+    mta_sts_txt:
+    nfv_oauth_server_configuration:
+    ni:
+    oauth_authorization_server:
+    openid_configuration:
+    openorg:
+    pki_validation:
+    posh:
+    pvd:
+    reload_config:
+    repute_template:
+    resourcesync:
+    sshfp:
+    stun_key:
+    thread:
+    time:
+    timezone:
+    tor_relay:
+    uma2_configuration:
+    void:
+    webfinger:
   whois:
     domain:
-      ">>> Last update of whois database": 2020-12-21T22:54:08Z <<<
+      ">>> Last update of whois database": 2020-12-30T21:07:03Z <<<
     ip:
       "# available at": https://www.arin.net/resources/registry/whois/tou/
       "# https": "//www.arin.net/resources/registry/whois/inaccuracy_reporting/"
-      NetRange: 99.86.0.0 - 99.86.255.255
-      CIDR: 99.86.0.0/16
+      NetRange: 13.32.0.0 - 13.33.255.255
+      CIDR: 13.32.0.0/15
       NetName: AMAZO-CF
-      NetHandle: NET-99-86-0-0-1
-      Parent: AMAZO-4 (NET-99-85-128-0-1)
+      NetHandle: NET-13-32-0-0-2
+      Parent: AT-88-Z (NET-13-32-0-0-1)
       NetType: Reallocated
-      OriginAS: 'Organization:   Amazon.com, Inc. (AMAZON-4)'
-      Organization: Amazon.com, Inc. (AMAZO-4)
+      OriginAS: AS16509
       RegDate: '1995-01-23'
       Updated: '2020-03-31'
       Ref: https://rdap.arin.net/registry/entity/AMAZON-4
@@ -182,17 +181,18 @@ checks:
       StateProv: WA
       PostalCode: 98101-1244
       Country: US
-      Comment: http://ec2.amazonaws.com
-      OrgRoutingHandle: IPROU3-ARIN
-      OrgRoutingName: IP Routing
-      OrgRoutingPhone: "+1-206-266-4064 "
-      OrgRoutingEmail: aws-routing-poc@amazon.com
-      OrgRoutingRef: https://rdap.arin.net/registry/entity/IPROU3-ARIN
+      Comment: "* Your contact details (phone and email) Without these we will be
+        unable to identify the correct owner of the IP address at that point in time."
       OrgTechHandle: ANO24-ARIN
       OrgTechName: Amazon EC2 Network Operations
       OrgTechPhone: "+1-206-266-4064 "
       OrgTechEmail: amzn-noc-contact@amazon.com
       OrgTechRef: https://rdap.arin.net/registry/entity/ANO24-ARIN
+      OrgRoutingHandle: IPROU3-ARIN
+      OrgRoutingName: IP Routing
+      OrgRoutingPhone: "+1-206-266-4064 "
+      OrgRoutingEmail: aws-routing-poc@amazon.com
+      OrgRoutingRef: https://rdap.arin.net/registry/entity/IPROU3-ARIN
       OrgAbuseHandle: AEA8-ARIN
       OrgAbuseName: Amazon EC2 Abuse
       OrgAbusePhone: "+1-206-266-4064 "
@@ -203,5 +203,6 @@ checks:
       OrgNOCPhone: "+1-206-266-4064 "
       OrgNOCEmail: amzn-noc-contact@amazon.com
       OrgNOCRef: https://rdap.arin.net/registry/entity/AANO1-ARIN
+      Organization: Amazon.com, Inc. (AMAZON-4)
 title: fhfa.gov
 ---

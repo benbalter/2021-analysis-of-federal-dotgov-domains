@@ -44,18 +44,18 @@ checks:
     humans_txt: false
     vulnerability_disclosure_policy: false
     security_txt: false
-    developer_json: false
+    data_json: false
   cookies:
     cookie?: true
     secure?: false
   dns:
-    dnssec: false
-    ipv6: false
+    dnssec: true
+    ipv6: true
     cdn:
     cloud_provider:
     google_apps: false
     hostname: ''
-    ip: 104.27.169.51
+    ip: 104.27.168.51
   headers:
     strict-transport-security: max-age=31536000
     content-security-policy: false
@@ -92,11 +92,11 @@ checks:
     ui_frameworks:
     - ZURB Foundation
     - Bootstrap
-    analytics:
-    - Google Analytics
     javascript_libraries:
     - jQuery UI
     - jQuery
+    analytics:
+    - Google Analytics
     cdn:
     - Cloudflare
   wellknown:
@@ -153,15 +153,15 @@ checks:
     domain:
       Domain Name: USTR.GOV
       Status: ACTIVE
-      ">>> Last update of whois database": 2020-12-21T20:55:02Z <<<
+      ">>> Last update of whois database": 2020-12-30T21:47:34Z <<<
     ip:
       "# available at": https://www.arin.net/resources/registry/whois/tou/
       "# https": "//www.arin.net/resources/registry/whois/inaccuracy_reporting/"
-      NetRange: 172.64.0.0 - 172.71.255.255
-      CIDR: 172.64.0.0/13
+      NetRange: 104.16.0.0 - 104.31.255.255
+      CIDR: 104.16.0.0/12
       NetName: CLOUDFLARENET
-      NetHandle: NET-172-64-0-0-1
-      Parent: NET172 (NET-172-0-0-0-0)
+      NetHandle: NET-104-16-0-0-1
+      Parent: NET104 (NET-104-0-0-0-0)
       NetType: Direct Assignment
       OriginAS: AS13335
       Organization: Cloudflare, Inc. (CLOUD14)
@@ -191,6 +191,11 @@ checks:
       OrgTechPhone: "+1-650-319-8930 "
       OrgTechEmail: rir@cloudflare.com
       OrgTechRef: https://rdap.arin.net/registry/entity/ADMIN2521-ARIN
+      RAbuseHandle: ABUSE2916-ARIN
+      RAbuseName: Abuse
+      RAbusePhone: "+1-650-319-8930 "
+      RAbuseEmail: abuse@cloudflare.com
+      RAbuseRef: https://rdap.arin.net/registry/entity/ABUSE2916-ARIN
       RNOCHandle: NOC11962-ARIN
       RNOCName: NOC
       RNOCPhone: "+1-650-319-8930 "
@@ -201,10 +206,5 @@ checks:
       RTechPhone: "+1-650-319-8930 "
       RTechEmail: rir@cloudflare.com
       RTechRef: https://rdap.arin.net/registry/entity/ADMIN2521-ARIN
-      RAbuseHandle: ABUSE2916-ARIN
-      RAbuseName: Abuse
-      RAbusePhone: "+1-650-319-8930 "
-      RAbuseEmail: abuse@cloudflare.com
-      RAbuseRef: https://rdap.arin.net/registry/entity/ABUSE2916-ARIN
 title: ustr.gov
 ---

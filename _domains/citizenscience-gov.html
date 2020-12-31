@@ -44,18 +44,18 @@ checks:
     humans_txt: false
     vulnerability_disclosure_policy: false
     security_txt: false
-    developer_json: false
+    data_json: true
   cookies:
     cookie?: false
     secure?: false
   dns:
-    dnssec: false
-    ipv6: false
+    dnssec: true
+    ipv6: true
     cdn: :cloudfront
     cloud_provider:
     google_apps: false
-    hostname: server-13-32-183-39.iad66.r.cloudfront.net
-    ip: 13.32.183.39
+    hostname: server-13-32-181-80.iad66.r.cloudfront.net
+    ip: 13.32.181.80
   headers:
     strict-transport-security: max-age=31536000; preload
     content-security-policy: false
@@ -63,11 +63,11 @@ checks:
     server: false
     x-xss-protection: 1; mode=block
     x-server: Federalist
-    x-vcap-request-id: a2cc38da-a6ac-4021-76db-a035fa3a4317
+    x-vcap-request-id: 1fafbe51-a906-414e-6038-4b2e19cfc064
     x-content-type-options: nosniff
     x-cache: Miss from cloudfront
     x-amz-cf-pop: IAD66-C2
-    x-amz-cf-id: VILmfePxsemOBjG2JAwXjaAi42wcs56yNF5Aerjdu20QxnddqhnIBw==
+    x-amz-cf-id: IlZp3c2Jx1vnFKlW5S3IUenxUkS8kR0_emk2H0oeCPyWpLOgIJCGCQ==
   hsts:
     valid: true
     max_age: 31536000
@@ -145,7 +145,7 @@ checks:
     webfinger: false
   whois:
     domain:
-      ">>> Last update of whois database": 2020-12-22T17:21:54Z <<<
+      ">>> Last update of whois database": 2020-12-30T21:04:32Z <<<
     ip:
       "# available at": https://www.arin.net/resources/registry/whois/tou/
       "# https": "//www.arin.net/resources/registry/whois/inaccuracy_reporting/"
@@ -168,6 +168,11 @@ checks:
       Country: US
       Comment: "* Your contact details (phone and email) Without these we will be
         unable to identify the correct owner of the IP address at that point in time."
+      OrgTechHandle: ANO24-ARIN
+      OrgTechName: Amazon EC2 Network Operations
+      OrgTechPhone: "+1-206-266-4064 "
+      OrgTechEmail: amzn-noc-contact@amazon.com
+      OrgTechRef: https://rdap.arin.net/registry/entity/ANO24-ARIN
       OrgRoutingHandle: IPROU3-ARIN
       OrgRoutingName: IP Routing
       OrgRoutingPhone: "+1-206-266-4064 "
@@ -183,11 +188,6 @@ checks:
       OrgNOCPhone: "+1-206-266-4064 "
       OrgNOCEmail: amzn-noc-contact@amazon.com
       OrgNOCRef: https://rdap.arin.net/registry/entity/AANO1-ARIN
-      OrgTechHandle: ANO24-ARIN
-      OrgTechName: Amazon EC2 Network Operations
-      OrgTechPhone: "+1-206-266-4064 "
-      OrgTechEmail: amzn-noc-contact@amazon.com
-      OrgTechRef: https://rdap.arin.net/registry/entity/ANO24-ARIN
       Organization: Amazon.com, Inc. (AMAZON-4)
 title: citizenscience.gov
 ---

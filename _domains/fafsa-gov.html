@@ -14,45 +14,40 @@ domain:
   responds: true
   www: true
   root: true
-  https: true
-  enforces_https: true
+  https: false
+  enforces_https: false
   downgrades_https: false
   canonically_www: false
-  canonically_https: true
+  canonically_https: false
   redirect: false
   hsts: false
   hsts_subdomains: false
   hsts_preload_ready: false
 canonical_endpoint:
-  uri: https://fafsa.gov/
+  uri: http://fafsa.gov/
   host: fafsa.gov
   www: false
-  scheme: https
-  up: false
-  responds: false
-  timed_out: true
-  redirect: false
+  scheme: http
+  up: true
+  responds: true
+  timed_out: false
+  redirect: true
   resolves_to: https://fafsa.gov/
   external_redirect: false
 checks:
   content: {}
   cookies: {}
   dns:
-    dnssec: false
-    ipv6: false
+    dnssec: true
+    ipv6: true
     cdn: :akamai
     cloud_provider:
     google_apps: false
-    hostname: a104-69-217-77.deploy.static.akamaitechnologies.com
-    ip: 104.69.217.77
-  headers:
-    strict-transport-security: false
-    content-security-policy: false
-    x-frame-options: false
-    server: false
-    x-xss-protection: false
+    hostname: a104-82-10-180.deploy.static.akamaitechnologies.com
+    ip: 104.82.10.180
+  headers: {}
   hsts:
-    valid: true
+    valid: false
     max_age: 0
     include_subdomains: false
     preload: false
@@ -61,7 +56,7 @@ checks:
     preload_list_status: unknown
   https:
     valid: false
-    return_code: :operation_timedout
+    return_code: :ok
   sniffer: {}
   wappalyzer: {}
   wellknown: {}
@@ -70,7 +65,7 @@ checks:
       Domain Name: FAFSA.GOV
       Status: ACTIVE
       Security Contact Email: EDSOC@ed.gov
-      ">>> Last update of whois database": 2020-12-21T22:16:21Z <<<
+      ">>> Last update of whois database": 2020-12-30T21:26:03Z <<<
     ip:
       "# available at": https://www.arin.net/resources/registry/whois/tou/
       "# https": "//www.arin.net/resources/registry/whois/inaccuracy_reporting/"
@@ -96,10 +91,10 @@ checks:
       OrgAbusePhone: "+1-617-444-2535 "
       OrgAbuseEmail: abuse@akamai.com
       OrgAbuseRef: https://rdap.arin.net/registry/entity/NUS-ARIN
-      OrgTechHandle: IPADM11-ARIN
-      OrgTechName: ipadmin
-      OrgTechPhone: "+1-617-444-0017 "
+      OrgTechHandle: YKS-ARIN
+      OrgTechName: 'Yeung, Kam Sze '
+      OrgTechPhone: "+852-22718527 "
       OrgTechEmail: ip-admin@akamai.com
-      OrgTechRef: https://rdap.arin.net/registry/entity/IPADM11-ARIN
+      OrgTechRef: https://rdap.arin.net/registry/entity/YKS-ARIN
 title: fafsa.gov
 ---

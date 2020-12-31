@@ -44,13 +44,13 @@ checks:
     humans_txt: false
     vulnerability_disclosure_policy: false
     security_txt: false
-    developer_json: false
+    data_json: false
   cookies:
     cookie?: false
     secure?: false
   dns:
-    dnssec: false
-    ipv6: false
+    dnssec: true
+    ipv6: true
     cdn:
     cloud_provider:
     google_apps: false
@@ -171,48 +171,49 @@ checks:
     webfinger: false
   whois:
     domain:
-      ">>> Last update of whois database": 2020-12-21T23:14:24Z <<<
+      ">>> Last update of whois database": 2020-12-30T22:59:23Z <<<
     ip:
       "# available at": https://www.arin.net/resources/registry/whois/tou/
       "# https": "//www.arin.net/resources/registry/whois/inaccuracy_reporting/"
-      NetRange: 54.234.0.0 - 54.235.255.255
-      CIDR: 54.234.0.0/15
-      NetName: AMAZO-ZIAD2
-      NetHandle: NET-54-234-0-0-1
-      Parent: AMAZON-2011L (NET-54-224-0-0-1)
+      NetRange: 3.224.0.0 - 3.239.255.255
+      CIDR: 3.224.0.0/12
+      NetName: AMAZON-IAD
+      NetHandle: NET-3-224-0-0-1
+      Parent: AT-88-Z (NET-3-128-0-0-1)
       NetType: Reallocated
-      OriginAS: AS16509
-      Organization: Amazon.com, Inc. (AMAZO-4)
-      RegDate: '2005-09-29'
-      Updated: '2020-04-07'
-      Comment: http://ec2.amazonaws.com
-      Ref: https://rdap.arin.net/registry/entity/AMAZO-4
-      OrgName: Amazon.com, Inc.
-      OrgId: AMAZO-4
-      Address: P.O. Box 81226
-      City: Seattle
-      StateProv: WA
-      PostalCode: 98108-1226
+      OriginAS: AS16509, AS14618
+      RegDate: '2018-04-25'
+      Updated: '2019-08-02'
+      Ref: https://rdap.arin.net/registry/entity/ADSN-1
+      OrgName: Amazon Data Services NoVa
+      OrgId: ADSN-1
+      Address: 13200 Woodland Park Road
+      City: Herndon
+      StateProv: VA
+      PostalCode: '20171'
       Country: US
+      Comment: "* Your contact details (phone and email) Without these we will be
+        unable to identify the correct owner of the IP address at that point in time."
+      OrgRoutingHandle: ADR29-ARIN
+      OrgRoutingName: AWS Dogfish Routing
+      OrgRoutingPhone: "+1-206-266-4064 "
+      OrgRoutingEmail: aws-dogfish-routing-poc@amazon.com
+      OrgRoutingRef: https://rdap.arin.net/registry/entity/ADR29-ARIN
       OrgAbuseHandle: AEA8-ARIN
       OrgAbuseName: Amazon EC2 Abuse
       OrgAbusePhone: "+1-206-266-4064 "
       OrgAbuseEmail: abuse@amazonaws.com
       OrgAbuseRef: https://rdap.arin.net/registry/entity/AEA8-ARIN
-      OrgRoutingHandle: IPROU3-ARIN
-      OrgRoutingName: IP Routing
-      OrgRoutingPhone: "+1-206-266-4064 "
-      OrgRoutingEmail: aws-routing-poc@amazon.com
-      OrgRoutingRef: https://rdap.arin.net/registry/entity/IPROU3-ARIN
-      OrgTechHandle: ANO24-ARIN
-      OrgTechName: Amazon EC2 Network Operations
-      OrgTechPhone: "+1-206-266-4064 "
-      OrgTechEmail: amzn-noc-contact@amazon.com
-      OrgTechRef: https://rdap.arin.net/registry/entity/ANO24-ARIN
       OrgNOCHandle: AANO1-ARIN
       OrgNOCName: Amazon AWS Network Operations
       OrgNOCPhone: "+1-206-266-4064 "
       OrgNOCEmail: amzn-noc-contact@amazon.com
       OrgNOCRef: https://rdap.arin.net/registry/entity/AANO1-ARIN
+      OrgTechHandle: ANO24-ARIN
+      OrgTechName: Amazon EC2 Network Operations
+      OrgTechPhone: "+1-206-266-4064 "
+      OrgTechEmail: amzn-noc-contact@amazon.com
+      OrgTechRef: https://rdap.arin.net/registry/entity/ANO24-ARIN
+      Organization: Amazon Data Services NoVa (ADSN-1)
 title: mcc.gov
 ---

@@ -38,13 +38,13 @@ checks:
   content: {}
   cookies: {}
   dns:
-    dnssec: false
-    ipv6: false
+    dnssec: true
+    ipv6: true
     cdn:
     cloud_provider:
     google_apps: false
     hostname: ''
-    ip: 104.16.211.230
+    ip: 104.16.210.230
   headers: {}
   hsts:
     valid: true
@@ -62,7 +62,7 @@ checks:
   wellknown: {}
   whois:
     domain:
-      ">>> Last update of whois database": 2020-12-21T20:53:17Z <<<
+      ">>> Last update of whois database": 2020-12-30T22:54:38Z <<<
     ip:
       "# available at": https://www.arin.net/resources/registry/whois/tou/
       "# https": "//www.arin.net/resources/registry/whois/inaccuracy_reporting/"
@@ -85,6 +85,11 @@ checks:
       StateProv: CA
       PostalCode: '94107'
       Country: US
+      OrgAbuseHandle: ABUSE2916-ARIN
+      OrgAbuseName: Abuse
+      OrgAbusePhone: "+1-650-319-8930 "
+      OrgAbuseEmail: abuse@cloudflare.com
+      OrgAbuseRef: https://rdap.arin.net/registry/entity/ABUSE2916-ARIN
       OrgNOCHandle: NOC11962-ARIN
       OrgNOCName: NOC
       OrgNOCPhone: "+1-650-319-8930 "
@@ -95,25 +100,20 @@ checks:
       OrgTechPhone: "+1-650-319-8930 "
       OrgTechEmail: rir@cloudflare.com
       OrgTechRef: https://rdap.arin.net/registry/entity/ADMIN2521-ARIN
-      OrgAbuseHandle: ABUSE2916-ARIN
-      OrgAbuseName: Abuse
-      OrgAbusePhone: "+1-650-319-8930 "
-      OrgAbuseEmail: abuse@cloudflare.com
-      OrgAbuseRef: https://rdap.arin.net/registry/entity/ABUSE2916-ARIN
-      RNOCHandle: NOC11962-ARIN
-      RNOCName: NOC
-      RNOCPhone: "+1-650-319-8930 "
-      RNOCEmail: noc@cloudflare.com
-      RNOCRef: https://rdap.arin.net/registry/entity/NOC11962-ARIN
-      RTechHandle: ADMIN2521-ARIN
-      RTechName: Admin
-      RTechPhone: "+1-650-319-8930 "
-      RTechEmail: rir@cloudflare.com
-      RTechRef: https://rdap.arin.net/registry/entity/ADMIN2521-ARIN
       RAbuseHandle: ABUSE2916-ARIN
       RAbuseName: Abuse
       RAbusePhone: "+1-650-319-8930 "
       RAbuseEmail: abuse@cloudflare.com
       RAbuseRef: https://rdap.arin.net/registry/entity/ABUSE2916-ARIN
+      RTechHandle: ADMIN2521-ARIN
+      RTechName: Admin
+      RTechPhone: "+1-650-319-8930 "
+      RTechEmail: rir@cloudflare.com
+      RTechRef: https://rdap.arin.net/registry/entity/ADMIN2521-ARIN
+      RNOCHandle: NOC11962-ARIN
+      RNOCName: NOC
+      RNOCPhone: "+1-650-319-8930 "
+      RNOCEmail: noc@cloudflare.com
+      RNOCRef: https://rdap.arin.net/registry/entity/NOC11962-ARIN
 title: smartcheck.gov
 ---

@@ -44,13 +44,13 @@ checks:
     humans_txt: false
     vulnerability_disclosure_policy: false
     security_txt: false
-    developer_json: false
+    data_json: false
   cookies:
     cookie?: false
     secure?: false
   dns:
-    dnssec: false
-    ipv6: false
+    dnssec: true
+    ipv6: true
     cdn:
     cloud_provider:
     google_apps: false
@@ -84,6 +84,8 @@ checks:
     - Prototype
     font_scripts:
     - Google Font API
+    analytics:
+    - Google Analytics
     ssl/tls_certificate_authorities:
     - Sectigo
   wellknown:
@@ -141,7 +143,7 @@ checks:
       Domain Name: OGE.GOV
       Status: ACTIVE
       Security Contact Email: webmaster@oge.gov
-      ">>> Last update of whois database": 2020-12-21T19:58:29Z <<<
+      ">>> Last update of whois database": 2020-12-30T21:16:33Z <<<
     ip:
       "# available at": https://www.arin.net/resources/registry/whois/tou/
       "# https": "//www.arin.net/resources/registry/whois/inaccuracy_reporting/"
@@ -164,16 +166,16 @@ checks:
       StateProv: 'PostalCode:     1001EB'
       Country: NL
       ReferralServer: whois://whois.ripe.net
-      OrgAbuseHandle: ABUSE3850-ARIN
-      OrgAbuseName: Abuse Contact
-      OrgAbusePhone: "+31205354444 "
-      OrgAbuseEmail: abuse@ripe.net
-      OrgAbuseRef: https://rdap.arin.net/registry/entity/ABUSE3850-ARIN
       OrgTechHandle: RNO29-ARIN
       OrgTechName: RIPE NCC Operations
       OrgTechPhone: "+31 20 535 4444 "
       OrgTechEmail: hostmaster@ripe.net
       OrgTechRef: https://rdap.arin.net/registry/entity/RNO29-ARIN
+      OrgAbuseHandle: ABUSE3850-ARIN
+      OrgAbuseName: Abuse Contact
+      OrgAbusePhone: "+31205354444 "
+      OrgAbuseEmail: abuse@ripe.net
+      OrgAbuseRef: https://rdap.arin.net/registry/entity/ABUSE3850-ARIN
       "% See http": "//www.ripe.net/db/support/db-terms-conditions.pdf"
       "% Note": this output has been filtered.
       inetnum: 169.55.65.199 - 169.55.65.199

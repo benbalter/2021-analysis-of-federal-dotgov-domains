@@ -13,7 +13,7 @@ domain:
   up: true
   responds: true
   www: true
-  root: true
+  root: false
   https: true
   enforces_https: true
   downgrades_https: false
@@ -21,8 +21,8 @@ domain:
   canonically_https: true
   redirect: false
   hsts: true
-  hsts_subdomains: true
-  hsts_preload_ready: true
+  hsts_subdomains: false
+  hsts_preload_ready: false
 canonical_endpoint:
   uri: https://www.americathebeautifulquarters.gov/
   host: www.americathebeautifulquarters.gov
@@ -44,18 +44,18 @@ checks:
     humans_txt: false
     vulnerability_disclosure_policy: false
     security_txt: false
-    developer_json: false
+    data_json: false
   cookies:
     cookie?: true
     secure?: false
   dns:
-    dnssec: false
-    ipv6: false
+    dnssec: true
+    ipv6: true
     cdn: :cloudfront
     cloud_provider:
     google_apps: false
-    hostname: server-99-84-178-37.iad89.r.cloudfront.net
-    ip: 99.84.178.37
+    hostname: server-99-84-222-106.iad79.r.cloudfront.net
+    ip: 99.84.222.106
   headers:
     strict-transport-security: max-age=63072000; includeSubDomains; preload
     content-security-policy: false
@@ -63,8 +63,8 @@ checks:
     server: Apache
     x-xss-protection: false
     x-cache: Hit from cloudfront
-    x-amz-cf-pop: IAD89-C2
-    x-amz-cf-id: bWNH8uM8m1rDk8F62Yg6aD6CuLq-KbY0kTb_xGhykSOIo2sAvMMLPw==
+    x-amz-cf-pop: IAD79-C1
+    x-amz-cf-id: NSZwkHawd-sFt-_VM-LmDa886yyjVrpBOCYRRogaoB6ZCOwegKLXQQ==
   hsts:
     valid: true
     max_age: 63072000
@@ -168,7 +168,7 @@ checks:
     webfinger: false
   whois:
     domain:
-      ">>> Last update of whois database": 2020-12-22T17:24:09Z <<<
+      ">>> Last update of whois database": 2020-12-31T18:43:42Z <<<
     ip:
       "# available at": https://www.arin.net/resources/registry/whois/tou/
       "# https": "//www.arin.net/resources/registry/whois/inaccuracy_reporting/"
@@ -191,25 +191,25 @@ checks:
       PostalCode: 98101-1244
       Country: US
       Comment: http://ec2.amazonaws.com
-      OrgRoutingHandle: IPROU3-ARIN
-      OrgRoutingName: IP Routing
-      OrgRoutingPhone: "+1-206-266-4064 "
-      OrgRoutingEmail: aws-routing-poc@amazon.com
-      OrgRoutingRef: https://rdap.arin.net/registry/entity/IPROU3-ARIN
-      OrgAbuseHandle: AEA8-ARIN
-      OrgAbuseName: Amazon EC2 Abuse
-      OrgAbusePhone: "+1-206-266-4064 "
-      OrgAbuseEmail: abuse@amazonaws.com
-      OrgAbuseRef: https://rdap.arin.net/registry/entity/AEA8-ARIN
       OrgNOCHandle: AANO1-ARIN
       OrgNOCName: Amazon AWS Network Operations
       OrgNOCPhone: "+1-206-266-4064 "
       OrgNOCEmail: amzn-noc-contact@amazon.com
       OrgNOCRef: https://rdap.arin.net/registry/entity/AANO1-ARIN
+      OrgRoutingHandle: IPROU3-ARIN
+      OrgRoutingName: IP Routing
+      OrgRoutingPhone: "+1-206-266-4064 "
+      OrgRoutingEmail: aws-routing-poc@amazon.com
+      OrgRoutingRef: https://rdap.arin.net/registry/entity/IPROU3-ARIN
       OrgTechHandle: ANO24-ARIN
       OrgTechName: Amazon EC2 Network Operations
       OrgTechPhone: "+1-206-266-4064 "
       OrgTechEmail: amzn-noc-contact@amazon.com
       OrgTechRef: https://rdap.arin.net/registry/entity/ANO24-ARIN
+      OrgAbuseHandle: AEA8-ARIN
+      OrgAbuseName: Amazon EC2 Abuse
+      OrgAbusePhone: "+1-206-266-4064 "
+      OrgAbuseEmail: abuse@amazonaws.com
+      OrgAbuseRef: https://rdap.arin.net/registry/entity/AEA8-ARIN
 title: americathebeautifulquarters.gov
 ---

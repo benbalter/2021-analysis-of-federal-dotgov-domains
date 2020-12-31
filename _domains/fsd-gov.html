@@ -38,19 +38,19 @@ checks:
   content:
     doctype:
     generator:
-    proper_404s: true
-    robots_txt: true
-    sitemap_xml: true
-    humans_txt: false
-    vulnerability_disclosure_policy: true
+    proper_404s: false
+    robots_txt:
+    sitemap_xml:
+    humans_txt:
+    vulnerability_disclosure_policy:
     security_txt: false
-    developer_json: false
+    data_json:
   cookies:
     cookie?: true
     secure?: true
   dns:
-    dnssec: false
-    ipv6: false
+    dnssec: true
+    ipv6: true
     cdn:
     cloud_provider:
     google_apps: false
@@ -97,58 +97,58 @@ checks:
     miscellaneous:
     - Prism
   wellknown:
-    acme_challenge: true
-    amphtml: true
-    ashrae: true
-    assetlinks_json: false
-    brski: true
-    caldav: true
-    carddav: true
-    coap: true
-    core: true
-    csvm: true
-    dnt: true
-    dnt_policy_txt: false
-    dots: true
-    ecips: true
-    enterprise_transport_security: true
-    est: true
-    genid: true
-    gs1resolver: true
-    hoba: true
-    host_meta: true
-    host_meta_json: false
-    hosting_provider: true
-    http_opportunistic: true
-    idp_proxy: true
-    jmap: true
-    keybase_txt: false
-    looking_glass: true
-    matrix: true
-    mta_sts_txt: false
-    nfv_oauth_server_configuration: true
-    ni: true
-    oauth_authorization_server: true
-    openid_configuration: true
-    openorg: true
-    pki_validation: true
-    posh: true
-    pvd: true
-    reload_config: true
-    repute_template: true
-    resourcesync: true
-    sshfp: true
-    stun_key: true
-    thread: true
-    time: true
-    timezone: true
-    tor_relay: true
-    uma2_configuration: true
-    void: true
-    webfinger: true
+    acme_challenge:
+    amphtml:
+    ashrae:
+    assetlinks_json:
+    brski:
+    caldav:
+    carddav:
+    coap:
+    core:
+    csvm:
+    dnt:
+    dnt_policy_txt:
+    dots:
+    ecips:
+    enterprise_transport_security:
+    est:
+    genid:
+    gs1resolver:
+    hoba:
+    host_meta:
+    host_meta_json:
+    hosting_provider:
+    http_opportunistic:
+    idp_proxy:
+    jmap:
+    keybase_txt:
+    looking_glass:
+    matrix:
+    mta_sts_txt:
+    nfv_oauth_server_configuration:
+    ni:
+    oauth_authorization_server:
+    openid_configuration:
+    openorg:
+    pki_validation:
+    posh:
+    pvd:
+    reload_config:
+    repute_template:
+    resourcesync:
+    sshfp:
+    stun_key:
+    thread:
+    time:
+    timezone:
+    tor_relay:
+    uma2_configuration:
+    void:
+    webfinger:
   whois:
     domain:
-      ">>> Last update of whois database": 2020-12-21T20:43:17Z <<<
+      ">>> Last update of whois database": 2020-12-30T22:05:50Z <<<
     ip:
       "# available at": https://www.arin.net/resources/registry/whois/tou/
       "# https": "//www.arin.net/resources/registry/whois/inaccuracy_reporting/"
@@ -176,15 +176,15 @@ checks:
       OrgTechPhone: "+1-425-629-2818 "
       OrgTechEmail: bharat.ranjan@servicenow.com
       OrgTechRef: https://rdap.arin.net/registry/entity/RANJA1-ARIN
+      OrgAbuseHandle: SNCAB-ARIN
+      OrgAbuseName: SNC Abuse
+      OrgAbusePhone: "+1-858-720-0477 "
+      OrgAbuseEmail: abuse@service-now.com
+      OrgAbuseRef: https://rdap.arin.net/registry/entity/SNCAB-ARIN
       OrgNOCHandle: CNS18-ARIN
       OrgNOCName: Cloud Network Services
       OrgNOCPhone: "+1-858-720-0477 "
       OrgNOCEmail: cns@servicenow.com
       OrgNOCRef: https://rdap.arin.net/registry/entity/CNS18-ARIN
-      OrgAbuseHandle: CNS18-ARIN
-      OrgAbuseName: Cloud Network Services
-      OrgAbusePhone: "+1-858-720-0477 "
-      OrgAbuseEmail: cns@servicenow.com
-      OrgAbuseRef: https://rdap.arin.net/registry/entity/CNS18-ARIN
 title: fsd.gov
 ---

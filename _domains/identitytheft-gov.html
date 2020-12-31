@@ -38,18 +38,18 @@ checks:
   content:
     doctype:
     generator:
-    proper_404s: true
-    robots_txt: false
-    sitemap_xml: false
-    humans_txt: false
-    vulnerability_disclosure_policy: true
+    proper_404s: false
+    robots_txt:
+    sitemap_xml:
+    humans_txt:
+    vulnerability_disclosure_policy:
     security_txt: false
-    developer_json: false
+    data_json:
   cookies:
     cookie?: true
     secure?: false
   dns:
-    dnssec: false
+    dnssec: true
     ipv6: false
     cdn:
     cloud_provider:
@@ -93,61 +93,61 @@ checks:
     ssl/tls_certificate_authorities:
     - DigiCert
   wellknown:
-    acme_challenge: true
-    amphtml: true
-    ashrae: true
-    assetlinks_json: false
-    brski: true
-    caldav: true
-    carddav: true
-    coap: true
-    core: true
-    csvm: true
-    dnt: true
-    dnt_policy_txt: false
-    dots: true
-    ecips: true
-    enterprise_transport_security: true
-    est: true
-    genid: true
-    gs1resolver: true
-    hoba: true
-    host_meta: true
-    host_meta_json: false
-    hosting_provider: true
-    http_opportunistic: true
-    idp_proxy: true
-    jmap: true
-    keybase_txt: false
-    looking_glass: true
-    matrix: true
-    mta_sts_txt: false
-    nfv_oauth_server_configuration: true
-    ni: true
-    oauth_authorization_server: true
-    openid_configuration: true
-    openorg: true
-    pki_validation: true
-    posh: true
-    pvd: true
-    reload_config: true
-    repute_template: true
-    resourcesync: true
-    sshfp: true
-    stun_key: true
-    thread: true
-    time: true
-    timezone: true
-    tor_relay: true
-    uma2_configuration: true
-    void: true
-    webfinger: true
+    acme_challenge:
+    amphtml:
+    ashrae:
+    assetlinks_json:
+    brski:
+    caldav:
+    carddav:
+    coap:
+    core:
+    csvm:
+    dnt:
+    dnt_policy_txt:
+    dots:
+    ecips:
+    enterprise_transport_security:
+    est:
+    genid:
+    gs1resolver:
+    hoba:
+    host_meta:
+    host_meta_json:
+    hosting_provider:
+    http_opportunistic:
+    idp_proxy:
+    jmap:
+    keybase_txt:
+    looking_glass:
+    matrix:
+    mta_sts_txt:
+    nfv_oauth_server_configuration:
+    ni:
+    oauth_authorization_server:
+    openid_configuration:
+    openorg:
+    pki_validation:
+    posh:
+    pvd:
+    reload_config:
+    repute_template:
+    resourcesync:
+    sshfp:
+    stun_key:
+    thread:
+    time:
+    timezone:
+    tor_relay:
+    uma2_configuration:
+    void:
+    webfinger:
   whois:
     domain:
       Domain Name: IDENTITYTHEFT.GOV
       Status: ACTIVE
       Security Contact Email: security@ftc.gov
-      ">>> Last update of whois database": 2020-12-21T20:48:17Z <<<
+      ">>> Last update of whois database": 2020-12-30T21:46:34Z <<<
     ip:
       "# available at": https://www.arin.net/resources/registry/whois/tou/
       "# https": "//www.arin.net/resources/registry/whois/inaccuracy_reporting/"
@@ -170,21 +170,21 @@ checks:
       Country: US
       Comment: "* Your contact details (phone and email) Without these we will be
         unable to identify the correct owner of the IP address at that point in time."
-      OrgTechHandle: ANO24-ARIN
-      OrgTechName: Amazon EC2 Network Operations
-      OrgTechPhone: "+1-206-266-4064 "
-      OrgTechEmail: amzn-noc-contact@amazon.com
-      OrgTechRef: https://rdap.arin.net/registry/entity/ANO24-ARIN
-      OrgRoutingHandle: IPROU3-ARIN
-      OrgRoutingName: IP Routing
-      OrgRoutingPhone: "+1-206-266-4064 "
-      OrgRoutingEmail: aws-routing-poc@amazon.com
-      OrgRoutingRef: https://rdap.arin.net/registry/entity/IPROU3-ARIN
       OrgAbuseHandle: AEA8-ARIN
       OrgAbuseName: Amazon EC2 Abuse
       OrgAbusePhone: "+1-206-266-4064 "
       OrgAbuseEmail: abuse@amazonaws.com
       OrgAbuseRef: https://rdap.arin.net/registry/entity/AEA8-ARIN
+      OrgRoutingHandle: ADR29-ARIN
+      OrgRoutingName: AWS Dogfish Routing
+      OrgRoutingPhone: "+1-206-266-4064 "
+      OrgRoutingEmail: aws-dogfish-routing-poc@amazon.com
+      OrgRoutingRef: https://rdap.arin.net/registry/entity/ADR29-ARIN
+      OrgTechHandle: ANO24-ARIN
+      OrgTechName: Amazon EC2 Network Operations
+      OrgTechPhone: "+1-206-266-4064 "
+      OrgTechEmail: amzn-noc-contact@amazon.com
+      OrgTechRef: https://rdap.arin.net/registry/entity/ANO24-ARIN
       OrgNOCHandle: AANO1-ARIN
       OrgNOCName: Amazon AWS Network Operations
       OrgNOCPhone: "+1-206-266-4064 "

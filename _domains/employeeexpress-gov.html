@@ -38,20 +38,19 @@ checks:
   content: {}
   cookies: {}
   dns:
-    dnssec: false
-    ipv6: false
+    dnssec: true
+    ipv6: true
     cdn: :akamai
     cloud_provider:
     google_apps: false
-    hostname: a23-2-157-6.deploy.static.akamaitechnologies.com
-    ip: 23.2.157.6
+    hostname: a104-82-26-224.deploy.static.akamaitechnologies.com
+    ip: 104.82.26.224
   headers:
     strict-transport-security: max-age=31536000; includeSubDomains
     content-security-policy: false
     x-frame-options: false
-    server: AkamaiGHost
+    server: AkamaiNetStorage
     x-xss-protection: false
-    x-reference-error: 119.d700c045.1608586169.decc3da1
   hsts:
     valid: true
     max_age: 31536000
@@ -68,15 +67,15 @@ checks:
   wellknown: {}
   whois:
     domain:
-      ">>> Last update of whois database": 2020-12-21T21:29:34Z <<<
+      ">>> Last update of whois database": 2020-12-30T22:51:08Z <<<
     ip:
       "# available at": https://www.arin.net/resources/registry/whois/tou/
       "# https": "//www.arin.net/resources/registry/whois/inaccuracy_reporting/"
-      NetRange: 23.0.0.0 - 23.15.255.255
-      CIDR: 23.0.0.0/12
+      NetRange: 104.64.0.0 - 104.127.255.255
+      CIDR: 104.64.0.0/10
       NetName: AKAMAI
-      NetHandle: NET-23-0-0-0-1
-      Parent: NET23 (NET-23-0-0-0-0)
+      NetHandle: NET-104-64-0-0-1
+      Parent: NET104 (NET-104-0-0-0-0)
       NetType: Direct Allocation
       OriginAS: 'Organization:   Akamai Technologies, Inc. (AKAMAI)'
       RegDate: '1999-01-21'
@@ -94,10 +93,10 @@ checks:
       OrgAbusePhone: "+1-617-444-2535 "
       OrgAbuseEmail: abuse@akamai.com
       OrgAbuseRef: https://rdap.arin.net/registry/entity/NUS-ARIN
-      OrgTechHandle: YKS-ARIN
-      OrgTechName: 'Yeung, Kam Sze '
-      OrgTechPhone: "+852-92813828 "
+      OrgTechHandle: IPADM11-ARIN
+      OrgTechName: ipadmin
+      OrgTechPhone: "+1-617-444-0017 "
       OrgTechEmail: ip-admin@akamai.com
-      OrgTechRef: https://rdap.arin.net/registry/entity/YKS-ARIN
+      OrgTechRef: https://rdap.arin.net/registry/entity/IPADM11-ARIN
 title: employeeexpress.gov
 ---

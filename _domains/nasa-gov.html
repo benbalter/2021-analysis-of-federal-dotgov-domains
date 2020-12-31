@@ -44,34 +44,34 @@ checks:
     humans_txt: false
     vulnerability_disclosure_policy: true
     security_txt: false
-    developer_json: false
+    data_json: false
   cookies:
     cookie?: false
     secure?: false
   dns:
-    dnssec: false
-    ipv6: false
+    dnssec: true
+    ipv6: true
     cdn: :cloudfront
     cloud_provider:
     google_apps: false
-    hostname: server-99-86-230-113.iad79.r.cloudfront.net
-    ip: 99.86.230.113
+    hostname: server-13-249-44-98.iad89.r.cloudfront.net
+    ip: 13.249.44.98
   headers:
     strict-transport-security: max-age=31557600; includeSubdomains; preload
     content-security-policy: frame-ancestors 'self' https://*.nasa.gov
     x-frame-options: false
     server: AmazonS3
     x-xss-protection: false
-    x-amz-id-2: T5+ACpSX+6awdp2Du1sf+qO5hi8cXof1wDpY5X9WocfGSEHnSxED/Q9QqWzetTkgTuCew0q9FdY=
-    x-amz-request-id: 9X1T4T0ZBZFH3Y1M
+    x-amz-id-2: lx01OJFozVEI2OIj2TWa0+pZSP9yTTcV4JEs7vY0eIf0F/DEgBLpn2NcdrJPzLK0Nh9aphU2Mmw=
+    x-amz-request-id: BBE828EB5E6D218C
     x-amz-replication-status: COMPLETED
-    x-amz-meta-md5_hash: 2ca95ffc9eeb621e4c6d4c53939345b7
-    x-amz-version-id: A3HUTJtv7yfPFxrYqLmarFG4hZeL_B2_
+    x-amz-meta-md5_hash: 7e999b7609ea31bc60c85b37d64a772e
+    x-amz-version-id: 6sCv4i4a1tYD8BZS59ftd3nKwLY8IJOq
     x-ua-compatible: IE=edge,chrome=1
     x-content-type-options: nosniff
     x-cache: Hit from cloudfront
-    x-amz-cf-pop: EWR52-C2
-    x-amz-cf-id: tw5U19nMrGEWua_jQymKzo9ufNoh_DYKXD5_5VtbyP2wSuUnIzmMIw==
+    x-amz-cf-pop: IAD89-C1
+    x-amz-cf-id: spR9xvPHHt4-TCQ7BcW1eZzMcnRLuz-QA8n-OkX7_ZDwru4WkPY5yQ==
   hsts:
     valid: true
     max_age: 31557600
@@ -169,18 +169,17 @@ checks:
     webfinger: false
   whois:
     domain:
-      ">>> Last update of whois database": 2020-12-21T23:11:54Z <<<
+      ">>> Last update of whois database": 2020-12-30T21:19:48Z <<<
     ip:
       "# available at": https://www.arin.net/resources/registry/whois/tou/
       "# https": "//www.arin.net/resources/registry/whois/inaccuracy_reporting/"
-      NetRange: 99.86.0.0 - 99.86.255.255
-      CIDR: 99.86.0.0/16
+      NetRange: 13.249.0.0 - 13.249.255.255
+      CIDR: 13.249.0.0/16
       NetName: AMAZO-CF
-      NetHandle: NET-99-86-0-0-1
-      Parent: AMAZO-4 (NET-99-85-128-0-1)
+      NetHandle: NET-13-249-0-0-1
+      Parent: AT-88-Z (NET-13-248-0-0-1)
       NetType: Reallocated
       OriginAS: 'Organization:   Amazon.com, Inc. (AMAZON-4)'
-      Organization: Amazon.com, Inc. (AMAZO-4)
       RegDate: '1995-01-23'
       Updated: '2020-03-31'
       Ref: https://rdap.arin.net/registry/entity/AMAZON-4
@@ -191,26 +190,27 @@ checks:
       StateProv: WA
       PostalCode: 98101-1244
       Country: US
-      Comment: http://ec2.amazonaws.com
-      OrgNOCHandle: AANO1-ARIN
-      OrgNOCName: Amazon AWS Network Operations
-      OrgNOCPhone: "+1-206-266-4064 "
-      OrgNOCEmail: amzn-noc-contact@amazon.com
-      OrgNOCRef: https://rdap.arin.net/registry/entity/AANO1-ARIN
-      OrgAbuseHandle: AEA8-ARIN
-      OrgAbuseName: Amazon EC2 Abuse
-      OrgAbusePhone: "+1-206-266-4064 "
-      OrgAbuseEmail: abuse@amazonaws.com
-      OrgAbuseRef: https://rdap.arin.net/registry/entity/AEA8-ARIN
+      Comment: "* Your contact details (phone and email) Without these we will be
+        unable to identify the correct owner of the IP address at that point in time."
       OrgRoutingHandle: IPROU3-ARIN
       OrgRoutingName: IP Routing
       OrgRoutingPhone: "+1-206-266-4064 "
       OrgRoutingEmail: aws-routing-poc@amazon.com
       OrgRoutingRef: https://rdap.arin.net/registry/entity/IPROU3-ARIN
+      OrgNOCHandle: AANO1-ARIN
+      OrgNOCName: Amazon AWS Network Operations
+      OrgNOCPhone: "+1-206-266-4064 "
+      OrgNOCEmail: amzn-noc-contact@amazon.com
+      OrgNOCRef: https://rdap.arin.net/registry/entity/AANO1-ARIN
       OrgTechHandle: ANO24-ARIN
       OrgTechName: Amazon EC2 Network Operations
       OrgTechPhone: "+1-206-266-4064 "
       OrgTechEmail: amzn-noc-contact@amazon.com
       OrgTechRef: https://rdap.arin.net/registry/entity/ANO24-ARIN
+      OrgAbuseHandle: AEA8-ARIN
+      OrgAbuseName: Amazon EC2 Abuse
+      OrgAbusePhone: "+1-206-266-4064 "
+      OrgAbuseEmail: abuse@amazonaws.com
+      OrgAbuseRef: https://rdap.arin.net/registry/entity/AEA8-ARIN
 title: nasa.gov
 ---

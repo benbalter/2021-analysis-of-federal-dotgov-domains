@@ -38,8 +38,8 @@ checks:
   content: {}
   cookies: {}
   dns:
-    dnssec: false
-    ipv6: false
+    dnssec: true
+    ipv6: true
     cdn:
     cloud_provider:
     google_apps: false
@@ -47,7 +47,7 @@ checks:
     ip: 100.24.75.220
   headers: {}
   hsts:
-    valid: true
+    valid: false
     max_age: 0
     include_subdomains: false
     preload: false
@@ -65,7 +65,7 @@ checks:
       Domain Name: FPDS.GOV
       Status: ACTIVE
       Security Contact Email: gsa-vulnerability-reports@gsa.gov
-      ">>> Last update of whois database": 2020-12-21T20:50:02Z <<<
+      ">>> Last update of whois database": 2020-12-30T21:23:48Z <<<
     ip:
       "# available at": https://www.arin.net/resources/registry/whois/tou/
       "# https": "//www.arin.net/resources/registry/whois/inaccuracy_reporting/"
@@ -92,11 +92,6 @@ checks:
       OrgNOCPhone: "+1-206-266-4064 "
       OrgNOCEmail: amzn-noc-contact@amazon.com
       OrgNOCRef: https://rdap.arin.net/registry/entity/AANO1-ARIN
-      OrgAbuseHandle: AEA8-ARIN
-      OrgAbuseName: Amazon EC2 Abuse
-      OrgAbusePhone: "+1-206-266-4064 "
-      OrgAbuseEmail: abuse@amazonaws.com
-      OrgAbuseRef: https://rdap.arin.net/registry/entity/AEA8-ARIN
       OrgRoutingHandle: IPROU3-ARIN
       OrgRoutingName: IP Routing
       OrgRoutingPhone: "+1-206-266-4064 "
@@ -107,6 +102,11 @@ checks:
       OrgTechPhone: "+1-206-266-4064 "
       OrgTechEmail: amzn-noc-contact@amazon.com
       OrgTechRef: https://rdap.arin.net/registry/entity/ANO24-ARIN
+      OrgAbuseHandle: AEA8-ARIN
+      OrgAbuseName: Amazon EC2 Abuse
+      OrgAbusePhone: "+1-206-266-4064 "
+      OrgAbuseEmail: abuse@amazonaws.com
+      OrgAbuseRef: https://rdap.arin.net/registry/entity/AEA8-ARIN
       Organization: Amazon Data Services NoVa (ADSN-1)
 title: fpds.gov
 ---

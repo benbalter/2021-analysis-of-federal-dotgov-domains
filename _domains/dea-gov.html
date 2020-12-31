@@ -44,31 +44,32 @@ checks:
     humans_txt: false
     vulnerability_disclosure_policy: false
     security_txt: false
-    developer_json: false
+    data_json: false
   cookies:
     cookie?: false
     secure?: false
   dns:
-    dnssec: false
-    ipv6: false
+    dnssec: true
+    ipv6: true
     cdn: :akamai
     cloud_provider:
     google_apps: false
-    hostname: a104-127-254-208.deploy.static.akamaitechnologies.com
-    ip: 104.127.254.208
+    hostname: a104-117-15-235.deploy.static.akamaitechnologies.com
+    ip: 104.117.15.235
   headers:
     strict-transport-security: max-age=31536000
     content-security-policy: false
     x-frame-options: SAMEORIGIN
     server: nginx
     x-xss-protection: false
-    x-age: '0'
+    x-age: '90'
     x-ah-environment: prod
+    x-cache-hits: '1'
     x-content-type-options: nosniff
     x-drupal-cache: HIT
     x-drupal-dynamic-cache: UNCACHEABLE
     x-generator: Drupal 8 (https://www.drupal.org)
-    x-request-id: v-72b43e08-43d0-11eb-a7f7-37937c519d1a
+    x-request-id: v-6ddd7e52-4b8d-11eb-adff-e744797c61fa
     x-ua-compatible: IE=edge
   hsts:
     valid: true
@@ -171,7 +172,7 @@ checks:
     webfinger: false
   whois:
     domain:
-      ">>> Last update of whois database": 2020-12-21T23:31:25Z <<<
+      ">>> Last update of whois database": 2020-12-31T18:08:10Z <<<
     ip:
       "# available at": https://www.arin.net/resources/registry/whois/tou/
       "# https": "//www.arin.net/resources/registry/whois/inaccuracy_reporting/"

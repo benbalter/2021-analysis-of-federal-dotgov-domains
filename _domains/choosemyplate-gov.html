@@ -19,7 +19,7 @@ domain:
   downgrades_https: false
   canonically_www: true
   canonically_https: true
-  redirect: false
+  redirect: true
   hsts: true
   hsts_subdomains: false
   hsts_preload_ready: false
@@ -31,44 +31,21 @@ canonical_endpoint:
   up: true
   responds: true
   timed_out: false
-  redirect: false
-  resolves_to: https://www.choosemyplate.gov/
-  external_redirect: false
+  redirect: true
+  resolves_to: https://www.myplate.gov/
+  external_redirect: true
 checks:
-  content:
-    doctype:
-    generator:
-    proper_404s: true
-    robots_txt: true
-    sitemap_xml: false
-    humans_txt: false
-    vulnerability_disclosure_policy: false
-    security_txt: false
-    developer_json: false
-  cookies:
-    cookie?: false
-    secure?: false
+  content: {}
+  cookies: {}
   dns:
-    dnssec: false
-    ipv6: false
+    dnssec: true
+    ipv6: true
     cdn: :akamai
     cloud_provider:
     google_apps: false
-    hostname: a23-67-83-106.deploy.static.akamaitechnologies.com
-    ip: 23.67.83.106
-  headers:
-    strict-transport-security: max-age=31536000;
-    content-security-policy: false
-    x-frame-options: SAMEORIGIN
-    server: Apache/2.4.6 (CentOS) OpenSSL/1.0.2k-fips
-    x-xss-protection: false
-    x-content-type-options:
-    - nosniff
-    - nosniff
-    x-drupal-dynamic-cache: UNCACHEABLE
-    x-ua-compatible: IE=edge
-    x-generator: Drupal 8 (https://www.drupal.org)
-    x-varnish: '1204564'
+    hostname: a23-33-43-36.deploy.static.akamaitechnologies.com
+    ip: 23.33.43.36
+  headers: {}
   hsts:
     valid: true
     max_age: 31536000
@@ -80,84 +57,12 @@ checks:
   https:
     valid: true
     return_code: :ok
-  sniffer:
-    framework:
-    analytics:
-    javascript:
-    advertising:
-  wappalyzer:
-    cms:
-    - Drupal
-    programming_languages:
-    - PHP
-    operating_systems:
-    - CentOS
-    caching:
-    - Varnish
-    web_server_extensions:
-    - OpenSSL
-    web_servers:
-    - Apache
-    cdn:
-    - jsDelivr
-    tag_managers:
-    - Google Tag Manager
-    javascript_libraries:
-    - jQuery UI
-    - jQuery
-  wellknown:
-    acme_challenge: false
-    amphtml: false
-    ashrae: false
-    assetlinks_json: false
-    brski: false
-    caldav: false
-    carddav: false
-    coap: false
-    core: false
-    csvm: false
-    dnt: false
-    dnt_policy_txt: false
-    dots: false
-    ecips: false
-    enterprise_transport_security: false
-    est: false
-    genid: false
-    gs1resolver: false
-    hoba: false
-    host_meta: false
-    host_meta_json: false
-    hosting_provider: false
-    http_opportunistic: false
-    idp_proxy: false
-    jmap: false
-    keybase_txt: false
-    looking_glass: false
-    matrix: false
-    mta_sts_txt: false
-    nfv_oauth_server_configuration: false
-    ni: false
-    oauth_authorization_server: false
-    openid_configuration: false
-    openorg: false
-    pki_validation: false
-    posh: false
-    pvd: false
-    reload_config: false
-    repute_template: false
-    resourcesync: false
-    sshfp: false
-    stun_key: false
-    thread: false
-    time: false
-    timezone: false
-    tor_relay: false
-    uma2_configuration: false
-    void: false
-    webfinger: false
+  sniffer: {}
+  wappalyzer: {}
+  wellknown: {}
   whois:
     domain:
-      ">>> Last update of whois database": 2020-12-21T20:56:47Z <<<
+      ">>> Last update of whois database": 2020-12-30T21:40:19Z <<<
     ip:
       "# available at": https://www.arin.net/resources/registry/whois/tou/
       "# https": "//www.arin.net/resources/registry/whois/inaccuracy_reporting/"
@@ -178,11 +83,11 @@ checks:
       StateProv: MA
       PostalCode: '02142'
       Country: US
-      OrgTechHandle: SJS98-ARIN
-      OrgTechName: Schecter, Steven Jay
-      OrgTechPhone: "+1-617-274-7134 "
+      OrgTechHandle: IPADM11-ARIN
+      OrgTechName: ipadmin
+      OrgTechPhone: "+1-617-444-0017 "
       OrgTechEmail: ip-admin@akamai.com
-      OrgTechRef: https://rdap.arin.net/registry/entity/SJS98-ARIN
+      OrgTechRef: https://rdap.arin.net/registry/entity/IPADM11-ARIN
       OrgAbuseHandle: NUS-ARIN
       OrgAbuseName: NOC United States
       OrgAbusePhone: "+1-617-444-2535 "

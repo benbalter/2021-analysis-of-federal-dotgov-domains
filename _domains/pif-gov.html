@@ -19,7 +19,7 @@ domain:
   downgrades_https: false
   canonically_www: false
   canonically_https: true
-  redirect: false
+  redirect: true
   hsts: true
   hsts_subdomains: false
   hsts_preload_ready: false
@@ -42,9 +42,9 @@ checks:
     ipv6: false
     cdn: :cloudfront
     cloud_provider:
-    google_apps: false
-    hostname: server-13-249-117-75.atl51.r.cloudfront.net
-    ip: 13.249.117.75
+    google_apps: true
+    hostname: server-52-85-144-75.iad89.r.cloudfront.net
+    ip: 52.85.144.75
   headers: {}
   hsts:
     valid: true
@@ -65,17 +65,18 @@ checks:
       Domain Name: PIF.GOV
       Status: ACTIVE
       Security Contact Email: gsa-vulnerability-reports@gsa.gov
-      ">>> Last update of whois database": 2020-12-21T23:19:40Z <<<
+      ">>> Last update of whois database": 2020-12-30T22:49:22Z <<<
     ip:
       "# available at": https://www.arin.net/resources/registry/whois/tou/
       "# https": "//www.arin.net/resources/registry/whois/inaccuracy_reporting/"
-      NetRange: 13.249.0.0 - 13.249.255.255
-      CIDR: 13.249.0.0/16
+      NetRange: 52.84.0.0 - 52.85.255.255
+      CIDR: 52.84.0.0/15
       NetName: AMAZO-CF
-      NetHandle: NET-13-249-0-0-1
-      Parent: AT-88-Z (NET-13-248-0-0-1)
+      NetHandle: NET-52-84-0-0-2
+      Parent: AT-88-Z (NET-52-84-0-0-1)
       NetType: Reallocated
       OriginAS: 'Organization:   Amazon.com, Inc. (AMAZON-4)'
+      Organization: Amazon Technologies Inc. (AT-88-Z)
       RegDate: '1995-01-23'
       Updated: '2020-03-31'
       Ref: https://rdap.arin.net/registry/entity/AMAZON-4
@@ -86,27 +87,27 @@ checks:
       StateProv: WA
       PostalCode: 98101-1244
       Country: US
-      Comment: "* Your contact details (phone and email) Without these we will be
-        unable to identify the correct owner of the IP address at that point in time."
-      OrgRoutingHandle: IPROU3-ARIN
-      OrgRoutingName: IP Routing
-      OrgRoutingPhone: "+1-206-266-4064 "
-      OrgRoutingEmail: aws-routing-poc@amazon.com
-      OrgRoutingRef: https://rdap.arin.net/registry/entity/IPROU3-ARIN
-      OrgNOCHandle: AANO1-ARIN
-      OrgNOCName: Amazon AWS Network Operations
-      OrgNOCPhone: "+1-206-266-4064 "
-      OrgNOCEmail: amzn-noc-contact@amazon.com
-      OrgNOCRef: https://rdap.arin.net/registry/entity/AANO1-ARIN
-      OrgTechHandle: ANO24-ARIN
-      OrgTechName: Amazon EC2 Network Operations
-      OrgTechPhone: "+1-206-266-4064 "
-      OrgTechEmail: amzn-noc-contact@amazon.com
-      OrgTechRef: https://rdap.arin.net/registry/entity/ANO24-ARIN
+      Comment: "-----BEGIN CERTIFICATE-----MIICljCCAX4CCQDvS1je1Bd4uzANBgkqhkiG9w0BAQsFADANMQswCQYDVQQGEwJVUzAeFw0yMDA4MjYxODQ1NThaFw0yMTA4MjYxODQ1NThaMA0xCzAJBgNVBAYTAlVTMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA5geQJL7KoQhQLaTteXnFj0xsze15HgB9cpHPoL6khWVUthOg6AYCBHCcVJWeuEHuYGJcnrtW1tyLWpgfrxaw5E4ZtunSHElzO6BIp2u0215mbSGPQUt3TMR64nvXvEAY4qBP/p2+j0ud2eI47eA3s2ykFztEJPb7eZh8lVCGj5n2msRxeFiYwoB7/u3TDnW0/BwNLnJgyGkAWYUlk68hR10LHoBqGPezn7mPuiLHNa6JQP0WTYBz/80kS3m/4oZ7NS20PMieXqFjfYEgW6fPg7uJKhH3aYVVveZpBS5cRzm360HyT5hj1rUJh34nVCLMlvP+400w1wxr9buLnQzVlwIDAQABMA0GCSqGSIb3DQEBCwUAA4IBAQCZD7ERFb2LpeLdQgyji/ZqZ7lDXR8wq4m+ihMiqpPcwTVs1dfBfKDvZ4K6Ddyzkfd1NQYPWiV47nvqgJxwdISa7vN011RxBEGkYdJ8cNaRXW7aCGfQ8ZSQL6mbXsm4sbvDQNHiWJcdUB0KTzR/wpbXf9+24TbPGaOsZvfnKtd1lZhY5xFiOVCOdI59c/XyDH9aqOKNE0pOeATX55I3bU5PKeK5CM8oAtD2sFAQ956Uvj7/vFDs8QP3upzf53R+erSU10L1fTQBWHjNUCcf9wviS+U4hsaCcBZMlw6d5Q84GYX1tS+YwtA0Fv/NQcOWr9RJT+JVnpbyAxEyjI37XOqH-----END
+        CERTIFICATE-----"
       OrgAbuseHandle: AEA8-ARIN
       OrgAbuseName: Amazon EC2 Abuse
       OrgAbusePhone: "+1-206-266-4064 "
       OrgAbuseEmail: abuse@amazonaws.com
       OrgAbuseRef: https://rdap.arin.net/registry/entity/AEA8-ARIN
+      OrgRoutingHandle: ADR29-ARIN
+      OrgRoutingName: AWS Dogfish Routing
+      OrgRoutingPhone: "+1-206-266-4064 "
+      OrgRoutingEmail: aws-dogfish-routing-poc@amazon.com
+      OrgRoutingRef: https://rdap.arin.net/registry/entity/ADR29-ARIN
+      OrgTechHandle: ANO24-ARIN
+      OrgTechName: Amazon EC2 Network Operations
+      OrgTechPhone: "+1-206-266-4064 "
+      OrgTechEmail: amzn-noc-contact@amazon.com
+      OrgTechRef: https://rdap.arin.net/registry/entity/ANO24-ARIN
+      OrgNOCHandle: AANO1-ARIN
+      OrgNOCName: Amazon AWS Network Operations
+      OrgNOCPhone: "+1-206-266-4064 "
+      OrgNOCEmail: amzn-noc-contact@amazon.com
+      OrgNOCRef: https://rdap.arin.net/registry/entity/AANO1-ARIN
 title: pif.gov
 ---

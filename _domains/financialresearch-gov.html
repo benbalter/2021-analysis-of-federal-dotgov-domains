@@ -13,7 +13,7 @@ domain:
   up: true
   responds: true
   www: true
-  root: false
+  root: true
   https: true
   enforces_https: true
   downgrades_https: false
@@ -44,18 +44,18 @@ checks:
     humans_txt: false
     vulnerability_disclosure_policy: false
     security_txt: false
-    developer_json: false
+    data_json: false
   cookies:
     cookie?: false
     secure?: false
   dns:
-    dnssec: false
-    ipv6: false
+    dnssec: true
+    ipv6: true
     cdn: :cloudfront
     cloud_provider:
     google_apps: false
-    hostname: server-52-85-144-9.iad89.r.cloudfront.net
-    ip: 52.85.144.9
+    hostname: ''
+    ip: 99.84.222.67
   headers:
     strict-transport-security: max-age=31536000; includeSubdomains; preload
     content-security-policy: false
@@ -64,8 +64,8 @@ checks:
     x-xss-protection: 1; mode=block
     x-content-type-options: nosniff
     x-cache: Hit from cloudfront
-    x-amz-cf-pop: IAD89-C3
-    x-amz-cf-id: kv9zDKzshZ-ZEJiYaOdXyGbhu8Pi2mSN4T52hHgvhWLDVXKw2LpaQg==
+    x-amz-cf-pop: IAD79-C1
+    x-amz-cf-id: s_YN5yDVGE5Mj-Tthfj54u6zHpfS3a52YiDsYSVtFGWJafZJze5K4A==
   hsts:
     valid: true
     max_age: 31536000
@@ -151,7 +151,48 @@ checks:
     webfinger: false
   whois:
     domain:
-      ">>> Last update of whois database": 2020-12-22T17:05:08Z <<<
+      ">>> Last update of whois database": 2020-12-31T18:26:26Z <<<
     ip:
+      "# available at": https://www.arin.net/resources/registry/whois/tou/
+      "# https": "//www.arin.net/resources/registry/whois/inaccuracy_reporting/"
+      NetRange: 99.84.0.0 - 99.84.255.255
+      CIDR: 99.84.0.0/16
+      NetName: AMAZO-CF
+      NetHandle: NET-99-84-0-0-1
+      Parent: AMAZO-4 (NET-99-83-64-0-1)
+      NetType: Reallocated
+      OriginAS: 'Organization:   Amazon.com, Inc. (AMAZON-4)'
+      Organization: Amazon.com, Inc. (AMAZO-4)
+      RegDate: '1995-01-23'
+      Updated: '2020-03-31'
+      Ref: https://rdap.arin.net/registry/entity/AMAZON-4
+      OrgName: Amazon.com, Inc.
+      OrgId: AMAZON-4
+      Address: 1918 8th Ave
+      City: SEATTLE
+      StateProv: WA
+      PostalCode: 98101-1244
+      Country: US
+      Comment: http://ec2.amazonaws.com
+      OrgRoutingHandle: ADR29-ARIN
+      OrgRoutingName: AWS Dogfish Routing
+      OrgRoutingPhone: "+1-206-266-4064 "
+      OrgRoutingEmail: aws-dogfish-routing-poc@amazon.com
+      OrgRoutingRef: https://rdap.arin.net/registry/entity/ADR29-ARIN
+      OrgTechHandle: ANO24-ARIN
+      OrgTechName: Amazon EC2 Network Operations
+      OrgTechPhone: "+1-206-266-4064 "
+      OrgTechEmail: amzn-noc-contact@amazon.com
+      OrgTechRef: https://rdap.arin.net/registry/entity/ANO24-ARIN
+      OrgNOCHandle: AANO1-ARIN
+      OrgNOCName: Amazon AWS Network Operations
+      OrgNOCPhone: "+1-206-266-4064 "
+      OrgNOCEmail: amzn-noc-contact@amazon.com
+      OrgNOCRef: https://rdap.arin.net/registry/entity/AANO1-ARIN
+      OrgAbuseHandle: AEA8-ARIN
+      OrgAbuseName: Amazon EC2 Abuse
+      OrgAbusePhone: "+1-206-266-4064 "
+      OrgAbuseEmail: abuse@amazonaws.com
+      OrgAbuseRef: https://rdap.arin.net/registry/entity/AEA8-ARIN
 title: financialresearch.gov
 ---

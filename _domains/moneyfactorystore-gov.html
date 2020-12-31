@@ -6,27 +6,27 @@ organization: Department of the Treasury - BEP
 city: Washington
 state: DC
 domain:
-  host: moneyfactorystore.gov
+  host: www.moneyfactorystore.gov
   tld: gov
   sld: moneyfactorystore
-  trd:
+  trd: www
   up: true
   responds: true
   www: true
-  root: true
+  root: false
   https: true
   enforces_https: true
   downgrades_https: false
-  canonically_www: false
+  canonically_www: true
   canonically_https: true
   redirect: true
   hsts: true
   hsts_subdomains: false
   hsts_preload_ready: false
 canonical_endpoint:
-  uri: https://moneyfactorystore.gov/
-  host: moneyfactorystore.gov
-  www: false
+  uri: https://www.moneyfactorystore.gov/
+  host: www.moneyfactorystore.gov
+  www: true
   scheme: https
   up: true
   responds: true
@@ -43,7 +43,7 @@ checks:
     cdn:
     cloud_provider:
     google_apps: false
-    hostname: tlms.treasury.gov
+    hostname: es.consumerfinance.gov
     ip: 166.123.218.220
   headers: {}
   hsts:
@@ -62,10 +62,7 @@ checks:
   wellknown: {}
   whois:
     domain:
-      Domain Name: MONEYFACTORYSTORE.GOV
-      Status: ACTIVE
-      Security Contact Email: domainsecurity@treasury.gov
-      ">>> Last update of whois database": 2020-12-21T22:30:52Z <<<
+      ">>> Last update of whois database": 2020-12-31T18:01:25Z <<<
     ip:
       "# available at": https://www.arin.net/resources/registry/whois/tou/
       "# https": "//www.arin.net/resources/registry/whois/inaccuracy_reporting/"
@@ -92,16 +89,16 @@ checks:
       OrgTechPhone: "+1-304-480-7779 "
       OrgTechEmail: ecb-hosting@bpd.treas.gov
       OrgTechRef: https://rdap.arin.net/registry/entity/DLS46-ARIN
-      OrgAbuseHandle: SOC35-ARIN
-      OrgAbuseName: Security Operations Center
-      OrgAbusePhone: "+1-202-927-9777 "
-      OrgAbuseEmail: soc@gsoc.treas.gov
-      OrgAbuseRef: https://rdap.arin.net/registry/entity/SOC35-ARIN
       OrgNOCHandle: SOC35-ARIN
       OrgNOCName: Security Operations Center
       OrgNOCPhone: "+1-202-927-9777 "
       OrgNOCEmail: soc@gsoc.treas.gov
       OrgNOCRef: https://rdap.arin.net/registry/entity/SOC35-ARIN
+      OrgAbuseHandle: SOC35-ARIN
+      OrgAbuseName: Security Operations Center
+      OrgAbusePhone: "+1-202-927-9777 "
+      OrgAbuseEmail: soc@gsoc.treas.gov
+      OrgAbuseRef: https://rdap.arin.net/registry/entity/SOC35-ARIN
       RTechHandle: DLS46-ARIN
       RTechName: Smicker, Daniel L
       RTechPhone: "+1-304-480-7779 "

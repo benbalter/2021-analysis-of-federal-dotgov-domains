@@ -6,73 +6,50 @@ organization: Citizens Coinage Advisory Committee (Mint)
 city: Washington
 state: DC
 domain:
-  host: www.ccac.gov
+  host: ccac.gov
   tld: gov
   sld: ccac
-  trd: www
+  trd:
   up: true
   responds: true
-  www: true
+  www: false
   root: true
   https: true
   enforces_https: true
   downgrades_https: false
-  canonically_www: true
+  canonically_www: false
   canonically_https: true
-  redirect: false
+  redirect: true
   hsts: true
   hsts_subdomains: true
   hsts_preload_ready: false
 canonical_endpoint:
-  uri: https://www.ccac.gov/
-  host: www.ccac.gov
-  www: true
+  uri: https://ccac.gov/
+  host: ccac.gov
+  www: false
   scheme: https
   up: true
   responds: true
   timed_out: false
-  redirect: false
+  redirect: true
   resolves_to: https://www.ccac.gov/
-  external_redirect: false
+  external_redirect: true
 checks:
-  content:
-    doctype: "-//W3C//DTD XHTML 1.0 Transitional//EN"
-    generator:
-    proper_404s: false
-    robots_txt:
-    sitemap_xml:
-    humans_txt:
-    vulnerability_disclosure_policy:
-    security_txt: false
-    developer_json:
-  cookies:
-    cookie?: false
-    secure?: false
+  content: {}
+  cookies: {}
   dns:
-    dnssec: false
+    dnssec: true
     ipv6: false
-    cdn: :cloudfront
+    cdn:
     cloud_provider:
     google_apps: false
-    hostname: server-13-32-204-92.iad66.r.cloudfront.net
-    ip: 13.32.204.92
-  headers:
-    strict-transport-security: max-age=63072000; preload
-    content-security-policy: false
-    x-frame-options: DENY
-    server: AmazonS3
-    x-xss-protection: 1; mode=block
-    x-amz-replication-status: COMPLETED
-    x-amz-server-side-encryption: AES256
-    x-amz-version-id: iPan0HYA1K07LbTm6ckZXTeI4f6FcKu6
-    x-content-type-options: nosniff
-    x-cache: Hit from cloudfront
-    x-amz-cf-pop: IAD66-C1
-    x-amz-cf-id: tExhYu1rLWxUeJdl3mkL9edkFCDr-PdFiUxCWuxrRs-1Q2h7DKOWew==
+    hostname: ''
+    ip: 35.174.202.69
+  headers: {}
   hsts:
     valid: true
-    max_age: 63072000
-    include_subdomains: false
+    max_age: 120
+    include_subdomains: true
     preload: true
     enabled: true
     preload_ready: false
@@ -80,94 +57,34 @@ checks:
   https:
     valid: true
     return_code: :ok
-  sniffer:
-    framework:
-    analytics:
-    javascript:
-    advertising:
-  wappalyzer:
-    paas:
-    - Amazon Web Services
-    javascript_libraries:
-    - jQuery
-    analytics:
-    - Google Analytics
-    miscellaneous:
-    - Amazon S3
-    cdn:
-    - Amazon Cloudfront
-  wellknown:
-    acme_challenge:
-    amphtml:
-    ashrae:
-    assetlinks_json:
-    brski:
-    caldav:
-    carddav:
-    coap:
-    core:
-    csvm:
-    dnt:
-    dnt_policy_txt:
-    dots:
-    ecips:
-    enterprise_transport_security:
-    est:
-    genid:
-    gs1resolver:
-    hoba:
-    host_meta:
-    host_meta_json:
-    hosting_provider:
-    http_opportunistic:
-    idp_proxy:
-    jmap:
-    keybase_txt:
-    looking_glass:
-    matrix:
-    mta_sts_txt:
-    nfv_oauth_server_configuration:
-    ni:
-    oauth_authorization_server:
-    openid_configuration:
-    openorg:
-    pki_validation:
-    posh:
-    pvd:
-    reload_config:
-    repute_template:
-    resourcesync:
-    sshfp:
-    stun_key:
-    thread:
-    time:
-    timezone:
-    tor_relay:
-    uma2_configuration:
-    void:
-    webfinger:
+  sniffer: {}
+  wappalyzer: {}
+  wellknown: {}
   whois:
     domain:
-      ">>> Last update of whois database": 2020-12-22T17:45:55Z <<<
+      Domain Name: CCAC.GOV
+      Status: ACTIVE
+      Security Contact Email: domainsecurity@treasury.gov
+      ">>> Last update of whois database": 2020-12-30T21:05:18Z <<<
     ip:
       "# available at": https://www.arin.net/resources/registry/whois/tou/
       "# https": "//www.arin.net/resources/registry/whois/inaccuracy_reporting/"
-      NetRange: 13.32.0.0 - 13.33.255.255
-      CIDR: 13.32.0.0/15
-      NetName: AMAZO-CF
-      NetHandle: NET-13-32-0-0-2
-      Parent: AT-88-Z (NET-13-32-0-0-1)
-      NetType: Reallocated
-      OriginAS: AS16509
-      RegDate: '1995-01-23'
+      NetRange: 35.152.0.0 - 35.183.255.255
+      CIDR: 35.160.0.0/12, 35.152.0.0/13, 35.176.0.0/13
+      NetName: AT-88-Z
+      NetHandle: NET-35-152-0-0-1
+      Parent: NET35 (NET-35-0-0-0-0)
+      NetType: Direct Allocation
+      OriginAS: 'Organization:   Amazon Technologies Inc. (AT-88-Z)'
+      RegDate: '2011-12-08'
       Updated: '2020-03-31'
-      Ref: https://rdap.arin.net/registry/entity/AMAZON-4
-      OrgName: Amazon.com, Inc.
-      OrgId: AMAZON-4
-      Address: 1918 8th Ave
-      City: SEATTLE
+      Ref: https://rdap.arin.net/registry/entity/AT-88-Z
+      OrgName: Amazon Technologies Inc.
+      OrgId: AT-88-Z
+      Address: 410 Terry Ave N.
+      City: Seattle
       StateProv: WA
-      PostalCode: 98101-1244
+      PostalCode: '98109'
       Country: US
       Comment: "* Your contact details (phone and email) Without these we will be
         unable to identify the correct owner of the IP address at that point in time."
@@ -176,21 +93,20 @@ checks:
       OrgTechPhone: "+1-206-266-4064 "
       OrgTechEmail: amzn-noc-contact@amazon.com
       OrgTechRef: https://rdap.arin.net/registry/entity/ANO24-ARIN
-      OrgNOCHandle: AANO1-ARIN
-      OrgNOCName: Amazon AWS Network Operations
-      OrgNOCPhone: "+1-206-266-4064 "
-      OrgNOCEmail: amzn-noc-contact@amazon.com
-      OrgNOCRef: https://rdap.arin.net/registry/entity/AANO1-ARIN
-      OrgAbuseHandle: AEA8-ARIN
-      OrgAbuseName: Amazon EC2 Abuse
-      OrgAbusePhone: "+1-206-266-4064 "
-      OrgAbuseEmail: abuse@amazonaws.com
-      OrgAbuseRef: https://rdap.arin.net/registry/entity/AEA8-ARIN
       OrgRoutingHandle: IPROU3-ARIN
       OrgRoutingName: IP Routing
       OrgRoutingPhone: "+1-206-266-4064 "
       OrgRoutingEmail: aws-routing-poc@amazon.com
       OrgRoutingRef: https://rdap.arin.net/registry/entity/IPROU3-ARIN
-      Organization: Amazon.com, Inc. (AMAZON-4)
+      OrgAbuseHandle: AEA8-ARIN
+      OrgAbuseName: Amazon EC2 Abuse
+      OrgAbusePhone: "+1-206-266-4064 "
+      OrgAbuseEmail: abuse@amazonaws.com
+      OrgAbuseRef: https://rdap.arin.net/registry/entity/AEA8-ARIN
+      OrgNOCHandle: AANO1-ARIN
+      OrgNOCName: Amazon AWS Network Operations
+      OrgNOCPhone: "+1-206-266-4064 "
+      OrgNOCEmail: amzn-noc-contact@amazon.com
+      OrgNOCRef: https://rdap.arin.net/registry/entity/AANO1-ARIN
 title: ccac.gov
 ---

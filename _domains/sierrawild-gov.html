@@ -44,25 +44,25 @@ checks:
     humans_txt: false
     vulnerability_disclosure_policy: false
     security_txt: false
-    developer_json: false
+    data_json: false
   cookies:
     cookie?: false
     secure?: false
   dns:
-    dnssec: false
-    ipv6: false
+    dnssec: true
+    ipv6: true
     cdn:
     cloud_provider:
     google_apps: false
-    hostname: ec2-13-56-125-91.us-west-1.compute.amazonaws.com
-    ip: 13.56.125.91
+    hostname: ''
+    ip: 104.248.50.87
   headers:
     strict-transport-security: max-age=31536000
     content-security-policy: false
     x-frame-options: false
     server: Netlify
     x-xss-protection: false
-    x-nf-request-id: 0d695ca5-9dd3-492c-864e-2849e587c7f6-16650629
+    x-nf-request-id: b6bc8f7b-d87d-4e36-ae5a-042c29122101-7794813
   hsts:
     valid: true
     max_age: 31536000
@@ -142,43 +142,48 @@ checks:
     webfinger: false
   whois:
     domain:
-      ">>> Last update of whois database": 2020-12-22T18:10:27Z <<<
+      ">>> Last update of whois database": 2020-12-30T22:50:08Z <<<
     ip:
       "# available at": https://www.arin.net/resources/registry/whois/tou/
       "# https": "//www.arin.net/resources/registry/whois/inaccuracy_reporting/"
-      NetRange: 159.65.0.0 - 159.65.255.255
-      CIDR: 159.65.0.0/16
-      NetName: DIGITALOCEAN-159-65-0-0
-      NetHandle: NET-159-65-0-0-1
-      Parent: NET159 (NET-159-0-0-0-0)
+      NetRange: 13.52.0.0 - 13.59.255.255
+      CIDR: 13.52.0.0/14, 13.56.0.0/14
+      NetName: AT-88-Z
+      NetHandle: NET-13-52-0-0-1
+      Parent: NET13 (NET-13-0-0-0-0)
       NetType: Direct Allocation
-      OriginAS: AS14061
-      Organization: DigitalOcean, LLC (DO-13)
-      RegDate: '2012-05-14'
-      Updated: '2019-02-04'
-      Comment: Simple Cloud Hosting
-      Ref: https://rdap.arin.net/registry/entity/DO-13
-      OrgName: DigitalOcean, LLC
-      OrgId: DO-13
-      Address: 10th Floor
-      City: New York
-      StateProv: NY
-      PostalCode: '10013'
+      OriginAS: 'Organization:   Amazon Technologies Inc. (AT-88-Z)'
+      RegDate: '2011-12-08'
+      Updated: '2020-03-31'
+      Ref: https://rdap.arin.net/registry/entity/AT-88-Z
+      OrgName: Amazon Technologies Inc.
+      OrgId: AT-88-Z
+      Address: 410 Terry Ave N.
+      City: Seattle
+      StateProv: WA
+      PostalCode: '98109'
       Country: US
-      OrgAbuseHandle: ABUSE5232-ARIN
-      OrgAbuseName: 'Abuse, DigitalOcean '
-      OrgAbusePhone: "+1-347-875-6044 "
-      OrgAbuseEmail: abuse@digitalocean.com
-      OrgAbuseRef: https://rdap.arin.net/registry/entity/ABUSE5232-ARIN
-      OrgNOCHandle: NOC32014-ARIN
-      OrgNOCName: Network Operations Center
-      OrgNOCPhone: "+1-347-875-6044 "
-      OrgNOCEmail: noc@digitalocean.com
-      OrgNOCRef: https://rdap.arin.net/registry/entity/NOC32014-ARIN
-      OrgTechHandle: NOC32014-ARIN
-      OrgTechName: Network Operations Center
-      OrgTechPhone: "+1-347-875-6044 "
-      OrgTechEmail: noc@digitalocean.com
-      OrgTechRef: https://rdap.arin.net/registry/entity/NOC32014-ARIN
+      Comment: "* Your contact details (phone and email) Without these we will be
+        unable to identify the correct owner of the IP address at that point in time."
+      OrgAbuseHandle: AEA8-ARIN
+      OrgAbuseName: Amazon EC2 Abuse
+      OrgAbusePhone: "+1-206-266-4064 "
+      OrgAbuseEmail: abuse@amazonaws.com
+      OrgAbuseRef: https://rdap.arin.net/registry/entity/AEA8-ARIN
+      OrgRoutingHandle: ADR29-ARIN
+      OrgRoutingName: AWS Dogfish Routing
+      OrgRoutingPhone: "+1-206-266-4064 "
+      OrgRoutingEmail: aws-dogfish-routing-poc@amazon.com
+      OrgRoutingRef: https://rdap.arin.net/registry/entity/ADR29-ARIN
+      OrgTechHandle: ANO24-ARIN
+      OrgTechName: Amazon EC2 Network Operations
+      OrgTechPhone: "+1-206-266-4064 "
+      OrgTechEmail: amzn-noc-contact@amazon.com
+      OrgTechRef: https://rdap.arin.net/registry/entity/ANO24-ARIN
+      OrgNOCHandle: AANO1-ARIN
+      OrgNOCName: Amazon AWS Network Operations
+      OrgNOCPhone: "+1-206-266-4064 "
+      OrgNOCEmail: amzn-noc-contact@amazon.com
+      OrgNOCRef: https://rdap.arin.net/registry/entity/AANO1-ARIN
 title: sierrawild.gov
 ---

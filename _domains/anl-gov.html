@@ -44,18 +44,18 @@ checks:
     humans_txt: false
     vulnerability_disclosure_policy: false
     security_txt: false
-    developer_json: false
+    data_json: false
   cookies:
     cookie?: false
     secure?: false
   dns:
-    dnssec: false
-    ipv6: false
+    dnssec: true
+    ipv6: true
     cdn:
     cloud_provider:
     google_apps: false
     hostname: ''
-    ip: 54.164.45.173
+    ip: 3.209.96.163
   headers:
     strict-transport-security: max-age=31536000
     content-security-policy: report-uri /report-csp-violation
@@ -64,11 +64,11 @@ checks:
     x-xss-protection: 1; mode=block
     x-ah-environment: prod
     x-cache: HIT
-    x-cache-hits: '391'
+    x-cache-hits: '7797'
     x-content-type-options: nosniff
     x-drupal-dynamic-cache: UNCACHEABLE
     x-generator: Drupal 8 (https://www.drupal.org)
-    x-request-id: v-04400032-43cc-11eb-a6de-dbe824061fc0
+    x-request-id: v-48a35880-4b58-11eb-b843-cb81f431ec73
     x-ua-compatible: IE=edge
   hsts:
     valid: true
@@ -103,8 +103,6 @@ checks:
     - Nginx
     paas:
     - Cloud Platform
-    tag_managers:
-    - Google Tag Manager
     javascript_libraries:
     - jQuery
     font_scripts:
@@ -113,6 +111,9 @@ checks:
     - Twitter
     analytics:
     - New Relic
+    - Google Analytics
+    tag_managers:
+    - Google Tag Manager
     ssl/tls_certificate_authorities:
     - DigiCert
   wellknown:
@@ -167,34 +168,29 @@ checks:
     webfinger: false
   whois:
     domain:
-      ">>> Last update of whois database": 2020-12-21T20:54:17Z <<<
+      ">>> Last update of whois database": 2020-12-31T18:20:11Z <<<
     ip:
       "# available at": https://www.arin.net/resources/registry/whois/tou/
       "# https": "//www.arin.net/resources/registry/whois/inaccuracy_reporting/"
-      NetRange: 3.224.0.0 - 3.239.255.255
-      CIDR: 3.224.0.0/12
-      NetName: AMAZON-IAD
-      NetHandle: NET-3-224-0-0-1
-      Parent: AT-88-Z (NET-3-128-0-0-1)
-      NetType: Reallocated
-      OriginAS: AS16509, AS14618
-      RegDate: '2018-04-25'
-      Updated: '2019-08-02'
-      Ref: https://rdap.arin.net/registry/entity/ADSN-1
-      OrgName: Amazon Data Services NoVa
-      OrgId: ADSN-1
-      Address: 13200 Woodland Park Road
-      City: Herndon
-      StateProv: VA
-      PostalCode: '20171'
+      NetRange: 54.160.0.0 - 54.175.255.255
+      CIDR: 54.160.0.0/12
+      NetName: AMAZON-2011L
+      NetHandle: NET-54-160-0-0-1
+      Parent: NET54 (NET-54-0-0-0-0)
+      NetType: Direct Allocation
+      OriginAS: 'Organization:   Amazon Technologies Inc. (AT-88-Z)'
+      RegDate: '2011-12-08'
+      Updated: '2020-03-31'
+      Ref: https://rdap.arin.net/registry/entity/AT-88-Z
+      OrgName: Amazon Technologies Inc.
+      OrgId: AT-88-Z
+      Address: 410 Terry Ave N.
+      City: Seattle
+      StateProv: WA
+      PostalCode: '98109'
       Country: US
       Comment: "* Your contact details (phone and email) Without these we will be
         unable to identify the correct owner of the IP address at that point in time."
-      OrgNOCHandle: AANO1-ARIN
-      OrgNOCName: Amazon AWS Network Operations
-      OrgNOCPhone: "+1-206-266-4064 "
-      OrgNOCEmail: amzn-noc-contact@amazon.com
-      OrgNOCRef: https://rdap.arin.net/registry/entity/AANO1-ARIN
       OrgTechHandle: ANO24-ARIN
       OrgTechName: Amazon EC2 Network Operations
       OrgTechPhone: "+1-206-266-4064 "
@@ -210,6 +206,10 @@ checks:
       OrgAbusePhone: "+1-206-266-4064 "
       OrgAbuseEmail: abuse@amazonaws.com
       OrgAbuseRef: https://rdap.arin.net/registry/entity/AEA8-ARIN
-      Organization: Amazon Data Services NoVa (ADSN-1)
+      OrgNOCHandle: AANO1-ARIN
+      OrgNOCName: Amazon AWS Network Operations
+      OrgNOCPhone: "+1-206-266-4064 "
+      OrgNOCEmail: amzn-noc-contact@amazon.com
+      OrgNOCRef: https://rdap.arin.net/registry/entity/AANO1-ARIN
 title: anl.gov
 ---

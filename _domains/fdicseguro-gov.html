@@ -38,8 +38,8 @@ checks:
   content: {}
   cookies: {}
   dns:
-    dnssec: false
-    ipv6: false
+    dnssec: true
+    ipv6: true
     cdn:
     cloud_provider:
     google_apps: false
@@ -47,7 +47,7 @@ checks:
     ip: 167.176.6.111
   headers: {}
   hsts:
-    valid: true
+    valid: false
     max_age: 0
     include_subdomains: false
     preload: false
@@ -62,7 +62,7 @@ checks:
   wellknown: {}
   whois:
     domain:
-      ">>> Last update of whois database": 2020-12-21T21:46:20Z <<<
+      ">>> Last update of whois database": 2020-12-30T21:23:03Z <<<
     ip:
       "# available at": https://www.arin.net/resources/registry/whois/tou/
       "# https": "//www.arin.net/resources/registry/whois/inaccuracy_reporting/"
@@ -85,6 +85,11 @@ checks:
       PostalCode: '22226'
       Country: US
       Comment: http://www.fdic.gov
+      OrgTechHandle: TKN20-ARIN
+      OrgTechName: NGUYEN, TRI-DZUNG KIM
+      OrgTechPhone: "+1-703-516-1125 "
+      OrgTechEmail: tknguyen@fdic.gov
+      OrgTechRef: https://rdap.arin.net/registry/entity/TKN20-ARIN
       OrgAbuseHandle: ABUSE1702-ARIN
       OrgAbuseName: Abuse - FDIC
       OrgAbusePhone: "+1-703-516-5760 "
@@ -95,11 +100,6 @@ checks:
       OrgNOCPhone: "+1-703-516-1208 "
       OrgNOCEmail: NOC@fdic.gov
       OrgNOCRef: https://rdap.arin.net/registry/entity/NETWO1896-ARIN
-      OrgTechHandle: LATTA18-ARIN
-      OrgTechName: 'Lattanze, Sharon '
-      OrgTechPhone: "+1-703-516-1129 "
-      OrgTechEmail: slattanze@fdic.gov
-      OrgTechRef: https://rdap.arin.net/registry/entity/LATTA18-ARIN
       RNOCHandle: NETWO1896-ARIN
       RNOCName: Network Operations
       RNOCPhone: "+1-703-516-1208 "

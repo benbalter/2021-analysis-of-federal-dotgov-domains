@@ -44,13 +44,13 @@ checks:
     humans_txt: false
     vulnerability_disclosure_policy: false
     security_txt: false
-    developer_json: false
+    data_json: false
   cookies:
     cookie?: true
     secure?: true
   dns:
     dnssec: false
-    ipv6: false
+    ipv6: true
     cdn:
     cloud_provider:
     google_apps: false
@@ -80,7 +80,7 @@ checks:
       config:system.menu.account config:system.menu.footer config:system.menu.main
       config:system.menu.social config:system.menu.tools config:system.menu.utility
       config:system.site config:user.role.anonymous config:views.view.latest_alert
-      file:10229 file:10365 file:11798 file:12104 file:6350 http_response local_task
+      file:10229 file:10365 file:12104 file:12237 file:6350 http_response local_task
       media:2206 media:2210 media:2211 media:3383 media:5828 media:5829 media:6967
       media:8406 media:8540 media:8592 media:8618 media_view node:105 node:107 node:110
       node:112 node:1269 node:1270 node:1272 node:1281 node:1373 node:150 node:154
@@ -218,12 +218,12 @@ checks:
     webfinger: false
   whois:
     domain:
-      ">>> Last update of whois database": 2020-12-22T17:33:25Z <<<
+      ">>> Last update of whois database": 2020-12-30T22:11:20Z <<<
     ip:
       "# available at": https://www.arin.net/resources/registry/whois/tou/
       "# https": "//www.arin.net/resources/registry/whois/inaccuracy_reporting/"
       NetRange: 192.101.100.0 - 192.101.109.255
-      CIDR: 192.101.104.0/22, 192.101.100.0/22, 192.101.108.0/23
+      CIDR: 192.101.108.0/23, 192.101.104.0/22, 192.101.100.0/22
       NetName: PNNL
       NetHandle: NET-192-101-100-0-1
       Parent: NET192 (NET-192-0-0-0-0)
@@ -251,7 +251,7 @@ checks:
       OrgAbuseRef: https://rdap.arin.net/registry/entity/LWA96-ARIN
       RTechHandle: SCT2-ARIN
       RTechName: 'Tollbom, Cullen '
-      RTechPhone: "+1-509-375-2896 "
+      RTechPhone: "+1-509-375-6703 "
       RTechEmail: cullen.tollbom@pnl.gov
       RTechRef: https://rdap.arin.net/registry/entity/SCT2-ARIN
 title: pnnl.gov

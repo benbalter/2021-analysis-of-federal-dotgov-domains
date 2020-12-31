@@ -44,18 +44,18 @@ checks:
     humans_txt: false
     vulnerability_disclosure_policy: false
     security_txt: false
-    developer_json: false
+    data_json: false
   cookies:
     cookie?: false
     secure?: false
   dns:
     dnssec: false
-    ipv6: false
+    ipv6: true
     cdn: :cloudfront
     cloud_provider:
-    google_apps: false
-    hostname: server-13-224-215-129.phl50.r.cloudfront.net
-    ip: 13.224.215.129
+    google_apps: true
+    hostname: server-13-249-44-69.iad89.r.cloudfront.net
+    ip: 13.249.44.69
   headers:
     strict-transport-security: max-age=31536000; includeSubDomains; preload
     content-security-policy: false
@@ -63,11 +63,11 @@ checks:
     server: false
     x-xss-protection: 1; mode=block
     x-server: Federalist
-    x-vcap-request-id: de0b5c5c-2849-4668-78fb-e581a20f20c1
+    x-vcap-request-id: eea6c3c6-ec24-4ce7-5efd-b0adfdda625d
     x-content-type-options: nosniff
     x-cache: Miss from cloudfront
-    x-amz-cf-pop: PHL50-C1
-    x-amz-cf-id: 29xej-zaYz1-5xGcgV2K4gK2b4NvdWXcx1FcL-52YBU_y-CMAQxdEA==
+    x-amz-cf-pop: IAD89-C1
+    x-amz-cf-id: dwuLTtgZ7NhIEIUJh5ddspodO_1RfwgoGUzS1u4nALBxFmEhcEsp1w==
   hsts:
     valid: true
     max_age: 31536000
@@ -91,12 +91,12 @@ checks:
     - Amazon Web Services
     font_scripts:
     - Font Awesome
+    analytics:
+    - Google Analytics
     cms:
     - Zendesk
     webmail:
     - Google Workspace
-    ssl/tls_certificate_authorities:
-    - Let's Encrypt
     cdn:
     - Amazon Cloudfront
   wellknown:
@@ -154,15 +154,15 @@ checks:
       Domain Name: CLOUD.GOV
       Status: ACTIVE
       Security Contact Email: tts-vulnerability-reports@gsa.gov
-      ">>> Last update of whois database": 2020-12-21T21:07:03Z <<<
+      ">>> Last update of whois database": 2020-12-30T22:39:37Z <<<
     ip:
       "# available at": https://www.arin.net/resources/registry/whois/tou/
       "# https": "//www.arin.net/resources/registry/whois/inaccuracy_reporting/"
-      NetRange: 13.224.0.0 - 13.227.255.255
-      CIDR: 13.224.0.0/14
+      NetRange: 13.249.0.0 - 13.249.255.255
+      CIDR: 13.249.0.0/16
       NetName: AMAZO-CF
-      NetHandle: NET-13-224-0-0-2
-      Parent: AT-88-Z (NET-13-224-0-0-1)
+      NetHandle: NET-13-249-0-0-1
+      Parent: AT-88-Z (NET-13-248-0-0-1)
       NetType: Reallocated
       OriginAS: 'Organization:   Amazon.com, Inc. (AMAZON-4)'
       RegDate: '1995-01-23'
@@ -177,11 +177,6 @@ checks:
       Country: US
       Comment: "* Your contact details (phone and email) Without these we will be
         unable to identify the correct owner of the IP address at that point in time."
-      OrgTechHandle: ANO24-ARIN
-      OrgTechName: Amazon EC2 Network Operations
-      OrgTechPhone: "+1-206-266-4064 "
-      OrgTechEmail: amzn-noc-contact@amazon.com
-      OrgTechRef: https://rdap.arin.net/registry/entity/ANO24-ARIN
       OrgRoutingHandle: IPROU3-ARIN
       OrgRoutingName: IP Routing
       OrgRoutingPhone: "+1-206-266-4064 "
@@ -197,5 +192,10 @@ checks:
       OrgNOCPhone: "+1-206-266-4064 "
       OrgNOCEmail: amzn-noc-contact@amazon.com
       OrgNOCRef: https://rdap.arin.net/registry/entity/AANO1-ARIN
+      OrgTechHandle: ANO24-ARIN
+      OrgTechName: Amazon EC2 Network Operations
+      OrgTechPhone: "+1-206-266-4064 "
+      OrgTechEmail: amzn-noc-contact@amazon.com
+      OrgTechRef: https://rdap.arin.net/registry/entity/ANO24-ARIN
 title: cloud.gov
 ---

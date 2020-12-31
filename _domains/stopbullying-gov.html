@@ -44,18 +44,18 @@ checks:
     humans_txt: false
     vulnerability_disclosure_policy: false
     security_txt: false
-    developer_json: false
+    data_json: false
   cookies:
     cookie?: false
     secure?: false
   dns:
-    dnssec: false
-    ipv6: false
+    dnssec: true
+    ipv6: true
     cdn: :akamai
     cloud_provider:
     google_apps: false
-    hostname: a104-106-174-194.deploy.static.akamaitechnologies.com
-    ip: 104.106.174.194
+    hostname: a104-82-19-76.deploy.static.akamaitechnologies.com
+    ip: 104.82.19.76
   headers:
     strict-transport-security: max-age=31536000 ; includeSubDomains ; preload
     content-security-policy: frame-ancestors 'self'
@@ -67,7 +67,7 @@ checks:
     - nosniff
     - nosniff
     x-generator: Drupal 8 (https://www.drupal.org)
-    x-request-id: f9dfb16c3a30c8c02760d71c16deb2d3
+    x-request-id: e38823d68e15d9ac7cc35ae89d8a68bd
   hsts:
     valid: true
     max_age: 31536000
@@ -91,11 +91,16 @@ checks:
     - PHP
     web_servers:
     - Nginx
-    tag_managers:
-    - Google Tag Manager
     javascript_libraries:
     - jQuery UI
     - jQuery
+    analytics:
+    - Quantcast Measure
+    - Google Analytics
+    cookie_compliance:
+    - Quantcast Choice
+    tag_managers:
+    - Google Tag Manager
     cdn:
     - Akamai
   wellknown:
@@ -150,7 +155,7 @@ checks:
     webfinger: false
   whois:
     domain:
-      ">>> Last update of whois database": 2020-12-21T21:27:49Z <<<
+      ">>> Last update of whois database": 2020-12-30T21:23:48Z <<<
     ip:
       "# available at": https://www.arin.net/resources/registry/whois/tou/
       "# https": "//www.arin.net/resources/registry/whois/inaccuracy_reporting/"
@@ -178,7 +183,7 @@ checks:
       OrgAbuseRef: https://rdap.arin.net/registry/entity/NUS-ARIN
       OrgTechHandle: YKS-ARIN
       OrgTechName: 'Yeung, Kam Sze '
-      OrgTechPhone: "+852-92813828 "
+      OrgTechPhone: "+852-22718527 "
       OrgTechEmail: ip-admin@akamai.com
       OrgTechRef: https://rdap.arin.net/registry/entity/YKS-ARIN
 title: stopbullying.gov

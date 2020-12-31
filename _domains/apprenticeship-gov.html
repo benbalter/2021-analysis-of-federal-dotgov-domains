@@ -44,13 +44,13 @@ checks:
     humans_txt: false
     vulnerability_disclosure_policy: false
     security_txt: false
-    developer_json: false
+    data_json: false
   cookies:
     cookie?: false
     secure?: false
   dns:
-    dnssec: false
-    ipv6: false
+    dnssec: true
+    ipv6: true
     cdn:
     cloud_provider:
     google_apps: false
@@ -85,15 +85,14 @@ checks:
     - Drupal
     programming_languages:
     - PHP
-    video_players:
-    - YouTube
     caching:
     - Varnish
-    tag_managers:
-    - Google Tag Manager
     font_scripts:
     - Google Font API
+    tag_managers:
+    - Google Tag Manager
     analytics:
+    - Google Analytics
     - Crazy Egg
   wellknown:
     acme_challenge: false
@@ -147,13 +146,13 @@ checks:
     webfinger: false
   whois:
     domain:
-      ">>> Last update of whois database": 2020-12-21T20:04:45Z <<<
+      ">>> Last update of whois database": 2020-12-30T22:35:07Z <<<
     ip:
       "# available at": https://www.arin.net/resources/registry/whois/tou/
       "# https": "//www.arin.net/resources/registry/whois/inaccuracy_reporting/"
       NetRange: 40.74.0.0 - 40.125.127.255
-      CIDR: 40.74.0.0/15, 40.80.0.0/12, 40.76.0.0/14, 40.125.0.0/17, 40.120.0.0/14,
-        40.96.0.0/12, 40.112.0.0/13, 40.124.0.0/16
+      CIDR: 40.124.0.0/16, 40.96.0.0/12, 40.112.0.0/13, 40.120.0.0/14, 40.125.0.0/17,
+        40.80.0.0/12, 40.76.0.0/14, 40.74.0.0/15
       NetName: MSFT
       NetHandle: NET-40-74-0-0-1
       Parent: NET40 (NET-40-0-0-0-0)

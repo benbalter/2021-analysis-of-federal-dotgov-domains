@@ -44,13 +44,13 @@ checks:
     humans_txt:
     vulnerability_disclosure_policy:
     security_txt: false
-    developer_json:
+    data_json:
   cookies:
     cookie?: false
     secure?: false
   dns:
-    dnssec: false
-    ipv6: false
+    dnssec: true
+    ipv6: true
     cdn: :cloudfront
     cloud_provider:
     google_apps: false
@@ -63,10 +63,10 @@ checks:
     server: AmazonS3
     x-xss-protection: false
     x-cache: Hit from cloudfront
-    x-amz-cf-pop: EWR52-C1
-    x-amz-cf-id: kcWe-7p2AlnQQILQCfzu6ppRumfNB-VloPca3fyjXFqNtMKLJji9BQ==
+    x-amz-cf-pop: IAD79-C1
+    x-amz-cf-id: wg4qFVgWx6Wo5OsTHJ_USys63MECu9hnJqz5aFhhkgfmVacDvnVXRA==
   hsts:
-    valid: true
+    valid: false
     max_age: 0
     include_subdomains: false
     preload: false
@@ -153,7 +153,7 @@ checks:
     webfinger:
   whois:
     domain:
-      ">>> Last update of whois database": 2020-12-21T22:36:07Z <<<
+      ">>> Last update of whois database": 2020-12-31T18:20:41Z <<<
     ip:
       "# available at": https://www.arin.net/resources/registry/whois/tou/
       "# https": "//www.arin.net/resources/registry/whois/inaccuracy_reporting/"
@@ -176,21 +176,21 @@ checks:
       PostalCode: 98101-1244
       Country: US
       Comment: http://ec2.amazonaws.com
-      OrgRoutingHandle: ADR29-ARIN
-      OrgRoutingName: AWS Dogfish Routing
-      OrgRoutingPhone: "+1-206-266-4064 "
-      OrgRoutingEmail: aws-dogfish-routing-poc@amazon.com
-      OrgRoutingRef: https://rdap.arin.net/registry/entity/ADR29-ARIN
-      OrgTechHandle: ANO24-ARIN
-      OrgTechName: Amazon EC2 Network Operations
-      OrgTechPhone: "+1-206-266-4064 "
-      OrgTechEmail: amzn-noc-contact@amazon.com
-      OrgTechRef: https://rdap.arin.net/registry/entity/ANO24-ARIN
       OrgNOCHandle: AANO1-ARIN
       OrgNOCName: Amazon AWS Network Operations
       OrgNOCPhone: "+1-206-266-4064 "
       OrgNOCEmail: amzn-noc-contact@amazon.com
       OrgNOCRef: https://rdap.arin.net/registry/entity/AANO1-ARIN
+      OrgRoutingHandle: IPROU3-ARIN
+      OrgRoutingName: IP Routing
+      OrgRoutingPhone: "+1-206-266-4064 "
+      OrgRoutingEmail: aws-routing-poc@amazon.com
+      OrgRoutingRef: https://rdap.arin.net/registry/entity/IPROU3-ARIN
+      OrgTechHandle: ANO24-ARIN
+      OrgTechName: Amazon EC2 Network Operations
+      OrgTechPhone: "+1-206-266-4064 "
+      OrgTechEmail: amzn-noc-contact@amazon.com
+      OrgTechRef: https://rdap.arin.net/registry/entity/ANO24-ARIN
       OrgAbuseHandle: AEA8-ARIN
       OrgAbuseName: Amazon EC2 Abuse
       OrgAbusePhone: "+1-206-266-4064 "

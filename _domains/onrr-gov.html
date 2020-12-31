@@ -44,13 +44,13 @@ checks:
     humans_txt:
     vulnerability_disclosure_policy:
     security_txt: false
-    developer_json:
+    data_json:
   cookies:
     cookie?: false
     secure?: false
   dns:
     dnssec: false
-    ipv6: false
+    ipv6: true
     cdn:
     cloud_provider:
     google_apps: false
@@ -93,16 +93,17 @@ checks:
     - Microsoft ASP.NET
     web_servers:
     - IIS
+    analytics:
+    - Moat
+    - Google Analytics
     font_scripts:
     - Google Font API
     - Font Awesome
-    analytics:
-    - Google Analytics
-    widgets:
-    - AddThis
     javascript_libraries:
     - jQuery
     - List.js
+    widgets:
+    - AddThis
     webmail:
     - Microsoft 365
     ssl/tls_certificate_authorities:
@@ -159,7 +160,7 @@ checks:
     webfinger:
   whois:
     domain:
-      ">>> Last update of whois database": 2020-12-21T22:09:51Z <<<
+      ">>> Last update of whois database": 2020-12-30T22:06:35Z <<<
     ip:
       "# available at": https://www.arin.net/resources/registry/whois/tou/
       "# https": "//www.arin.net/resources/registry/whois/inaccuracy_reporting/"
@@ -181,19 +182,19 @@ checks:
       PostalCode: 20170-4817
       Country: US
       Comment: http://www.mms.gov
-      OrgAbuseHandle: JLF9-ARIN
-      OrgAbuseName: Fischer, James Lee
-      OrgAbusePhone: "+1-303-886-8935 "
-      OrgAbuseEmail: James.Fischer@mms.gov
-      OrgAbuseRef: https://rdap.arin.net/registry/entity/JLF9-ARIN
       OrgTechHandle: JLF9-ARIN
       OrgTechName: Fischer, James Lee
-      OrgTechPhone: "+1-303-886-8935 "
+      OrgTechPhone: "+1-303-231-3998 "
       OrgTechEmail: James.Fischer@mms.gov
       OrgTechRef: https://rdap.arin.net/registry/entity/JLF9-ARIN
+      OrgAbuseHandle: JLF9-ARIN
+      OrgAbuseName: Fischer, James Lee
+      OrgAbusePhone: "+1-303-231-3998 "
+      OrgAbuseEmail: James.Fischer@mms.gov
+      OrgAbuseRef: https://rdap.arin.net/registry/entity/JLF9-ARIN
       RTechHandle: JLF9-ARIN
       RTechName: Fischer, James Lee
-      RTechPhone: "+1-303-886-8935 "
+      RTechPhone: "+1-303-231-3998 "
       RTechEmail: James.Fischer@mms.gov
       RTechRef: https://rdap.arin.net/registry/entity/JLF9-ARIN
 title: onrr.gov

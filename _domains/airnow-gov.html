@@ -44,29 +44,29 @@ checks:
     humans_txt: false
     vulnerability_disclosure_policy: false
     security_txt: false
-    developer_json: false
+    data_json: false
   cookies:
     cookie?: false
     secure?: false
   dns:
-    dnssec: false
-    ipv6: false
+    dnssec: true
+    ipv6: true
     cdn: :cloudfront
     cloud_provider:
     google_apps: false
-    hostname: server-13-32-204-5.iad66.r.cloudfront.net
-    ip: 13.32.204.5
+    hostname: server-99-86-230-11.iad79.r.cloudfront.net
+    ip: 99.86.230.11
   headers:
     strict-transport-security: max-age=31536000
     content-security-policy: false
     x-frame-options: DENY
     server: false
     x-xss-protection: 1; mode=block
-    x-vcap-request-id: 6e383d8a-001c-45e8-74e5-18cc2fde5cf9
+    x-vcap-request-id: eb406441-5a29-4365-59c8-39f138e37533
     x-content-type-options: nosniff
     x-cache: Hit from cloudfront
-    x-amz-cf-pop: IAD66-C1
-    x-amz-cf-id: yboCQBzUf_7HMyd9QszNOXQNe8GUzvcdoVKV8NBk_dtOc5Q0KnOcKg==
+    x-amz-cf-pop: IAD79-C3
+    x-amz-cf-id: YeJemqetdzIRzB0-YbmvldTRxr67vbCRnj4aRBkLuBmYsD75sw05wA==
   hsts:
     valid: true
     max_age: 31536000
@@ -98,8 +98,6 @@ checks:
     cdn:
     - jsDelivr
     - Amazon Cloudfront
-    tag_managers:
-    - Google Tag Manager
     font_scripts:
     - Font Awesome
     javascript_libraries:
@@ -109,6 +107,11 @@ checks:
     - Dojo
     comment_systems:
     - Livefyre
+    tag_managers:
+    - Google Tag Manager
+    analytics:
+    - Google Analytics
+    - Crazy Egg
   wellknown:
     acme_challenge: false
     amphtml: false
@@ -161,17 +164,18 @@ checks:
     webfinger: false
   whois:
     domain:
-      ">>> Last update of whois database": 2020-12-21T21:45:35Z <<<
+      ">>> Last update of whois database": 2020-12-31T18:11:10Z <<<
     ip:
       "# available at": https://www.arin.net/resources/registry/whois/tou/
       "# https": "//www.arin.net/resources/registry/whois/inaccuracy_reporting/"
-      NetRange: 13.32.0.0 - 13.33.255.255
-      CIDR: 13.32.0.0/15
+      NetRange: 99.86.0.0 - 99.86.255.255
+      CIDR: 99.86.0.0/16
       NetName: AMAZO-CF
-      NetHandle: NET-13-32-0-0-2
-      Parent: AT-88-Z (NET-13-32-0-0-1)
+      NetHandle: NET-99-86-0-0-1
+      Parent: AMAZO-4 (NET-99-85-128-0-1)
       NetType: Reallocated
-      OriginAS: AS16509
+      OriginAS: 'Organization:   Amazon.com, Inc. (AMAZON-4)'
+      Organization: Amazon.com, Inc. (AMAZO-4)
       RegDate: '1995-01-23'
       Updated: '2020-03-31'
       Ref: https://rdap.arin.net/registry/entity/AMAZON-4
@@ -182,28 +186,26 @@ checks:
       StateProv: WA
       PostalCode: 98101-1244
       Country: US
-      Comment: "* Your contact details (phone and email) Without these we will be
-        unable to identify the correct owner of the IP address at that point in time."
-      OrgRoutingHandle: IPROU3-ARIN
-      OrgRoutingName: IP Routing
-      OrgRoutingPhone: "+1-206-266-4064 "
-      OrgRoutingEmail: aws-routing-poc@amazon.com
-      OrgRoutingRef: https://rdap.arin.net/registry/entity/IPROU3-ARIN
-      OrgAbuseHandle: AEA8-ARIN
-      OrgAbuseName: Amazon EC2 Abuse
-      OrgAbusePhone: "+1-206-266-4064 "
-      OrgAbuseEmail: abuse@amazonaws.com
-      OrgAbuseRef: https://rdap.arin.net/registry/entity/AEA8-ARIN
+      Comment: http://ec2.amazonaws.com
       OrgNOCHandle: AANO1-ARIN
       OrgNOCName: Amazon AWS Network Operations
       OrgNOCPhone: "+1-206-266-4064 "
       OrgNOCEmail: amzn-noc-contact@amazon.com
       OrgNOCRef: https://rdap.arin.net/registry/entity/AANO1-ARIN
+      OrgRoutingHandle: IPROU3-ARIN
+      OrgRoutingName: IP Routing
+      OrgRoutingPhone: "+1-206-266-4064 "
+      OrgRoutingEmail: aws-routing-poc@amazon.com
+      OrgRoutingRef: https://rdap.arin.net/registry/entity/IPROU3-ARIN
       OrgTechHandle: ANO24-ARIN
       OrgTechName: Amazon EC2 Network Operations
       OrgTechPhone: "+1-206-266-4064 "
       OrgTechEmail: amzn-noc-contact@amazon.com
       OrgTechRef: https://rdap.arin.net/registry/entity/ANO24-ARIN
-      Organization: Amazon.com, Inc. (AMAZON-4)
+      OrgAbuseHandle: AEA8-ARIN
+      OrgAbuseName: Amazon EC2 Abuse
+      OrgAbusePhone: "+1-206-266-4064 "
+      OrgAbuseEmail: abuse@amazonaws.com
+      OrgAbuseRef: https://rdap.arin.net/registry/entity/AEA8-ARIN
 title: airnow.gov
 ---

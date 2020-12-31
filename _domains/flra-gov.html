@@ -44,13 +44,13 @@ checks:
     humans_txt: false
     vulnerability_disclosure_policy: false
     security_txt: false
-    developer_json: false
+    data_json: false
   cookies:
     cookie?: false
     secure?: false
   dns:
-    dnssec: false
-    ipv6: false
+    dnssec: true
+    ipv6: true
     cdn:
     cloud_provider:
     google_apps: false
@@ -62,8 +62,7 @@ checks:
     x-frame-options: SAMEORIGIN
     server: Apache/2.4.12 (Red Hat) OpenSSL/1.0.1e-fips
     x-xss-protection: false
-    x-drupal-cache: MISS
-    x-content-type-options: nosniff
+    x-drupal-cache: HIT
     x-generator: Drupal 7 (http://drupal.org)
     x-ua-compatible: IE=Edge,chrome=1
   hsts:
@@ -93,11 +92,13 @@ checks:
     - OpenSSL
     web_servers:
     - Apache
-    tag_managers:
-    - Google Tag Manager
     javascript_libraries:
     - jQuery UI
     - jQuery
+    tag_managers:
+    - Google Tag Manager
+    analytics:
+    - Google Analytics
     webmail:
     - Microsoft 365
     ssl/tls_certificate_authorities:
@@ -154,7 +155,7 @@ checks:
     webfinger: false
   whois:
     domain:
-      ">>> Last update of whois database": 2020-12-21T21:17:18Z <<<
+      ">>> Last update of whois database": 2020-12-30T22:33:22Z <<<
     ip:
       "# available at": https://www.arin.net/resources/registry/whois/tou/
       "# https": "//www.arin.net/resources/registry/whois/inaccuracy_reporting/"

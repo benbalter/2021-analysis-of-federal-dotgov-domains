@@ -44,13 +44,13 @@ checks:
     humans_txt: false
     vulnerability_disclosure_policy: false
     security_txt: false
-    developer_json: false
+    data_json: false
   cookies:
     cookie?: false
     secure?: false
   dns:
-    dnssec: false
-    ipv6: false
+    dnssec: true
+    ipv6: true
     cdn:
     cloud_provider:
     google_apps: false
@@ -65,10 +65,10 @@ checks:
     x-drupal-cache: MISS
     x-content-type-options: nosniff
     x-generator: Drupal 7 (http://drupal.org)
-    x-request-id: v-252e885c-43d3-11eb-81ba-a78fabccc153
+    x-request-id: v-64c33292-4aef-11eb-8ffa-33ffc543a8a4
     x-ah-environment: prod
     x-cache: HIT
-    x-cache-hits: '56'
+    x-cache-hits: '11'
   hsts:
     valid: true
     max_age: 31536000
@@ -100,12 +100,12 @@ checks:
     - Nginx
     paas:
     - Cloud Platform
-    tag_managers:
-    - Google Tag Manager
     font_scripts:
     - Google Font API
     javascript_libraries:
     - jQuery
+    tag_managers:
+    - Google Tag Manager
     analytics:
     - Google Analytics
   wellknown:
@@ -160,7 +160,7 @@ checks:
     webfinger: false
   whois:
     domain:
-      ">>> Last update of whois database": 2020-12-21T21:40:04Z <<<
+      ">>> Last update of whois database": 2020-12-30T22:51:23Z <<<
     ip:
       "# available at": https://www.arin.net/resources/registry/whois/tou/
       "# https": "//www.arin.net/resources/registry/whois/inaccuracy_reporting/"
@@ -182,16 +182,6 @@ checks:
       StateProv: WA
       PostalCode: 98108-1226
       Country: US
-      OrgNOCHandle: AANO1-ARIN
-      OrgNOCName: Amazon AWS Network Operations
-      OrgNOCPhone: "+1-206-266-4064 "
-      OrgNOCEmail: amzn-noc-contact@amazon.com
-      OrgNOCRef: https://rdap.arin.net/registry/entity/AANO1-ARIN
-      OrgAbuseHandle: AEA8-ARIN
-      OrgAbuseName: Amazon EC2 Abuse
-      OrgAbusePhone: "+1-206-266-4064 "
-      OrgAbuseEmail: abuse@amazonaws.com
-      OrgAbuseRef: https://rdap.arin.net/registry/entity/AEA8-ARIN
       OrgRoutingHandle: IPROU3-ARIN
       OrgRoutingName: IP Routing
       OrgRoutingPhone: "+1-206-266-4064 "
@@ -202,5 +192,15 @@ checks:
       OrgTechPhone: "+1-206-266-4064 "
       OrgTechEmail: amzn-noc-contact@amazon.com
       OrgTechRef: https://rdap.arin.net/registry/entity/ANO24-ARIN
+      OrgAbuseHandle: AEA8-ARIN
+      OrgAbuseName: Amazon EC2 Abuse
+      OrgAbusePhone: "+1-206-266-4064 "
+      OrgAbuseEmail: abuse@amazonaws.com
+      OrgAbuseRef: https://rdap.arin.net/registry/entity/AEA8-ARIN
+      OrgNOCHandle: AANO1-ARIN
+      OrgNOCName: Amazon AWS Network Operations
+      OrgNOCPhone: "+1-206-266-4064 "
+      OrgNOCEmail: amzn-noc-contact@amazon.com
+      OrgNOCRef: https://rdap.arin.net/registry/entity/AANO1-ARIN
 title: pppl.gov
 ---

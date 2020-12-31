@@ -44,10 +44,10 @@ checks:
     cloud_provider:
     google_apps: false
     hostname: ''
-    ip: 34.236.39.218
+    ip: 54.89.138.102
   headers: {}
   hsts:
-    valid: true
+    valid: false
     max_age: 0
     include_subdomains: false
     preload: false
@@ -64,17 +64,18 @@ checks:
     domain:
       Domain Name: OSDLS.GOV
       Status: ACTIVE
-      ">>> Last update of whois database": 2020-12-22T17:51:41Z <<<
+      ">>> Last update of whois database": 2020-12-30T23:08:54Z <<<
     ip:
       "# available at": https://www.arin.net/resources/registry/whois/tou/
       "# https": "//www.arin.net/resources/registry/whois/inaccuracy_reporting/"
-      NetRange: 52.32.0.0 - 52.63.255.255
-      CIDR: 52.32.0.0/11
-      NetName: AT-88-Z
-      NetHandle: NET-52-32-0-0-1
-      Parent: NET52 (NET-52-0-0-0-0)
+      NetRange: 54.72.0.0 - 54.95.255.255
+      CIDR: 54.80.0.0/12, 54.72.0.0/13
+      NetName: AMAZON-2011L
+      NetHandle: NET-54-72-0-0-1
+      Parent: NET54 (NET-54-0-0-0-0)
       NetType: Direct Allocation
-      OriginAS: 'Organization:   Amazon Technologies Inc. (AT-88-Z)'
+      OriginAS: AS16509
+      Organization: Amazon Technologies Inc. (AT-88-Z)
       RegDate: '2011-12-08'
       Updated: '2020-03-31'
       Ref: https://rdap.arin.net/registry/entity/AT-88-Z
@@ -92,6 +93,11 @@ checks:
       OrgRoutingPhone: "+1-206-266-4064 "
       OrgRoutingEmail: aws-routing-poc@amazon.com
       OrgRoutingRef: https://rdap.arin.net/registry/entity/IPROU3-ARIN
+      OrgAbuseHandle: AEA8-ARIN
+      OrgAbuseName: Amazon EC2 Abuse
+      OrgAbusePhone: "+1-206-266-4064 "
+      OrgAbuseEmail: abuse@amazonaws.com
+      OrgAbuseRef: https://rdap.arin.net/registry/entity/AEA8-ARIN
       OrgNOCHandle: AANO1-ARIN
       OrgNOCName: Amazon AWS Network Operations
       OrgNOCPhone: "+1-206-266-4064 "
@@ -102,10 +108,5 @@ checks:
       OrgTechPhone: "+1-206-266-4064 "
       OrgTechEmail: amzn-noc-contact@amazon.com
       OrgTechRef: https://rdap.arin.net/registry/entity/ANO24-ARIN
-      OrgAbuseHandle: AEA8-ARIN
-      OrgAbuseName: Amazon EC2 Abuse
-      OrgAbusePhone: "+1-206-266-4064 "
-      OrgAbuseEmail: abuse@amazonaws.com
-      OrgAbuseRef: https://rdap.arin.net/registry/entity/AEA8-ARIN
 title: osdls.gov
 ---

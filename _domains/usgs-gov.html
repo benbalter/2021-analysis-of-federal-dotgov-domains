@@ -44,31 +44,31 @@ checks:
     humans_txt: false
     vulnerability_disclosure_policy: false
     security_txt: false
-    developer_json: false
+    data_json: false
   cookies:
     cookie?: true
     secure?: false
   dns:
-    dnssec: false
-    ipv6: false
+    dnssec: true
+    ipv6: true
     cdn: :cloudfront
     cloud_provider:
     google_apps: false
-    hostname: server-99-84-222-61.iad79.r.cloudfront.net
-    ip: 99.84.222.61
+    hostname: server-13-249-44-80.iad89.r.cloudfront.net
+    ip: 13.249.44.80
   headers:
     strict-transport-security: max-age=31536000; includeSubDomains
     content-security-policy: false
     x-frame-options: SAMEORIGIN
     server: nginx
     x-xss-protection: 1; mode=block
-    x-drupal-cache: MISS
+    x-drupal-cache: HIT
     x-generator: Drupal 7 (http://drupal.org)
     x-proxy-cache: HIT
     x-content-type-options: nosniff
     x-cache: Hit from cloudfront
-    x-amz-cf-pop: IAD79-C1
-    x-amz-cf-id: InYiTULErUstQgUrp73wobp_CquvWsvR3vm7HlZ-_EA7gE0BLChYuw==
+    x-amz-cf-pop: IAD89-C1
+    x-amz-cf-id: k3VpRHvw_S7RH2lUIRvP-pFc1DRL27GYOEfcBCZt0MvPTyP2lUqf8Q==
   hsts:
     valid: true
     max_age: 31536000
@@ -100,10 +100,14 @@ checks:
     - Amazon Web Services
     web_servers:
     - Nginx
-    tag_managers:
-    - Google Tag Manager
     javascript_libraries:
     - jQuery
+    analytics:
+    - Hotjar
+    - Google Analytics
+    - Crazy Egg
+    tag_managers:
+    - Google Tag Manager
     webmail:
     - Microsoft 365
     email:
@@ -164,18 +168,17 @@ checks:
     webfinger: false
   whois:
     domain:
-      ">>> Last update of whois database": 2020-12-21T19:59:14Z <<<
+      ">>> Last update of whois database": 2020-12-30T23:14:39Z <<<
     ip:
       "# available at": https://www.arin.net/resources/registry/whois/tou/
       "# https": "//www.arin.net/resources/registry/whois/inaccuracy_reporting/"
-      NetRange: 99.84.0.0 - 99.84.255.255
-      CIDR: 99.84.0.0/16
+      NetRange: 13.249.0.0 - 13.249.255.255
+      CIDR: 13.249.0.0/16
       NetName: AMAZO-CF
-      NetHandle: NET-99-84-0-0-1
-      Parent: AMAZO-4 (NET-99-83-64-0-1)
+      NetHandle: NET-13-249-0-0-1
+      Parent: AT-88-Z (NET-13-248-0-0-1)
       NetType: Reallocated
       OriginAS: 'Organization:   Amazon.com, Inc. (AMAZON-4)'
-      Organization: Amazon.com, Inc. (AMAZO-4)
       RegDate: '1995-01-23'
       Updated: '2020-03-31'
       Ref: https://rdap.arin.net/registry/entity/AMAZON-4
@@ -186,17 +189,8 @@ checks:
       StateProv: WA
       PostalCode: 98101-1244
       Country: US
-      Comment: http://ec2.amazonaws.com
-      OrgRoutingHandle: IPROU3-ARIN
-      OrgRoutingName: IP Routing
-      OrgRoutingPhone: "+1-206-266-4064 "
-      OrgRoutingEmail: aws-routing-poc@amazon.com
-      OrgRoutingRef: https://rdap.arin.net/registry/entity/IPROU3-ARIN
-      OrgAbuseHandle: AEA8-ARIN
-      OrgAbuseName: Amazon EC2 Abuse
-      OrgAbusePhone: "+1-206-266-4064 "
-      OrgAbuseEmail: abuse@amazonaws.com
-      OrgAbuseRef: https://rdap.arin.net/registry/entity/AEA8-ARIN
+      Comment: "* Your contact details (phone and email) Without these we will be
+        unable to identify the correct owner of the IP address at that point in time."
       OrgNOCHandle: AANO1-ARIN
       OrgNOCName: Amazon AWS Network Operations
       OrgNOCPhone: "+1-206-266-4064 "
@@ -207,5 +201,15 @@ checks:
       OrgTechPhone: "+1-206-266-4064 "
       OrgTechEmail: amzn-noc-contact@amazon.com
       OrgTechRef: https://rdap.arin.net/registry/entity/ANO24-ARIN
+      OrgRoutingHandle: ADR29-ARIN
+      OrgRoutingName: AWS Dogfish Routing
+      OrgRoutingPhone: "+1-206-266-4064 "
+      OrgRoutingEmail: aws-dogfish-routing-poc@amazon.com
+      OrgRoutingRef: https://rdap.arin.net/registry/entity/ADR29-ARIN
+      OrgAbuseHandle: AEA8-ARIN
+      OrgAbuseName: Amazon EC2 Abuse
+      OrgAbusePhone: "+1-206-266-4064 "
+      OrgAbuseEmail: abuse@amazonaws.com
+      OrgAbuseRef: https://rdap.arin.net/registry/entity/AEA8-ARIN
 title: usgs.gov
 ---

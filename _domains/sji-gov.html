@@ -44,13 +44,13 @@ checks:
     humans_txt: false
     vulnerability_disclosure_policy: false
     security_txt: false
-    developer_json: false
+    data_json: false
   cookies:
     cookie?: false
     secure?: false
   dns:
     dnssec: false
-    ipv6: false
+    ipv6: true
     cdn:
     cloud_provider:
     google_apps: false
@@ -62,9 +62,8 @@ checks:
     x-frame-options: false
     server: Apache/2.4.25 (Debian)
     x-xss-protection: false
-    x-powered-by: PHP/5.6.40-0+deb8u12
   hsts:
-    valid: true
+    valid: false
     max_age: 0
     include_subdomains: false
     preload: false
@@ -156,7 +155,7 @@ checks:
     webfinger: false
   whois:
     domain:
-      ">>> Last update of whois database": 2020-12-21T21:20:18Z <<<
+      ">>> Last update of whois database": 2020-12-31T18:53:57Z <<<
     ip:
       "# available at": https://www.arin.net/resources/registry/whois/tou/
       "# https": "//www.arin.net/resources/registry/whois/inaccuracy_reporting/"
@@ -179,26 +178,26 @@ checks:
       PostalCode: '21012'
       Country: US
       ReferralServer: rwhois://rwhois.he.net:4321
-      OrgAbuseHandle: ABUSE1036-ARIN
-      OrgAbuseName: Abuse Department
-      OrgAbusePhone: "+1-510-580-4100 "
-      OrgAbuseEmail: abuse@he.net
-      OrgAbuseRef: https://rdap.arin.net/registry/entity/ABUSE1036-ARIN
       OrgTechHandle: ZH17-ARIN
       OrgTechName: Hurricane Electric
       OrgTechPhone: "+1-510-580-4100 "
       OrgTechEmail: hostmaster@he.net
       OrgTechRef: https://rdap.arin.net/registry/entity/ZH17-ARIN
-      RAbuseHandle: ABUSE1036-ARIN
-      RAbuseName: Abuse Department
-      RAbusePhone: "+1-510-580-4100 "
-      RAbuseEmail: abuse@he.net
-      RAbuseRef: https://rdap.arin.net/registry/entity/ABUSE1036-ARIN
+      OrgAbuseHandle: ABUSE1036-ARIN
+      OrgAbuseName: Abuse Department
+      OrgAbusePhone: "+1-510-580-4100 "
+      OrgAbuseEmail: abuse@he.net
+      OrgAbuseRef: https://rdap.arin.net/registry/entity/ABUSE1036-ARIN
       RTechHandle: ZH17-ARIN
       RTechName: Hurricane Electric
       RTechPhone: "+1-510-580-4100 "
       RTechEmail: hostmaster@he.net
       RTechRef: https://rdap.arin.net/registry/entity/ZH17-ARIN
+      RAbuseHandle: ABUSE1036-ARIN
+      RAbuseName: Abuse Department
+      RAbusePhone: "+1-510-580-4100 "
+      RAbuseEmail: abuse@he.net
+      RAbuseRef: https://rdap.arin.net/registry/entity/ABUSE1036-ARIN
       RNOCHandle: ZH17-ARIN
       RNOCName: Hurricane Electric
       RNOCPhone: "+1-510-580-4100 "
@@ -206,5 +205,7 @@ checks:
       RNOCRef: https://rdap.arin.net/registry/entity/ZH17-ARIN
       CustName: Data Mountain Solutions
       "%rwhois V-1.5": 0012b7:01 ops.he.net (HE-RWHOISd v:ec6e,m1:6333)
+      network: Updated:20180817203004000
+      contact: Comment:For email abuse (spam) only
 title: sji.gov
 ---

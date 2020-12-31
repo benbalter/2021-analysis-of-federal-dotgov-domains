@@ -44,36 +44,36 @@ checks:
     humans_txt: false
     vulnerability_disclosure_policy: false
     security_txt: false
-    developer_json: false
+    data_json: true
   cookies:
     cookie?: false
     secure?: false
   dns:
     dnssec: false
-    ipv6: false
+    ipv6: true
     cdn: :cloudfront
     cloud_provider:
     google_apps: false
-    hostname: server-99-84-222-120.iad79.r.cloudfront.net
-    ip: 99.84.222.120
+    hostname: server-52-85-144-89.iad89.r.cloudfront.net
+    ip: 52.85.144.89
   headers:
     strict-transport-security: max-age=31536000
     content-security-policy: false
     x-frame-options: SAMEORIGIN
     server: nginx
     x-xss-protection: false
-    x-amzn-requestid: 9a594412-02e1-4a17-8be1-2b51f211bd29
+    x-amzn-requestid: e09c2991-f801-4641-a09a-36762fc22cf9
     x-amzn-remapped-content-length: '3133'
     x-amzn-remapped-connection: close
-    x-amz-apigw-id: X5L2xG5pIAMFrVQ=
+    x-amz-apigw-id: YT0MRGrJoAMFjtA=
     x-powered-by: Express
-    x-amzn-trace-id: Root=1-5fe059c4-1b6bab1e7ab3ae27696e1596;Sampled=0
-    x-amzn-remapped-date: Mon, 21 Dec 2020 08:16:04 GMT
+    x-amzn-trace-id: Root=1-5feb00b4-41b6c1907976c7110468c47d;Sampled=0
+    x-amzn-remapped-date: Tue, 29 Dec 2020 10:11:00 GMT
     x-amz-cf-pop:
     - IAD89-C2
-    - EWR52-C4
+    - IAD89-C3
     x-cache: Hit from cloudfront
-    x-amz-cf-id: E5kfGejn96Sjg0Ax8_c7Eh_87bgwWeGNv4Yq24Dj8tuQtJ_A_HNaIQ==
+    x-amz-cf-id: lBKK1ZaePFSWTdHOwcAKKIOILA9pTVDc1fUF-nsmD4Wi3hfFgJCowA==
   hsts:
     valid: true
     max_age: 31536000
@@ -112,8 +112,6 @@ checks:
     - Lodash
     tag_managers:
     - Google Tag Manager
-    a/b_testing:
-    - Google Optimize
     analytics:
     - Google Analytics
     - Crazy Egg
@@ -175,18 +173,18 @@ checks:
     webfinger: false
   whois:
     domain:
-      ">>> Last update of whois database": 2020-12-21T23:28:10Z <<<
+      ">>> Last update of whois database": 2020-12-30T22:04:35Z <<<
     ip:
       "# available at": https://www.arin.net/resources/registry/whois/tou/
       "# https": "//www.arin.net/resources/registry/whois/inaccuracy_reporting/"
-      NetRange: 99.84.0.0 - 99.84.255.255
-      CIDR: 99.84.0.0/16
+      NetRange: 52.84.0.0 - 52.85.255.255
+      CIDR: 52.84.0.0/15
       NetName: AMAZO-CF
-      NetHandle: NET-99-84-0-0-1
-      Parent: AMAZO-4 (NET-99-83-64-0-1)
+      NetHandle: NET-52-84-0-0-2
+      Parent: AT-88-Z (NET-52-84-0-0-1)
       NetType: Reallocated
       OriginAS: 'Organization:   Amazon.com, Inc. (AMAZON-4)'
-      Organization: Amazon.com, Inc. (AMAZO-4)
+      Organization: Amazon Technologies Inc. (AT-88-Z)
       RegDate: '1995-01-23'
       Updated: '2020-03-31'
       Ref: https://rdap.arin.net/registry/entity/AMAZON-4
@@ -197,12 +195,8 @@ checks:
       StateProv: WA
       PostalCode: 98101-1244
       Country: US
-      Comment: http://ec2.amazonaws.com
-      OrgNOCHandle: AANO1-ARIN
-      OrgNOCName: Amazon AWS Network Operations
-      OrgNOCPhone: "+1-206-266-4064 "
-      OrgNOCEmail: amzn-noc-contact@amazon.com
-      OrgNOCRef: https://rdap.arin.net/registry/entity/AANO1-ARIN
+      Comment: "-----BEGIN CERTIFICATE-----MIICljCCAX4CCQDvS1je1Bd4uzANBgkqhkiG9w0BAQsFADANMQswCQYDVQQGEwJVUzAeFw0yMDA4MjYxODQ1NThaFw0yMTA4MjYxODQ1NThaMA0xCzAJBgNVBAYTAlVTMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA5geQJL7KoQhQLaTteXnFj0xsze15HgB9cpHPoL6khWVUthOg6AYCBHCcVJWeuEHuYGJcnrtW1tyLWpgfrxaw5E4ZtunSHElzO6BIp2u0215mbSGPQUt3TMR64nvXvEAY4qBP/p2+j0ud2eI47eA3s2ykFztEJPb7eZh8lVCGj5n2msRxeFiYwoB7/u3TDnW0/BwNLnJgyGkAWYUlk68hR10LHoBqGPezn7mPuiLHNa6JQP0WTYBz/80kS3m/4oZ7NS20PMieXqFjfYEgW6fPg7uJKhH3aYVVveZpBS5cRzm360HyT5hj1rUJh34nVCLMlvP+400w1wxr9buLnQzVlwIDAQABMA0GCSqGSIb3DQEBCwUAA4IBAQCZD7ERFb2LpeLdQgyji/ZqZ7lDXR8wq4m+ihMiqpPcwTVs1dfBfKDvZ4K6Ddyzkfd1NQYPWiV47nvqgJxwdISa7vN011RxBEGkYdJ8cNaRXW7aCGfQ8ZSQL6mbXsm4sbvDQNHiWJcdUB0KTzR/wpbXf9+24TbPGaOsZvfnKtd1lZhY5xFiOVCOdI59c/XyDH9aqOKNE0pOeATX55I3bU5PKeK5CM8oAtD2sFAQ956Uvj7/vFDs8QP3upzf53R+erSU10L1fTQBWHjNUCcf9wviS+U4hsaCcBZMlw6d5Q84GYX1tS+YwtA0Fv/NQcOWr9RJT+JVnpbyAxEyjI37XOqH-----END
+        CERTIFICATE-----"
       OrgAbuseHandle: AEA8-ARIN
       OrgAbuseName: Amazon EC2 Abuse
       OrgAbusePhone: "+1-206-266-4064 "
@@ -218,5 +212,10 @@ checks:
       OrgTechPhone: "+1-206-266-4064 "
       OrgTechEmail: amzn-noc-contact@amazon.com
       OrgTechRef: https://rdap.arin.net/registry/entity/ANO24-ARIN
+      OrgNOCHandle: AANO1-ARIN
+      OrgNOCName: Amazon AWS Network Operations
+      OrgNOCPhone: "+1-206-266-4064 "
+      OrgNOCEmail: amzn-noc-contact@amazon.com
+      OrgNOCRef: https://rdap.arin.net/registry/entity/AANO1-ARIN
 title: sba.gov
 ---

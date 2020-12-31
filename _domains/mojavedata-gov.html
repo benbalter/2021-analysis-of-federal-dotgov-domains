@@ -10,49 +10,60 @@ domain:
   tld: gov
   sld: mojavedata
   trd:
-  up: false
-  responds: false
-  www: false
-  root: false
-  https: false
+  up: true
+  responds: true
+  www: true
+  root: true
+  https: true
   enforces_https: false
   downgrades_https: false
   canonically_www: false
   canonically_https: false
   redirect: false
   hsts: false
-  hsts_subdomains: false
+  hsts_subdomains: true
   hsts_preload_ready: false
 canonical_endpoint:
   uri: http://mojavedata.gov/
   host: mojavedata.gov
   www: false
   scheme: http
-  up: false
-  responds: false
+  up: true
+  responds: true
   timed_out: false
   redirect: false
   resolves_to: http://mojavedata.gov/
   external_redirect: false
 checks:
-  content: {}
-  cookies: {}
+  content:
+    doctype:
+    generator:
+    proper_404s: true
+    robots_txt: false
+    sitemap_xml: false
+    humans_txt: false
+    vulnerability_disclosure_policy: false
+    security_txt: false
+    data_json: false
+  cookies:
+    cookie?: false
+    secure?: false
   dns:
-    dnssec: false
-    ipv6: false
+    dnssec: true
+    ipv6: true
     cdn:
     cloud_provider:
-    google_apps: false
+    google_apps: true
     hostname: ''
-    ip:
+    ip: 172.99.69.49
   headers:
     strict-transport-security: false
     content-security-policy: false
     x-frame-options: false
-    server: false
+    server: Apache/2.4.6 (CentOS) OpenSSL/1.0.2k-fips
     x-xss-protection: false
   hsts:
-    valid: true
+    valid: false
     max_age: 0
     include_subdomains: false
     preload: false
@@ -61,15 +72,125 @@ checks:
     preload_list_status: unknown
   https:
     valid: false
-    return_code: :couldnt_resolve_host
-  sniffer: {}
-  wappalyzer: {}
-  wellknown: {}
+    return_code: :ok
+  sniffer:
+    framework:
+    analytics:
+    javascript:
+    advertising:
+  wappalyzer:
+    maps:
+    - Google Maps
+    operating_systems:
+    - CentOS
+    ui_frameworks:
+    - Bootstrap
+    web_server_extensions:
+    - OpenSSL
+    web_servers:
+    - Apache
+    javascript_libraries:
+    - Lightbox
+    - jQuery
+    font_scripts:
+    - Font Awesome
+    tag_managers:
+    - Google Tag Manager
+    analytics:
+    - Google Analytics
+    webmail:
+    - Google Workspace
+  wellknown:
+    acme_challenge: false
+    amphtml: false
+    ashrae: false
+    assetlinks_json: false
+    brski: false
+    caldav: false
+    carddav: false
+    coap: false
+    core: false
+    csvm: false
+    dnt: false
+    dnt_policy_txt: false
+    dots: false
+    ecips: false
+    enterprise_transport_security: false
+    est: false
+    genid: false
+    gs1resolver: false
+    hoba: false
+    host_meta: false
+    host_meta_json: false
+    hosting_provider: false
+    http_opportunistic: false
+    idp_proxy: false
+    jmap: false
+    keybase_txt: false
+    looking_glass: false
+    matrix: false
+    mta_sts_txt: false
+    nfv_oauth_server_configuration: false
+    ni: false
+    oauth_authorization_server: false
+    openid_configuration: false
+    openorg: false
+    pki_validation: false
+    posh: false
+    pvd: false
+    reload_config: false
+    repute_template: false
+    resourcesync: false
+    sshfp: false
+    stun_key: false
+    thread: false
+    time: false
+    timezone: false
+    tor_relay: false
+    uma2_configuration: false
+    void: false
+    webfinger: false
   whois:
     domain:
       Domain Name: MOJAVEDATA.GOV
       Status: ACTIVE
-      ">>> Last update of whois database": 2020-12-21T21:00:47Z <<<
+      ">>> Last update of whois database": 2020-12-30T22:34:22Z <<<
     ip:
+      "# available at": https://www.arin.net/resources/registry/whois/tou/
+      "# https": "//www.arin.net/resources/registry/whois/inaccuracy_reporting/"
+      NetRange: 172.99.69.0 - 172.99.69.255
+      CIDR: 172.99.69.0/24
+      NetName: RACKS-8-1437762270873394
+      NetHandle: NET-172-99-69-0-1
+      Parent: RACKS-8-NET-18 (NET-172-99-64-0-1)
+      NetType: Reassigned
+      OriginAS: 'Customer:       Cloud Servers Cell 0001-0003 IAD3 (C05847549)'
+      Organization: Rackspace Hosting (RACKS-8)
+      RegDate: '2015-07-24'
+      Updated: '2015-07-24'
+      Ref: https://rdap.arin.net/registry/entity/C05847549
+      OrgName: Rackspace Hosting
+      OrgId: RACKS-8
+      Address: 5000 Walzem Rd.
+      City: San Antonio
+      StateProv: TX
+      PostalCode: '78218'
+      Country: US
+      OrgAbuseHandle: ABUSE45-ARIN
+      OrgAbuseName: Abuse Desk
+      OrgAbusePhone: "+1-210-312-4000 "
+      OrgAbuseEmail: abuse@rackspace.com
+      OrgAbuseRef: https://rdap.arin.net/registry/entity/ABUSE45-ARIN
+      OrgTechHandle: HANSE157-ARIN
+      OrgTechName: 'Hansell, Chris '
+      OrgTechPhone: "+1-210-312-4000 "
+      OrgTechEmail: hostmaster@rackspace.com
+      OrgTechRef: https://rdap.arin.net/registry/entity/HANSE157-ARIN
+      OrgNOCHandle: HANSE157-ARIN
+      OrgNOCName: 'Hansell, Chris '
+      OrgNOCPhone: "+1-210-312-4000 "
+      OrgNOCEmail: hostmaster@rackspace.com
+      OrgNOCRef: https://rdap.arin.net/registry/entity/HANSE157-ARIN
+      CustName: Cloud Servers Cell 0001-0003 IAD3
 title: mojavedata.gov
 ---

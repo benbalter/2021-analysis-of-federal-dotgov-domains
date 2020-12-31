@@ -40,45 +40,45 @@ checks:
     generator:
     proper_404s: true
     robots_txt: true
-    sitemap_xml: false
+    sitemap_xml: true
     humans_txt: false
     vulnerability_disclosure_policy: false
     security_txt: false
-    developer_json: false
+    data_json: true
   cookies:
     cookie?: false
     secure?: false
   dns:
-    dnssec: false
-    ipv6: false
+    dnssec: true
+    ipv6: true
     cdn: :akamai
     cloud_provider:
     google_apps: false
-    hostname: a23-39-181-56.deploy.static.akamaitechnologies.com
-    ip: 23.39.181.56
+    hostname: a23-41-10-218.deploy.static.akamaitechnologies.com
+    ip: 23.41.10.218
   headers:
     strict-transport-security: max-age=31536000
-    content-security-policy: 'connect-src ''self'' *.consumerfinance.gov *.google-analytics.com
-      *.tiles.mapbox.com api.mapbox.com bam.nr-data.net s3.amazonaws.com public.govdelivery.com
-      n2.mouseflow.com api.iperceptions.com *.qualtrics.com; frame-src ''self'' *.consumerfinance.gov
-      *.googletagmanager.com *.google-analytics.com optimize.google.com www.youtube.com
-      *.doubleclick.net universal.iperceptions.com www.facebook.com staticxx.facebook.com
-      mediasite.yorkcast.com *.qualtrics.com; font-src ''self'' data: *.consumerfinance.gov
-      fast.fonts.net fonts.google.com fonts.gstatic.com; media-src ''self'' *.consumerfinance.gov;
-      style-src ''self'' ''unsafe-inline'' *.consumerfinance.gov fast.fonts.net tagmanager.google.com
-      optimize.google.com api.mapbox.com fonts.googleapis.com; script-src ''self''
-      ''unsafe-inline'' ''unsafe-eval'' *.consumerfinance.gov *.google-analytics.com
-      *.googletagmanager.com tagmanager.google.com optimize.google.com ajax.googleapis.com
-      search.usa.gov api.mapbox.com js-agent.newrelic.com dnn506yrbagrg.cloudfront.net
+    content-security-policy: 'img-src ''self'' *.consumerfinance.gov www.ecfr.gov
+      s3.amazonaws.com www.gstatic.com ssl.gstatic.com stats.g.doubleclick.net img.youtube.com
+      *.google-analytics.com trk.cetrk.com searchstats.usa.gov gtrk.s3.amazonaws.com
+      *.googletagmanager.com tagmanager.google.com maps.googleapis.com optimize.google.com
+      api.mapbox.com *.tiles.mapbox.com stats.search.usa.gov blob: data: www.facebook.com
+      www.gravatar.com *.qualtrics.com; style-src ''self'' ''unsafe-inline'' *.consumerfinance.gov
+      fast.fonts.net tagmanager.google.com optimize.google.com api.mapbox.com fonts.googleapis.com;
+      font-src ''self'' data: *.consumerfinance.gov fast.fonts.net fonts.google.com
+      fonts.gstatic.com; script-src ''self'' ''unsafe-inline'' ''unsafe-eval'' *.consumerfinance.gov
+      *.google-analytics.com *.googletagmanager.com tagmanager.google.com optimize.google.com
+      ajax.googleapis.com search.usa.gov api.mapbox.com js-agent.newrelic.com dnn506yrbagrg.cloudfront.net
       bam.nr-data.net *.youtube.com *.ytimg.com trk.cetrk.com universal.iperceptions.com
       cdn.mouseflow.com n2.mouseflow.com us.mouseflow.com geocoding.geo.census.gov
       tigerweb.geo.census.gov about: connect.facebook.net www.federalregister.gov
-      storage.googleapis.com *.qualtrics.com; img-src ''self'' *.consumerfinance.gov
-      www.ecfr.gov s3.amazonaws.com www.gstatic.com ssl.gstatic.com stats.g.doubleclick.net
-      img.youtube.com *.google-analytics.com trk.cetrk.com searchstats.usa.gov gtrk.s3.amazonaws.com
-      *.googletagmanager.com tagmanager.google.com maps.googleapis.com optimize.google.com
-      api.mapbox.com *.tiles.mapbox.com stats.search.usa.gov blob: data: www.facebook.com
-      www.gravatar.com *.qualtrics.com; default-src ''self'''
+      storage.googleapis.com *.qualtrics.com; connect-src ''self'' *.consumerfinance.gov
+      *.google-analytics.com *.tiles.mapbox.com api.mapbox.com bam.nr-data.net s3.amazonaws.com
+      public.govdelivery.com n2.mouseflow.com api.iperceptions.com *.qualtrics.com;
+      default-src ''self''; frame-src ''self'' *.consumerfinance.gov *.googletagmanager.com
+      *.google-analytics.com optimize.google.com www.youtube.com *.doubleclick.net
+      universal.iperceptions.com www.facebook.com staticxx.facebook.com mediasite.yorkcast.com
+      *.qualtrics.com; media-src ''self'' *.consumerfinance.gov'
     x-frame-options: SAMEORIGIN
     server: Apache
     x-xss-protection: 1; mode=block
@@ -165,7 +165,7 @@ checks:
     webfinger: false
   whois:
     domain:
-      ">>> Last update of whois database": 2020-12-21T23:13:24Z <<<
+      ">>> Last update of whois database": 2020-12-30T23:01:53Z <<<
     ip:
       "# available at": https://www.arin.net/resources/registry/whois/tou/
       "# https": "//www.arin.net/resources/registry/whois/inaccuracy_reporting/"

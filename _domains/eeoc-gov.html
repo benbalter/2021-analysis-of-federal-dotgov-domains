@@ -44,7 +44,7 @@ checks:
     humans_txt: false
     vulnerability_disclosure_policy: false
     security_txt: false
-    developer_json: false
+    data_json: true
   cookies:
     cookie?: false
     secure?: false
@@ -66,10 +66,10 @@ checks:
     x-ua-compatible: IE=edge
     x-content-type-options: nosniff
     x-generator: Drupal 9 (https://www.drupal.org)
-    x-drupal-cache: HIT
+    x-drupal-cache: MISS
     x-hostid: eeoc-web-prod
-    x-varnish: 30638722 18580782
-    x-request-id: 285045b81ac020016a2618071ba303ac
+    x-varnish: 6690803 31719924
+    x-request-id: eeb5b912c49f5082ae5d35e9bebf3aca
   hsts:
     valid: true
     max_age: 63072000
@@ -100,6 +100,8 @@ checks:
     javascript_libraries:
     - jQuery
     - Lodash
+    analytics:
+    - Google Analytics
     email:
     - Sendgrid
     webmail:
@@ -156,12 +158,12 @@ checks:
     webfinger: false
   whois:
     domain:
-      ">>> Last update of whois database": 2020-12-21T20:59:02Z <<<
+      ">>> Last update of whois database": 2020-12-30T22:57:23Z <<<
     ip:
       "# available at": https://www.arin.net/resources/registry/whois/tou/
       "# https": "//www.arin.net/resources/registry/whois/inaccuracy_reporting/"
       NetRange: 52.132.0.0 - 52.143.255.255
-      CIDR: 52.136.0.0/13, 52.132.0.0/14
+      CIDR: 52.132.0.0/14, 52.136.0.0/13
       NetName: MSFT
       NetHandle: NET-52-132-0-0-1
       Parent: NET52 (NET-52-0-0-0-0)
@@ -178,15 +180,15 @@ checks:
       PostalCode: '98052'
       Country: US
       Comment: "* IOC@microsoft.com"
-      OrgTechHandle: MRPD-ARIN
-      OrgTechName: Microsoft Routing, Peering, and DNS
-      OrgTechPhone: "+1-425-882-8080 "
-      OrgTechEmail: IOC@microsoft.com
-      OrgTechRef: https://rdap.arin.net/registry/entity/MRPD-ARIN
       OrgAbuseHandle: MAC74-ARIN
       OrgAbuseName: Microsoft Abuse Contact
       OrgAbusePhone: "+1-425-882-8080 "
       OrgAbuseEmail: abuse@microsoft.com
       OrgAbuseRef: https://rdap.arin.net/registry/entity/MAC74-ARIN
+      OrgTechHandle: MRPD-ARIN
+      OrgTechName: Microsoft Routing, Peering, and DNS
+      OrgTechPhone: "+1-425-882-8080 "
+      OrgTechEmail: IOC@microsoft.com
+      OrgTechRef: https://rdap.arin.net/registry/entity/MRPD-ARIN
 title: eeoc.gov
 ---

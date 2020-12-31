@@ -44,12 +44,12 @@ checks:
     humans_txt: false
     vulnerability_disclosure_policy: false
     security_txt: false
-    developer_json: false
+    data_json: false
   cookies:
     cookie?: true
     secure?: false
   dns:
-    dnssec: false
+    dnssec: true
     ipv6: false
     cdn:
     cloud_provider:
@@ -63,7 +63,7 @@ checks:
     server: Microsoft-IIS/10.0
     x-xss-protection: false
     x-powered-by:
-    - PHP/7.3.22
+    - PHP/7.3.23
     - ASP.NET
     x-drupal-cache: HIT
     x-ua-compatible: IE=edge
@@ -171,13 +171,13 @@ checks:
       Domain Name: FIRSTNET.GOV
       Status: ACTIVE
       Security Contact Email: FirstnetEmailSec@firstnet.gov
-      ">>> Last update of whois database": 2020-12-21T22:29:22Z <<<
+      ">>> Last update of whois database": 2020-12-31T18:02:55Z <<<
     ip:
       "# available at": https://www.arin.net/resources/registry/whois/tou/
       "# https": "//www.arin.net/resources/registry/whois/inaccuracy_reporting/"
       NetRange: 20.33.0.0 - 20.128.255.255
-      CIDR: 20.33.0.0/16, 20.34.0.0/15, 20.48.0.0/12, 20.64.0.0/10, 20.40.0.0/13,
-        20.128.0.0/16, 20.36.0.0/14
+      CIDR: 20.36.0.0/14, 20.48.0.0/12, 20.33.0.0/16, 20.34.0.0/15, 20.40.0.0/13,
+        20.64.0.0/10, 20.128.0.0/16
       NetName: MSFT
       NetHandle: NET-20-33-0-0-1
       Parent: NET20 (NET-20-0-0-0-0)
@@ -194,15 +194,15 @@ checks:
       PostalCode: '98052'
       Country: US
       Comment: "* IOC@microsoft.com"
-      OrgTechHandle: MRPD-ARIN
-      OrgTechName: Microsoft Routing, Peering, and DNS
-      OrgTechPhone: "+1-425-882-8080 "
-      OrgTechEmail: IOC@microsoft.com
-      OrgTechRef: https://rdap.arin.net/registry/entity/MRPD-ARIN
       OrgAbuseHandle: MAC74-ARIN
       OrgAbuseName: Microsoft Abuse Contact
       OrgAbusePhone: "+1-425-882-8080 "
       OrgAbuseEmail: abuse@microsoft.com
       OrgAbuseRef: https://rdap.arin.net/registry/entity/MAC74-ARIN
+      OrgTechHandle: MRPD-ARIN
+      OrgTechName: Microsoft Routing, Peering, and DNS
+      OrgTechPhone: "+1-425-882-8080 "
+      OrgTechEmail: IOC@microsoft.com
+      OrgTechRef: https://rdap.arin.net/registry/entity/MRPD-ARIN
 title: firstnet.gov
 ---

@@ -44,18 +44,18 @@ checks:
     humans_txt: false
     vulnerability_disclosure_policy: false
     security_txt: false
-    developer_json: false
+    data_json: true
   cookies:
     cookie?: false
     secure?: false
   dns:
-    dnssec: false
-    ipv6: false
+    dnssec: true
+    ipv6: true
     cdn: :akamai
     cloud_provider:
     google_apps: false
-    hostname: a104-103-48-47.deploy.static.akamaitechnologies.com
-    ip: 104.103.48.47
+    hostname: a104-90-77-8.deploy.static.akamaitechnologies.com
+    ip: 104.90.77.8
   headers:
     strict-transport-security: max-age=31536000
     content-security-policy: false
@@ -103,16 +103,17 @@ checks:
     - jQuery Migrate
     - jQuery
     - Moment.js
+    analytics:
+    - Moat
+    - Matomo Analytics
+    - Google Analytics
     font_scripts:
     - Font Awesome
-    widgets:
-    - AddThis
     miscellaneous:
     - webpack
     - Babel
-    analytics:
-    - Matomo Analytics
-    - Google Analytics
+    widgets:
+    - AddThis
     webmail:
     - Google Workspace
     ssl/tls_certificate_authorities:
@@ -169,7 +170,7 @@ checks:
     webfinger: false
   whois:
     domain:
-      ">>> Last update of whois database": 2020-12-21T20:34:31Z <<<
+      ">>> Last update of whois database": 2020-12-30T22:08:05Z <<<
     ip:
       "# available at": https://www.arin.net/resources/registry/whois/tou/
       "# https": "//www.arin.net/resources/registry/whois/inaccuracy_reporting/"
@@ -190,15 +191,15 @@ checks:
       StateProv: MA
       PostalCode: '02142'
       Country: US
-      OrgAbuseHandle: NUS-ARIN
-      OrgAbuseName: NOC United States
-      OrgAbusePhone: "+1-617-444-2535 "
-      OrgAbuseEmail: abuse@akamai.com
-      OrgAbuseRef: https://rdap.arin.net/registry/entity/NUS-ARIN
       OrgTechHandle: IPADM11-ARIN
       OrgTechName: ipadmin
       OrgTechPhone: "+1-617-444-0017 "
       OrgTechEmail: ip-admin@akamai.com
       OrgTechRef: https://rdap.arin.net/registry/entity/IPADM11-ARIN
+      OrgAbuseHandle: NUS-ARIN
+      OrgAbuseName: NOC United States
+      OrgAbusePhone: "+1-617-444-2535 "
+      OrgAbuseEmail: abuse@akamai.com
+      OrgAbuseRef: https://rdap.arin.net/registry/entity/NUS-ARIN
 title: defense.gov
 ---

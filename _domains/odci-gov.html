@@ -38,7 +38,7 @@ checks:
   content: {}
   cookies: {}
   dns:
-    dnssec: false
+    dnssec: true
     ipv6: false
     cdn:
     cloud_provider:
@@ -52,7 +52,7 @@ checks:
     server: false
     x-xss-protection: false
   hsts:
-    valid: true
+    valid: false
     max_age: 0
     include_subdomains: false
     preload: false
@@ -69,7 +69,7 @@ checks:
     domain:
       Domain Name: ODCI.GOV
       Status: ACTIVE
-      ">>> Last update of whois database": 2020-12-21T20:29:46Z <<<
+      ">>> Last update of whois database": 2020-12-30T21:11:33Z <<<
     ip:
       "# available at": https://www.arin.net/resources/registry/whois/tou/
       "# https": "//www.arin.net/resources/registry/whois/inaccuracy_reporting/"
@@ -90,6 +90,11 @@ checks:
       StateProv: DC
       PostalCode: '20505'
       Country: US
+      OrgNOCHandle: OA12-ARIN
+      OrgNOCName: 'UUnet Technologies, Inc., Technologies '
+      OrgNOCPhone: "+1-800-900-0241 "
+      OrgNOCEmail: help4u@verizonbusiness.com
+      OrgNOCRef: https://rdap.arin.net/registry/entity/OA12-ARIN
       OrgTechHandle: DW1276-ARIN
       OrgTechName: 'Wheelock, David '
       OrgTechPhone: "+1-703-613-9840 "
@@ -100,11 +105,6 @@ checks:
       OrgAbusePhone: "+1-703-613-9840 "
       OrgAbuseEmail: davidw@ucia.gov
       OrgAbuseRef: https://rdap.arin.net/registry/entity/DW1276-ARIN
-      OrgNOCHandle: OA12-ARIN
-      OrgNOCName: 'UUnet Technologies, Inc., Technologies '
-      OrgNOCPhone: "+1-800-900-0241 "
-      OrgNOCEmail: help4u@verizonbusiness.com
-      OrgNOCRef: https://rdap.arin.net/registry/entity/OA12-ARIN
       RTechHandle: ANM3-ORG-ARIN
       RTechName: Central Intelligence Agency
       RTechPhone: "+1-703-874-5401 "

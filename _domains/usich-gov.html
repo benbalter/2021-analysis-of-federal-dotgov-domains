@@ -44,13 +44,13 @@ checks:
     humans_txt: false
     vulnerability_disclosure_policy: false
     security_txt: false
-    developer_json: false
+    data_json: false
   cookies:
     cookie?: true
     secure?: false
   dns:
-    dnssec: false
-    ipv6: false
+    dnssec: true
+    ipv6: true
     cdn:
     cloud_provider:
     google_apps: false
@@ -64,7 +64,7 @@ checks:
     x-xss-protection: false
     x-powered-by: PHP/7.4.12
   hsts:
-    valid: true
+    valid: false
     max_age: 0
     include_subdomains: false
     preload: false
@@ -92,20 +92,23 @@ checks:
     web_servers:
     - Nginx
     analytics:
-    - Hotjar
+    - Moat
+    - Crazy Egg
     - Mouse Flow
+    - Hotjar
     - Heap
-    tag_managers:
-    - Google Tag Manager
+    - Google Analytics
     font_scripts:
     - Google Font API
     - Font Awesome
-    widgets:
-    - AddThis
     javascript_libraries:
     - jQuery
     - Modernizr
     - FancyBox
+    tag_managers:
+    - Google Tag Manager
+    widgets:
+    - AddThis
     webmail:
     - Microsoft 365
     ssl/tls_certificate_authorities:
@@ -162,7 +165,7 @@ checks:
     webfinger: false
   whois:
     domain:
-      ">>> Last update of whois database": 2020-12-21T20:56:32Z <<<
+      ">>> Last update of whois database": 2020-12-31T18:44:27Z <<<
     ip:
 title: usich.gov
 ---

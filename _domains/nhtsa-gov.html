@@ -44,18 +44,18 @@ checks:
     humans_txt: false
     vulnerability_disclosure_policy: false
     security_txt: false
-    developer_json: false
+    data_json: false
   cookies:
     cookie?: true
     secure?: false
   dns:
-    dnssec: false
-    ipv6: false
+    dnssec: true
+    ipv6: true
     cdn: :akamai
     cloud_provider:
     google_apps: false
-    hostname: a104-127-254-39.deploy.static.akamaitechnologies.com
-    ip: 104.127.254.39
+    hostname: a104-111-84-124.deploy.static.akamaitechnologies.com
+    ip: 104.111.84.124
   headers:
     strict-transport-security: max-age=31536000 ; includeSubDomains ; preload
     content-security-policy: false
@@ -65,10 +65,10 @@ checks:
     x-drupal-cache: MISS
     x-content-type-options: nosniff
     x-generator: Drupal 7 (http://drupal.org)
-    x-request-id: v-8cee88b6-4162-11eb-8bc8-63142a5e03f3
+    x-request-id: v-5c89f964-4a02-11eb-bc28-3777d311e1ae
     x-ah-environment: prod
-    x-cache-hits: '2'
-    x-age: '6'
+    x-cache-hits: '110'
+    x-age: '82969'
   hsts:
     valid: true
     max_age: 31536000
@@ -107,8 +107,8 @@ checks:
     - RxJS
     paas:
     - Cloud Platform
-    tag_managers:
-    - Google Tag Manager
+    live_chat:
+    - LivePerson
     font_scripts:
     - Google Font API
     miscellaneous:
@@ -118,6 +118,9 @@ checks:
     - Moment.js
     analytics:
     - New Relic
+    - Google Analytics
+    tag_managers:
+    - Google Tag Manager
   wellknown:
     acme_challenge: false
     amphtml: false
@@ -170,7 +173,7 @@ checks:
     webfinger: false
   whois:
     domain:
-      ">>> Last update of whois database": 2020-12-21T22:17:07Z <<<
+      ">>> Last update of whois database": 2020-12-30T21:42:49Z <<<
     ip:
       "# available at": https://www.arin.net/resources/registry/whois/tou/
       "# https": "//www.arin.net/resources/registry/whois/inaccuracy_reporting/"

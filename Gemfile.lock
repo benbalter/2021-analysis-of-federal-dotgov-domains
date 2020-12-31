@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/benbalter/site-inspector.git
-  revision: 258264ec8b54b34dd11286fbee5ce2d8c6455729
+  revision: 73873b435e31c147020529b91369f7f1ec8e9bd0
   specs:
     site-inspector (3.2.0)
       activesupport

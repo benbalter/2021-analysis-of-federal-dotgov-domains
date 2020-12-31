@@ -6,33 +6,33 @@ organization: Department of the Treasury - BEP
 city: Washington
 state: DC
 domain:
-  host: moneyfactory.gov
+  host: www.moneyfactory.gov
   tld: gov
   sld: moneyfactory
-  trd:
+  trd: www
   up: true
   responds: true
   www: true
-  root: true
+  root: false
   https: true
   enforces_https: true
   downgrades_https: false
-  canonically_www: false
+  canonically_www: true
   canonically_https: true
   redirect: false
   hsts: false
   hsts_subdomains: false
   hsts_preload_ready: false
 canonical_endpoint:
-  uri: https://moneyfactory.gov/
-  host: moneyfactory.gov
-  www: false
+  uri: https://www.moneyfactory.gov/
+  host: www.moneyfactory.gov
+  www: true
   scheme: https
   up: true
   responds: true
   timed_out: false
   redirect: false
-  resolves_to: https://moneyfactory.gov/
+  resolves_to: https://www.moneyfactory.gov/
   external_redirect: false
 checks:
   content:
@@ -44,7 +44,7 @@ checks:
     humans_txt: false
     vulnerability_disclosure_policy: false
     security_txt: false
-    developer_json: false
+    data_json: false
   cookies:
     cookie?: false
     secure?: false
@@ -71,9 +71,9 @@ checks:
     - nosniff
     - nosniff
     x-webcom-cache-status: BYPASS
-    x-sucuri-cache: EXPIRED
+    x-sucuri-cache: REVALIDATED
   hsts:
-    valid: true
+    valid: false
     max_age: 0
     include_subdomains: false
     preload: false
@@ -145,41 +145,7 @@ checks:
     webfinger: false
   whois:
     domain:
-      Domain Name: MONEYFACTORY.GOV
-      Status: ACTIVE
-      Security Contact Email: domainsecurity@treasury.gov
-      ">>> Last update of whois database": 2020-12-21T22:59:39Z <<<
+      ">>> Last update of whois database": 2020-12-30T21:12:33Z <<<
     ip:
-      "# available at": https://www.arin.net/resources/registry/whois/tou/
-      "# https": "//www.arin.net/resources/registry/whois/inaccuracy_reporting/"
-      NetRange: 192.124.249.0 - 192.124.249.255
-      CIDR: 192.124.249.0/24
-      NetName: SUCURI-ARIN-002
-      NetHandle: NET-192-124-249-0-1
-      Parent: NET192 (NET-192-0-0-0-0)
-      NetType: Direct Assignment
-      OriginAS: AS174, AS3257, AS30148
-      Organization: Sucuri (SUCUR-2)
-      RegDate: '2014-12-11'
-      Updated: '2020-04-29'
-      Comment: noc@sucuri.net
-      Ref: https://rdap.arin.net/registry/entity/SUCUR-2
-      OrgName: Sucuri
-      OrgId: SUCUR-2
-      Address: 30141 Antelope Rd
-      City: Menifee
-      StateProv: CA
-      PostalCode: '92584'
-      Country: US
-      OrgTechHandle: SOC55-ARIN
-      OrgTechName: Security Operations Center
-      OrgTechPhone: "+1-888-318-5114 "
-      OrgTechEmail: soc@sucuri.net
-      OrgTechRef: https://rdap.arin.net/registry/entity/SOC55-ARIN
-      OrgAbuseHandle: SOC55-ARIN
-      OrgAbuseName: Security Operations Center
-      OrgAbusePhone: "+1-888-318-5114 "
-      OrgAbuseEmail: soc@sucuri.net
-      OrgAbuseRef: https://rdap.arin.net/registry/entity/SOC55-ARIN
 title: moneyfactory.gov
 ---

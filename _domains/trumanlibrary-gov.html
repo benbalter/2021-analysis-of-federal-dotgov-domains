@@ -44,18 +44,18 @@ checks:
     humans_txt: false
     vulnerability_disclosure_policy: false
     security_txt: false
-    developer_json: false
+    data_json: false
   cookies:
     cookie?: true
     secure?: false
   dns:
     dnssec: false
-    ipv6: false
+    ipv6: true
     cdn: :cloudfront
     cloud_provider:
     google_apps: false
-    hostname: server-13-32-204-79.iad66.r.cloudfront.net
-    ip: 13.32.204.79
+    hostname: server-13-32-204-100.iad66.r.cloudfront.net
+    ip: 13.32.204.100
   headers:
     strict-transport-security: max-age=31536000; includeSubDomains; preload
     content-security-policy: false
@@ -67,7 +67,7 @@ checks:
     x-content-type-options: nosniff
     x-cache: Miss from cloudfront
     x-amz-cf-pop: IAD66-C1
-    x-amz-cf-id: P3lHhuqT_CHT5g8wq7S7H6wQGLluaV4L3xVlW5KY62WKF5nRR38iYg==
+    x-amz-cf-id: 5enA0JousP3skLOqR3XIPcmC837Qwqjz6t-o6veIoazDvLnMmvkBLQ==
   hsts:
     valid: true
     max_age: 31536000
@@ -94,6 +94,7 @@ checks:
     paas:
     - Amazon Web Services
     font_scripts:
+    - Google Font API
     - Font Awesome
     javascript_libraries:
     - jQuery
@@ -155,7 +156,7 @@ checks:
     webfinger: false
   whois:
     domain:
-      ">>> Last update of whois database": 2020-12-22T18:20:42Z <<<
+      ">>> Last update of whois database": 2020-12-30T22:39:22Z <<<
     ip:
       "# available at": https://www.arin.net/resources/registry/whois/tou/
       "# https": "//www.arin.net/resources/registry/whois/inaccuracy_reporting/"
@@ -183,16 +184,16 @@ checks:
       OrgRoutingPhone: "+1-206-266-4064 "
       OrgRoutingEmail: aws-dogfish-routing-poc@amazon.com
       OrgRoutingRef: https://rdap.arin.net/registry/entity/ADR29-ARIN
-      OrgNOCHandle: AANO1-ARIN
-      OrgNOCName: Amazon AWS Network Operations
-      OrgNOCPhone: "+1-206-266-4064 "
-      OrgNOCEmail: amzn-noc-contact@amazon.com
-      OrgNOCRef: https://rdap.arin.net/registry/entity/AANO1-ARIN
       OrgAbuseHandle: AEA8-ARIN
       OrgAbuseName: Amazon EC2 Abuse
       OrgAbusePhone: "+1-206-266-4064 "
       OrgAbuseEmail: abuse@amazonaws.com
       OrgAbuseRef: https://rdap.arin.net/registry/entity/AEA8-ARIN
+      OrgNOCHandle: AANO1-ARIN
+      OrgNOCName: Amazon AWS Network Operations
+      OrgNOCPhone: "+1-206-266-4064 "
+      OrgNOCEmail: amzn-noc-contact@amazon.com
+      OrgNOCRef: https://rdap.arin.net/registry/entity/AANO1-ARIN
       OrgTechHandle: ANO24-ARIN
       OrgTechName: Amazon EC2 Network Operations
       OrgTechPhone: "+1-206-266-4064 "

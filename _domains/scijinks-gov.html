@@ -38,19 +38,19 @@ checks:
   content:
     doctype:
     generator:
-    proper_404s: true
-    robots_txt: true
-    sitemap_xml: false
-    humans_txt: true
-    vulnerability_disclosure_policy: true
-    security_txt: true
-    developer_json: false
+    proper_404s: false
+    robots_txt:
+    sitemap_xml:
+    humans_txt:
+    vulnerability_disclosure_policy:
+    security_txt: false
+    data_json:
   cookies:
     cookie?: false
     secure?: false
   dns:
-    dnssec: false
-    ipv6: false
+    dnssec: true
+    ipv6: true
     cdn:
     cloud_provider:
     google_apps: false
@@ -98,61 +98,61 @@ checks:
     ssl/tls_certificate_authorities:
     - DigiCert
   wellknown:
-    acme_challenge: true
-    amphtml: true
-    ashrae: true
-    assetlinks_json: false
-    brski: true
-    caldav: true
-    carddav: true
-    coap: true
-    core: true
-    csvm: true
-    dnt: true
-    dnt_policy_txt: true
-    dots: true
-    ecips: true
-    enterprise_transport_security: true
-    est: true
-    genid: true
-    gs1resolver: true
-    hoba: true
-    host_meta: true
-    host_meta_json: false
-    hosting_provider: true
-    http_opportunistic: true
-    idp_proxy: true
-    jmap: true
-    keybase_txt: true
-    looking_glass: true
-    matrix: true
-    mta_sts_txt: true
-    nfv_oauth_server_configuration: true
-    ni: true
-    oauth_authorization_server: true
-    openid_configuration: true
-    openorg: true
-    pki_validation: true
-    posh: true
-    pvd: true
-    reload_config: true
-    repute_template: true
-    resourcesync: true
-    sshfp: true
-    stun_key: true
-    thread: true
-    time: true
-    timezone: true
-    tor_relay: true
-    uma2_configuration: true
-    void: true
-    webfinger: true
+    acme_challenge:
+    amphtml:
+    ashrae:
+    assetlinks_json:
+    brski:
+    caldav:
+    carddav:
+    coap:
+    core:
+    csvm:
+    dnt:
+    dnt_policy_txt:
+    dots:
+    ecips:
+    enterprise_transport_security:
+    est:
+    genid:
+    gs1resolver:
+    hoba:
+    host_meta:
+    host_meta_json:
+    hosting_provider:
+    http_opportunistic:
+    idp_proxy:
+    jmap:
+    keybase_txt:
+    looking_glass:
+    matrix:
+    mta_sts_txt:
+    nfv_oauth_server_configuration:
+    ni:
+    oauth_authorization_server:
+    openid_configuration:
+    openorg:
+    pki_validation:
+    posh:
+    pvd:
+    reload_config:
+    repute_template:
+    resourcesync:
+    sshfp:
+    stun_key:
+    thread:
+    time:
+    timezone:
+    tor_relay:
+    uma2_configuration:
+    void:
+    webfinger:
   whois:
     domain:
       Domain Name: SCIJINKS.GOV
       Status: ACTIVE
       Security Contact Email: soc@nasa.gov
-      ">>> Last update of whois database": 2020-12-21T23:35:25Z <<<
+      ">>> Last update of whois database": 2020-12-30T21:02:02Z <<<
     ip:
       "# available at": https://www.arin.net/resources/registry/whois/tou/
       "# https": "//www.arin.net/resources/registry/whois/inaccuracy_reporting/"
@@ -176,32 +176,32 @@ checks:
       OrgTechHandle: RFBJ-ARIN
       OrgTechName: Bischof, Jr., Ralph F.
       OrgTechPhone: '256-961-4000 '
-      OrgTechEmail: Ralph.Bischof@nasa.gov
+      OrgTechEmail: dns.support@nasa.gov
       OrgTechRef: https://rdap.arin.net/registry/entity/RFBJ-ARIN
-      OrgNOCHandle: NISN-ARIN
-      OrgNOCName: NASA Information Services Network
-      OrgNOCPhone: "+1-256-961-4000 "
-      OrgNOCEmail: noc@nisn.nasa.gov
-      OrgNOCRef: https://rdap.arin.net/registry/entity/NISN-ARIN
       OrgAbuseHandle: NASAA-ARIN
       OrgAbuseName: NASA Abuse
       OrgAbusePhone: "+1-800-762-7472 "
       OrgAbuseEmail: abuse@nasa.gov
       OrgAbuseRef: https://rdap.arin.net/registry/entity/NASAA-ARIN
-      RTechHandle: PAV18-ARIN
-      RTechName: 'Averill, Paul '
-      RTechPhone: "+1-818-354-4321 "
-      RTechEmail: Paul.A.Averill@jpl.nasa.gov
-      RTechRef: https://rdap.arin.net/registry/entity/PAV18-ARIN
-      RAbuseHandle: NOC157-ARIN
-      RAbuseName: Network Operations Center
-      RAbusePhone: "+1-818-354-4357 "
-      RAbuseEmail: noc@jpl.nasa.gov
-      RAbuseRef: https://rdap.arin.net/registry/entity/NOC157-ARIN
+      OrgNOCHandle: NISN-ARIN
+      OrgNOCName: NASA Information Services Network
+      OrgNOCPhone: "+1-256-961-4000 "
+      OrgNOCEmail: noc@nisn.nasa.gov
+      OrgNOCRef: https://rdap.arin.net/registry/entity/NISN-ARIN
       RNOCHandle: NOC157-ARIN
       RNOCName: Network Operations Center
       RNOCPhone: "+1-818-354-4357 "
       RNOCEmail: noc@jpl.nasa.gov
       RNOCRef: https://rdap.arin.net/registry/entity/NOC157-ARIN
+      RAbuseHandle: NOC157-ARIN
+      RAbuseName: Network Operations Center
+      RAbusePhone: "+1-818-354-4357 "
+      RAbuseEmail: noc@jpl.nasa.gov
+      RAbuseRef: https://rdap.arin.net/registry/entity/NOC157-ARIN
+      RTechHandle: JMI120-ARIN
+      RTechName: 'Miles, James '
+      RTechPhone: "+1-818-354-4370 "
+      RTechEmail: James.C.Miles@jpl.nasa.gov
+      RTechRef: https://rdap.arin.net/registry/entity/JMI120-ARIN
 title: scijinks.gov
 ---

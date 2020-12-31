@@ -44,18 +44,18 @@ checks:
     humans_txt: false
     vulnerability_disclosure_policy: false
     security_txt: false
-    developer_json: false
+    data_json: false
   cookies:
     cookie?: false
     secure?: false
   dns:
-    dnssec: false
-    ipv6: false
+    dnssec: true
+    ipv6: true
     cdn: :cloudfront
     cloud_provider:
     google_apps: false
-    hostname: server-99-84-105-85.iad79.r.cloudfront.net
-    ip: 99.84.105.85
+    hostname: server-99-84-181-97.iad89.r.cloudfront.net
+    ip: 99.84.181.97
   headers:
     strict-transport-security: max-age=31536000; preload
     content-security-policy: false
@@ -63,11 +63,11 @@ checks:
     server: false
     x-xss-protection: 1; mode=block
     x-server: Federalist
-    x-vcap-request-id: 9932129f-dca7-4789-5cc5-650f7fcf1f99
+    x-vcap-request-id: ae7abba0-0b77-41f1-58f6-d91023717ecd
     x-content-type-options: nosniff
     x-cache: Miss from cloudfront
-    x-amz-cf-pop: IAD79-C2
-    x-amz-cf-id: bbsasvC0WDeiQAB2Gio7iRX9aujezgrzgprcGoawqZObSzGJjXIFfA==
+    x-amz-cf-pop: IAD89-C2
+    x-amz-cf-id: bsr5MFEgJTvh6MlFJ70KGtSL3kjv2JlpVDqMT3VeWM_plCuCOSeRBw==
   hsts:
     valid: true
     max_age: 31536000
@@ -92,6 +92,8 @@ checks:
     - jQuery UI
     - jQuery Migrate
     - jQuery
+    analytics:
+    - Google Analytics
     cdn:
     - Amazon Cloudfront
   wellknown:
@@ -146,7 +148,7 @@ checks:
     webfinger: false
   whois:
     domain:
-      ">>> Last update of whois database": 2020-12-21T21:00:02Z <<<
+      ">>> Last update of whois database": 2020-12-30T23:03:38Z <<<
     ip:
       "# available at": https://www.arin.net/resources/registry/whois/tou/
       "# https": "//www.arin.net/resources/registry/whois/inaccuracy_reporting/"
@@ -169,25 +171,25 @@ checks:
       PostalCode: 98101-1244
       Country: US
       Comment: http://ec2.amazonaws.com
-      OrgRoutingHandle: IPROU3-ARIN
-      OrgRoutingName: IP Routing
+      OrgRoutingHandle: ADR29-ARIN
+      OrgRoutingName: AWS Dogfish Routing
       OrgRoutingPhone: "+1-206-266-4064 "
-      OrgRoutingEmail: aws-routing-poc@amazon.com
-      OrgRoutingRef: https://rdap.arin.net/registry/entity/IPROU3-ARIN
-      OrgAbuseHandle: AEA8-ARIN
-      OrgAbuseName: Amazon EC2 Abuse
-      OrgAbusePhone: "+1-206-266-4064 "
-      OrgAbuseEmail: abuse@amazonaws.com
-      OrgAbuseRef: https://rdap.arin.net/registry/entity/AEA8-ARIN
-      OrgNOCHandle: AANO1-ARIN
-      OrgNOCName: Amazon AWS Network Operations
-      OrgNOCPhone: "+1-206-266-4064 "
-      OrgNOCEmail: amzn-noc-contact@amazon.com
-      OrgNOCRef: https://rdap.arin.net/registry/entity/AANO1-ARIN
+      OrgRoutingEmail: aws-dogfish-routing-poc@amazon.com
+      OrgRoutingRef: https://rdap.arin.net/registry/entity/ADR29-ARIN
       OrgTechHandle: ANO24-ARIN
       OrgTechName: Amazon EC2 Network Operations
       OrgTechPhone: "+1-206-266-4064 "
       OrgTechEmail: amzn-noc-contact@amazon.com
       OrgTechRef: https://rdap.arin.net/registry/entity/ANO24-ARIN
+      OrgNOCHandle: AANO1-ARIN
+      OrgNOCName: Amazon AWS Network Operations
+      OrgNOCPhone: "+1-206-266-4064 "
+      OrgNOCEmail: amzn-noc-contact@amazon.com
+      OrgNOCRef: https://rdap.arin.net/registry/entity/AANO1-ARIN
+      OrgAbuseHandle: AEA8-ARIN
+      OrgAbuseName: Amazon EC2 Abuse
+      OrgAbusePhone: "+1-206-266-4064 "
+      OrgAbuseEmail: abuse@amazonaws.com
+      OrgAbuseRef: https://rdap.arin.net/registry/entity/AEA8-ARIN
 title: paymentaccuracy.gov
 ---

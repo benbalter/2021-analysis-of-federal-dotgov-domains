@@ -44,18 +44,18 @@ checks:
     humans_txt: false
     vulnerability_disclosure_policy: false
     security_txt: false
-    developer_json: false
+    data_json: false
   cookies:
     cookie?: true
     secure?: true
   dns:
-    dnssec: false
-    ipv6: false
+    dnssec: true
+    ipv6: true
     cdn: :akamai
     cloud_provider:
     google_apps: false
-    hostname: a23-48-45-137.deploy.static.akamaitechnologies.com
-    ip: 23.48.45.137
+    hostname: a23-33-42-38.deploy.static.akamaitechnologies.com
+    ip: 23.33.42.38
   headers:
     strict-transport-security: max-age=31536000
     content-security-policy: false
@@ -66,10 +66,10 @@ checks:
     x-ua-compatible: IE=edge
     x-content-type-options: nosniff
     x-generator: Drupal 8 (https://www.drupal.org)
-    x-request-id: v-18bcde3e-447d-11eb-9594-3f0f74a545d3
+    x-request-id: v-9e67c296-4acd-11eb-8fe4-eb6874a8c2b3
     x-ah-environment: prod
-    x-cache-hits: '5'
-    x-age: '0'
+    x-cache-hits: '30'
+    x-age: '3004'
   hsts:
     valid: true
     max_age: 31536000
@@ -103,14 +103,11 @@ checks:
     tag_managers:
     - Tealium
     - Google Tag Manager
-    font_scripts:
-    - Google Font API
     security:
     - Akamai Bot Manager
     javascript_libraries:
     - jQuery UI
     - jQuery
-    - Lodash
     a/b_testing:
     - Optimizely
     analytics:
@@ -171,12 +168,12 @@ checks:
     webfinger: false
   whois:
     domain:
-      ">>> Last update of whois database": 2020-12-22T18:00:11Z <<<
+      ">>> Last update of whois database": 2020-12-30T21:36:34Z <<<
     ip:
       "# available at": https://www.arin.net/resources/registry/whois/tou/
       "# https": "//www.arin.net/resources/registry/whois/inaccuracy_reporting/"
       NetRange: 23.32.0.0 - 23.67.255.255
-      CIDR: 23.64.0.0/14, 23.32.0.0/11
+      CIDR: 23.32.0.0/11, 23.64.0.0/14
       NetName: AKAMAI
       NetHandle: NET-23-32-0-0-1
       Parent: NET23 (NET-23-0-0-0-0)
@@ -192,11 +189,11 @@ checks:
       StateProv: MA
       PostalCode: '02142'
       Country: US
-      OrgTechHandle: SJS98-ARIN
-      OrgTechName: Schecter, Steven Jay
-      OrgTechPhone: "+1-617-274-7134 "
+      OrgTechHandle: YKS-ARIN
+      OrgTechName: 'Yeung, Kam Sze '
+      OrgTechPhone: "+852-92813828 "
       OrgTechEmail: ip-admin@akamai.com
-      OrgTechRef: https://rdap.arin.net/registry/entity/SJS98-ARIN
+      OrgTechRef: https://rdap.arin.net/registry/entity/YKS-ARIN
       OrgAbuseHandle: NUS-ARIN
       OrgAbuseName: NOC United States
       OrgAbusePhone: "+1-617-444-2535 "

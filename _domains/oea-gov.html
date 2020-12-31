@@ -44,12 +44,12 @@ checks:
     humans_txt: false
     vulnerability_disclosure_policy: false
     security_txt: false
-    developer_json: false
+    data_json: false
   cookies:
     cookie?: false
     secure?: false
   dns:
-    dnssec: false
+    dnssec: true
     ipv6: false
     cdn:
     cloud_provider: :Amazon GovCloud
@@ -76,7 +76,7 @@ checks:
     preload: true
     enabled: true
     preload_ready: true
-    preload_list_status: preloaded
+    preload_list_status:
   https:
     valid: true
     return_code: :ok
@@ -92,12 +92,13 @@ checks:
     - PHP
     web_servers:
     - Apache
-    tag_managers:
-    - Google Tag Manager
-    analytics:
-    - Google Analytics
     javascript_libraries:
     - jQuery
+    analytics:
+    - Hotjar
+    - Google Analytics
+    tag_managers:
+    - Google Tag Manager
     webmail:
     - Microsoft 365
     ssl/tls_certificate_authorities:
@@ -157,7 +158,7 @@ checks:
       Domain Name: OEA.GOV
       Status: ACTIVE
       Security Contact Email: james.v.evans29.civ@mail.mil
-      ">>> Last update of whois database": 2020-12-21T21:35:04Z <<<
+      ">>> Last update of whois database": 2020-12-30T22:58:23Z <<<
     ip:
       "# available at": https://www.arin.net/resources/registry/whois/tou/
       "# https": "//www.arin.net/resources/registry/whois/inaccuracy_reporting/"
@@ -181,16 +182,11 @@ checks:
       StateProv: WA
       PostalCode: '98144'
       Country: US
-      OrgNOCHandle: AANO1-ARIN
-      OrgNOCName: Amazon AWS Network Operations
-      OrgNOCPhone: "+1-206-266-4064 "
-      OrgNOCEmail: amzn-noc-contact@amazon.com
-      OrgNOCRef: https://rdap.arin.net/registry/entity/AANO1-ARIN
-      OrgRoutingHandle: IPROU3-ARIN
-      OrgRoutingName: IP Routing
+      OrgRoutingHandle: ADR29-ARIN
+      OrgRoutingName: AWS Dogfish Routing
       OrgRoutingPhone: "+1-206-266-4064 "
-      OrgRoutingEmail: aws-routing-poc@amazon.com
-      OrgRoutingRef: https://rdap.arin.net/registry/entity/IPROU3-ARIN
+      OrgRoutingEmail: aws-dogfish-routing-poc@amazon.com
+      OrgRoutingRef: https://rdap.arin.net/registry/entity/ADR29-ARIN
       OrgTechHandle: ANO24-ARIN
       OrgTechName: Amazon EC2 Network Operations
       OrgTechPhone: "+1-206-266-4064 "
@@ -201,5 +197,10 @@ checks:
       OrgAbusePhone: "+1-206-266-4064 "
       OrgAbuseEmail: abuse@amazonaws.com
       OrgAbuseRef: https://rdap.arin.net/registry/entity/AEA8-ARIN
+      OrgNOCHandle: AANO1-ARIN
+      OrgNOCName: Amazon AWS Network Operations
+      OrgNOCPhone: "+1-206-266-4064 "
+      OrgNOCEmail: amzn-noc-contact@amazon.com
+      OrgNOCRef: https://rdap.arin.net/registry/entity/AANO1-ARIN
 title: oea.gov
 ---

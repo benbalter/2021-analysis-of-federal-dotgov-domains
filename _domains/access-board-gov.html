@@ -44,18 +44,18 @@ checks:
     humans_txt: false
     vulnerability_disclosure_policy: false
     security_txt: false
-    developer_json: false
+    data_json: false
   cookies:
     cookie?: false
     secure?: false
   dns:
-    dnssec: false
-    ipv6: false
+    dnssec: true
+    ipv6: true
     cdn: :cloudfront
     cloud_provider:
     google_apps: false
-    hostname: server-13-32-204-129.iad66.r.cloudfront.net
-    ip: 13.32.204.129
+    hostname: server-99-84-181-89.iad89.r.cloudfront.net
+    ip: 99.84.181.89
   headers:
     strict-transport-security: max-age=31536000; preload
     content-security-policy: false
@@ -63,11 +63,11 @@ checks:
     server: false
     x-xss-protection: 1; mode=block
     x-server: Federalist
-    x-vcap-request-id: b6776454-f9cc-4db9-5f0f-839a97785de5
+    x-vcap-request-id: f0e7c1e7-c2d3-416a-403d-084870cf3669
     x-content-type-options: nosniff
     x-cache: Miss from cloudfront
-    x-amz-cf-pop: EWR52-C2
-    x-amz-cf-id: 6Y0RD62oUqDY9_MmM3Xe9FlCV7560NMVp51ZmKxRIgwFoVkXu7oDmA==
+    x-amz-cf-pop: IAD89-C2
+    x-amz-cf-id: bAl3rnEHS0bgwdY_um2ChKFlXfdGefJ69o5OymNseWj1b1Rmfuyu6g==
   hsts:
     valid: true
     max_age: 31536000
@@ -154,17 +154,18 @@ checks:
     webfinger: false
   whois:
     domain:
-      ">>> Last update of whois database": 2020-12-21T22:57:23Z <<<
+      ">>> Last update of whois database": 2020-12-30T23:13:39Z <<<
     ip:
       "# available at": https://www.arin.net/resources/registry/whois/tou/
       "# https": "//www.arin.net/resources/registry/whois/inaccuracy_reporting/"
-      NetRange: 13.32.0.0 - 13.33.255.255
-      CIDR: 13.32.0.0/15
+      NetRange: 99.84.0.0 - 99.84.255.255
+      CIDR: 99.84.0.0/16
       NetName: AMAZO-CF
-      NetHandle: NET-13-32-0-0-2
-      Parent: AT-88-Z (NET-13-32-0-0-1)
+      NetHandle: NET-99-84-0-0-1
+      Parent: AMAZO-4 (NET-99-83-64-0-1)
       NetType: Reallocated
-      OriginAS: AS16509
+      OriginAS: 'Organization:   Amazon.com, Inc. (AMAZON-4)'
+      Organization: Amazon.com, Inc. (AMAZO-4)
       RegDate: '1995-01-23'
       Updated: '2020-03-31'
       Ref: https://rdap.arin.net/registry/entity/AMAZON-4
@@ -175,18 +176,17 @@ checks:
       StateProv: WA
       PostalCode: 98101-1244
       Country: US
-      Comment: "* Your contact details (phone and email) Without these we will be
-        unable to identify the correct owner of the IP address at that point in time."
-      OrgTechHandle: ANO24-ARIN
-      OrgTechName: Amazon EC2 Network Operations
-      OrgTechPhone: "+1-206-266-4064 "
-      OrgTechEmail: amzn-noc-contact@amazon.com
-      OrgTechRef: https://rdap.arin.net/registry/entity/ANO24-ARIN
+      Comment: http://ec2.amazonaws.com
       OrgRoutingHandle: IPROU3-ARIN
       OrgRoutingName: IP Routing
       OrgRoutingPhone: "+1-206-266-4064 "
       OrgRoutingEmail: aws-routing-poc@amazon.com
       OrgRoutingRef: https://rdap.arin.net/registry/entity/IPROU3-ARIN
+      OrgTechHandle: ANO24-ARIN
+      OrgTechName: Amazon EC2 Network Operations
+      OrgTechPhone: "+1-206-266-4064 "
+      OrgTechEmail: amzn-noc-contact@amazon.com
+      OrgTechRef: https://rdap.arin.net/registry/entity/ANO24-ARIN
       OrgAbuseHandle: AEA8-ARIN
       OrgAbuseName: Amazon EC2 Abuse
       OrgAbusePhone: "+1-206-266-4064 "
@@ -197,6 +197,5 @@ checks:
       OrgNOCPhone: "+1-206-266-4064 "
       OrgNOCEmail: amzn-noc-contact@amazon.com
       OrgNOCRef: https://rdap.arin.net/registry/entity/AANO1-ARIN
-      Organization: Amazon.com, Inc. (AMAZON-4)
 title: access-board.gov
 ---

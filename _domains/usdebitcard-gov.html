@@ -10,49 +10,44 @@ domain:
   tld: gov
   sld: usdebitcard
   trd:
-  up: false
-  responds: false
+  up: true
+  responds: true
   www: false
-  root: false
-  https: false
-  enforces_https: false
+  root: true
+  https: true
+  enforces_https: true
   downgrades_https: false
   canonically_www: false
-  canonically_https: false
-  redirect: false
+  canonically_https: true
+  redirect: true
   hsts: false
   hsts_subdomains: false
   hsts_preload_ready: false
 canonical_endpoint:
-  uri: http://usdebitcard.gov/
+  uri: https://usdebitcard.gov/
   host: usdebitcard.gov
   www: false
-  scheme: http
-  up: false
-  responds: false
+  scheme: https
+  up: true
+  responds: true
   timed_out: false
-  redirect: false
-  resolves_to: http://usdebitcard.gov/
-  external_redirect: false
+  redirect: true
+  resolves_to: https://www.usdebitcard.gov/
+  external_redirect: true
 checks:
   content: {}
   cookies: {}
   dns:
-    dnssec: false
+    dnssec: true
     ipv6: false
     cdn:
     cloud_provider:
     google_apps: false
     hostname: a952a1c3b3beb5f05.awsglobalaccelerator.com
     ip: 13.248.143.141
-  headers:
-    strict-transport-security: false
-    content-security-policy: false
-    x-frame-options: false
-    server: false
-    x-xss-protection: false
+  headers: {}
   hsts:
-    valid: true
+    valid: false
     max_age: 0
     include_subdomains: false
     preload: false
@@ -60,8 +55,8 @@ checks:
     preload_ready: false
     preload_list_status: unknown
   https:
-    valid: false
-    return_code: :couldnt_resolve_host
+    valid: true
+    return_code: :ok
   sniffer: {}
   wappalyzer: {}
   wellknown: {}
@@ -70,48 +65,7 @@ checks:
       Domain Name: USDEBITCARD.GOV
       Status: ACTIVE
       Security Contact Email: domainsecurity@treasury.gov
-      ">>> Last update of whois database": 2020-12-21T23:10:54Z <<<
+      ">>> Last update of whois database": 2020-12-30T21:46:49Z <<<
     ip:
-      "# available at": https://www.arin.net/resources/registry/whois/tou/
-      "# https": "//www.arin.net/resources/registry/whois/inaccuracy_reporting/"
-      NetRange: 76.223.0.0 - 76.223.175.255
-      CIDR: 76.223.128.0/19, 76.223.160.0/20, 76.223.0.0/17
-      NetName: AMAZO-4
-      NetHandle: NET-76-223-0-0-1
-      Parent: NET76 (NET-76-0-0-0-0)
-      NetType: Direct Allocation
-      OriginAS: AS16509
-      Organization: Amazon.com, Inc. (AMAZO-4)
-      RegDate: '2005-09-29'
-      Updated: '2020-04-07'
-      Ref: https://rdap.arin.net/registry/entity/AMAZO-4
-      OrgName: Amazon.com, Inc.
-      OrgId: AMAZO-4
-      Address: P.O. Box 81226
-      City: Seattle
-      StateProv: WA
-      PostalCode: 98108-1226
-      Country: US
-      Comment: http://ec2.amazonaws.com
-      OrgRoutingHandle: IPROU3-ARIN
-      OrgRoutingName: IP Routing
-      OrgRoutingPhone: "+1-206-266-4064 "
-      OrgRoutingEmail: aws-routing-poc@amazon.com
-      OrgRoutingRef: https://rdap.arin.net/registry/entity/IPROU3-ARIN
-      OrgTechHandle: ANO24-ARIN
-      OrgTechName: Amazon EC2 Network Operations
-      OrgTechPhone: "+1-206-266-4064 "
-      OrgTechEmail: amzn-noc-contact@amazon.com
-      OrgTechRef: https://rdap.arin.net/registry/entity/ANO24-ARIN
-      OrgAbuseHandle: AEA8-ARIN
-      OrgAbuseName: Amazon EC2 Abuse
-      OrgAbusePhone: "+1-206-266-4064 "
-      OrgAbuseEmail: abuse@amazonaws.com
-      OrgAbuseRef: https://rdap.arin.net/registry/entity/AEA8-ARIN
-      OrgNOCHandle: AANO1-ARIN
-      OrgNOCName: Amazon AWS Network Operations
-      OrgNOCPhone: "+1-206-266-4064 "
-      OrgNOCEmail: amzn-noc-contact@amazon.com
-      OrgNOCRef: https://rdap.arin.net/registry/entity/AANO1-ARIN
 title: usdebitcard.gov
 ---

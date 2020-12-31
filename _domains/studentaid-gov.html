@@ -6,71 +6,63 @@ organization: U.S. Department of Education (ED)
 city: Washington
 state: DC
 domain:
-  host: studentaid.gov
+  host: www.studentaid.gov
   tld: gov
   sld: studentaid
-  trd:
-  up: false
+  trd: www
+  up: true
   responds: true
-  www: false
+  www: true
   root: false
-  https: false
-  enforces_https: false
+  https: true
+  enforces_https: true
   downgrades_https: false
-  canonically_www: false
-  canonically_https: false
-  redirect: false
-  hsts: false
+  canonically_www: true
+  canonically_https: true
+  redirect: true
+  hsts: true
   hsts_subdomains: true
   hsts_preload_ready: true
 canonical_endpoint:
-  uri: http://studentaid.gov/
-  host: studentaid.gov
-  www: false
-  scheme: http
-  up: false
-  responds: false
-  timed_out: true
-  redirect: false
-  resolves_to: http://studentaid.gov/
-  external_redirect: false
+  uri: https://www.studentaid.gov/
+  host: www.studentaid.gov
+  www: true
+  scheme: https
+  up: true
+  responds: true
+  timed_out: false
+  redirect: true
+  resolves_to: https://studentaid.gov/
+  external_redirect: true
 checks:
   content: {}
   cookies: {}
   dns:
-    dnssec: false
-    ipv6: false
+    dnssec: true
+    ipv6: true
     cdn: :akamai
     cloud_provider:
     google_apps: false
-    hostname: a104-69-217-77.deploy.static.akamaitechnologies.com
-    ip: 104.69.217.77
-  headers:
-    strict-transport-security: false
-    content-security-policy: false
-    x-frame-options: false
-    server: false
-    x-xss-protection: false
+    hostname: a104-82-10-180.deploy.static.akamaitechnologies.com
+    ip: 104.82.10.180
+  headers: {}
   hsts:
     valid: true
-    max_age: 0
-    include_subdomains: false
-    preload: false
-    enabled: false
-    preload_ready: false
+    max_age: 31536000
+    include_subdomains: true
+    preload: true
+    enabled: true
+    preload_ready: true
     preload_list_status: preloaded
   https:
-    valid: false
-    return_code: :operation_timedout
+    valid: true
+    return_code: :ok
   sniffer: {}
   wappalyzer: {}
   wellknown: {}
   whois:
     domain:
-      Domain Name: STUDENTAID.GOV
-      Status: ACTIVE
-      Security Contact Email: EDSOC@ed.gov
-      ">>> Last update of whois database": 2020-12-21T23:29:55Z <<<
+      ">>> Last update of whois database": 2020-12-30T22:05:05Z <<<
     ip:
       "# available at": https://www.arin.net/resources/registry/whois/tou/
       "# https": "//www.arin.net/resources/registry/whois/inaccuracy_reporting/"
@@ -91,15 +83,15 @@ checks:
       StateProv: MA
       PostalCode: '02142'
       Country: US
+      OrgTechHandle: SJS98-ARIN
+      OrgTechName: Schecter, Steven Jay
+      OrgTechPhone: "+1-617-274-7134 "
+      OrgTechEmail: ip-admin@akamai.com
+      OrgTechRef: https://rdap.arin.net/registry/entity/SJS98-ARIN
       OrgAbuseHandle: NUS-ARIN
       OrgAbuseName: NOC United States
       OrgAbusePhone: "+1-617-444-2535 "
       OrgAbuseEmail: abuse@akamai.com
       OrgAbuseRef: https://rdap.arin.net/registry/entity/NUS-ARIN
-      OrgTechHandle: IPADM11-ARIN
-      OrgTechName: ipadmin
-      OrgTechPhone: "+1-617-444-0017 "
-      OrgTechEmail: ip-admin@akamai.com
-      OrgTechRef: https://rdap.arin.net/registry/entity/IPADM11-ARIN
 title: studentaid.gov
 ---

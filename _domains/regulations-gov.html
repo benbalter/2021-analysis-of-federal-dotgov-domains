@@ -44,13 +44,13 @@ checks:
     humans_txt: false
     vulnerability_disclosure_policy: false
     security_txt: false
-    developer_json: true
+    data_json: false
   cookies:
     cookie?: true
     secure?: false
   dns:
     dnssec: false
-    ipv6: false
+    ipv6: true
     cdn:
     cloud_provider:
     google_apps: false
@@ -91,6 +91,7 @@ checks:
     - Google Tag Manager
     analytics:
     - Google Analytics
+    - Crazy Egg
     ssl/tls_certificate_authorities:
     - DigiCert
   wellknown:
@@ -145,7 +146,7 @@ checks:
     webfinger: false
   whois:
     domain:
-      ">>> Last update of whois database": 2020-12-21T21:44:20Z <<<
+      ">>> Last update of whois database": 2020-12-30T21:05:03Z <<<
     ip:
       "# available at": https://www.arin.net/resources/registry/whois/tou/
       "# https": "//www.arin.net/resources/registry/whois/inaccuracy_reporting/"
@@ -166,16 +167,16 @@ checks:
       StateProv: NC
       PostalCode: '27711'
       Country: US
-      OrgTechHandle: ANDER545-ARIN
-      OrgTechName: 'Anderson, Jeff '
-      OrgTechPhone: "+1-919-558-6831 "
-      OrgTechEmail: anderson.jeffrey@epa.gov
-      OrgTechRef: https://rdap.arin.net/registry/entity/ANDER545-ARIN
       OrgAbuseHandle: PHELP82-ARIN
       OrgAbuseName: 'Phelps, Lemont '
       OrgAbusePhone: "+1-919-541-7599 "
       OrgAbuseEmail: phelps.lemont@epa.gov
       OrgAbuseRef: https://rdap.arin.net/registry/entity/PHELP82-ARIN
+      OrgTechHandle: ANDER545-ARIN
+      OrgTechName: 'Anderson, Jeff '
+      OrgTechPhone: "+1-919-558-6831 "
+      OrgTechEmail: anderson.jeffrey@epa.gov
+      OrgTechRef: https://rdap.arin.net/registry/entity/ANDER545-ARIN
       OrgNOCHandle: PHELP82-ARIN
       OrgNOCName: 'Phelps, Lemont '
       OrgNOCPhone: "+1-919-541-7599 "
@@ -186,15 +187,15 @@ checks:
       RTechPhone: "+1-919-558-6831 "
       RTechEmail: anderson.jeffrey@epa.gov
       RTechRef: https://rdap.arin.net/registry/entity/ANDER545-ARIN
-      RNOCHandle: PHELP82-ARIN
-      RNOCName: 'Phelps, Lemont '
-      RNOCPhone: "+1-919-541-7599 "
-      RNOCEmail: phelps.lemont@epa.gov
-      RNOCRef: https://rdap.arin.net/registry/entity/PHELP82-ARIN
       RAbuseHandle: PHELP82-ARIN
       RAbuseName: 'Phelps, Lemont '
       RAbusePhone: "+1-919-541-7599 "
       RAbuseEmail: phelps.lemont@epa.gov
       RAbuseRef: https://rdap.arin.net/registry/entity/PHELP82-ARIN
+      RNOCHandle: PHELP82-ARIN
+      RNOCName: 'Phelps, Lemont '
+      RNOCPhone: "+1-919-541-7599 "
+      RNOCEmail: phelps.lemont@epa.gov
+      RNOCRef: https://rdap.arin.net/registry/entity/PHELP82-ARIN
 title: regulations.gov
 ---

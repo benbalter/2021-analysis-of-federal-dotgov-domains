@@ -44,12 +44,12 @@ checks:
     humans_txt: false
     vulnerability_disclosure_policy: false
     security_txt: false
-    developer_json: false
+    data_json: false
   cookies:
     cookie?: false
     secure?: false
   dns:
-    dnssec: false
+    dnssec: true
     ipv6: false
     cdn:
     cloud_provider:
@@ -88,6 +88,8 @@ checks:
     javascript_libraries:
     - jQuery UI
     - jQuery
+    analytics:
+    - Google Analytics
   wellknown:
     acme_challenge: false
     amphtml: false
@@ -143,7 +145,7 @@ checks:
       Domain Name: SAFETYACT.GOV
       Status: ACTIVE
       Security Contact Email: malik.locket@st.dhs.gov
-      ">>> Last update of whois database": 2020-12-21T20:52:32Z <<<
+      ">>> Last update of whois database": 2020-12-31T18:15:11Z <<<
     ip:
       "# available at": https://www.arin.net/resources/registry/whois/tou/
       "# https": "//www.arin.net/resources/registry/whois/inaccuracy_reporting/"
@@ -164,11 +166,6 @@ checks:
       StateProv: DC
       PostalCode: '20024'
       Country: US
-      OrgAbuseHandle: DHSNO2-ARIN
-      OrgAbuseName: DHS-NOC
-      OrgAbusePhone: "+1-202-447-4003 "
-      OrgAbuseEmail: onenetNMT@hq.dhs.gov
-      OrgAbuseRef: https://rdap.arin.net/registry/entity/DHSNO2-ARIN
       OrgNOCHandle: DHSNO2-ARIN
       OrgNOCName: DHS-NOC
       OrgNOCPhone: "+1-202-447-4003 "
@@ -179,19 +176,24 @@ checks:
       OrgTechPhone: "+1-202-447-4003 "
       OrgTechEmail: onenetNMT@hq.dhs.gov
       OrgTechRef: https://rdap.arin.net/registry/entity/DHSNO2-ARIN
-      RNOCHandle: DIA9-ARIN
-      RNOCName: DHS IPv6 ADMINISTRATION
-      RNOCPhone: "+1-703-921-6347 "
-      RNOCEmail: DHS.IPv6.ADMIN@dhs.gov
-      RNOCRef: https://rdap.arin.net/registry/entity/DIA9-ARIN
+      OrgAbuseHandle: DHSNO2-ARIN
+      OrgAbuseName: DHS-NOC
+      OrgAbusePhone: "+1-202-447-4003 "
+      OrgAbuseEmail: onenetNMT@hq.dhs.gov
+      OrgAbuseRef: https://rdap.arin.net/registry/entity/DHSNO2-ARIN
       RAbuseHandle: DIA9-ARIN
       RAbuseName: DHS IPv6 ADMINISTRATION
-      RAbusePhone: "+1-703-921-6347 "
+      RAbusePhone: "+1-703-921-7595 "
       RAbuseEmail: DHS.IPv6.ADMIN@dhs.gov
       RAbuseRef: https://rdap.arin.net/registry/entity/DIA9-ARIN
+      RNOCHandle: DIA9-ARIN
+      RNOCName: DHS IPv6 ADMINISTRATION
+      RNOCPhone: "+1-703-921-7595 "
+      RNOCEmail: DHS.IPv6.ADMIN@dhs.gov
+      RNOCRef: https://rdap.arin.net/registry/entity/DIA9-ARIN
       RTechHandle: DIA9-ARIN
       RTechName: DHS IPv6 ADMINISTRATION
-      RTechPhone: "+1-703-921-6347 "
+      RTechPhone: "+1-703-921-7595 "
       RTechEmail: DHS.IPv6.ADMIN@dhs.gov
       RTechRef: https://rdap.arin.net/registry/entity/DIA9-ARIN
 title: safetyact.gov

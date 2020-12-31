@@ -6,10 +6,10 @@ organization: National Heart, Lung & Blood Institute, NIH
 city: Bethesda
 state: MD
 domain:
-  host: www.hearttruth.gov
+  host: hearttruth.gov
   tld: gov
   sld: hearttruth
-  trd: www
+  trd:
   up: true
   responds: true
   www: true
@@ -17,16 +17,16 @@ domain:
   https: true
   enforces_https: true
   downgrades_https: false
-  canonically_www: true
+  canonically_www: false
   canonically_https: true
   redirect: true
   hsts: true
   hsts_subdomains: true
   hsts_preload_ready: true
 canonical_endpoint:
-  uri: https://www.hearttruth.gov/
-  host: www.hearttruth.gov
-  www: true
+  uri: https://hearttruth.gov/
+  host: hearttruth.gov
+  www: false
   scheme: https
   up: true
   responds: true
@@ -38,13 +38,13 @@ checks:
   content: {}
   cookies: {}
   dns:
-    dnssec: false
-    ipv6: false
+    dnssec: true
+    ipv6: true
     cdn:
     cloud_provider:
     google_apps: false
-    hostname: ''
-    ip: 54.165.20.66
+    hostname: hearttruth.com
+    ip: 156.40.76.105
   headers: {}
   hsts:
     valid: true
@@ -62,48 +62,50 @@ checks:
   wellknown: {}
   whois:
     domain:
-      ">>> Last update of whois database": 2020-12-21T22:48:08Z <<<
+      Domain Name: HEARTTRUTH.GOV
+      Status: ACTIVE
+      Security Contact Email: responsibledisclosure@hhs.gov
+      ">>> Last update of whois database": 2020-12-30T21:44:19Z <<<
     ip:
       "# available at": https://www.arin.net/resources/registry/whois/tou/
       "# https": "//www.arin.net/resources/registry/whois/inaccuracy_reporting/"
-      NetRange: 34.192.0.0 - 34.255.255.255
-      CIDR: 34.192.0.0/10
-      NetName: AT-88-Z
-      NetHandle: NET-34-192-0-0-1
-      Parent: NET34 (NET-34-0-0-0-0)
+      NetRange: 156.40.0.0 - 156.40.92.255
+      CIDR: 156.40.64.0/20, 156.40.0.0/18, 156.40.80.0/21, 156.40.88.0/22, 156.40.92.0/24
+      NetName: NIHNET-3
+      NetHandle: NET-156-40-0-0-1
+      Parent: NET156 (NET-156-0-0-0-0)
       NetType: Direct Allocation
-      OriginAS: 'Organization:   Amazon Technologies Inc. (AT-88-Z)'
-      RegDate: '2011-12-08'
-      Updated: '2020-03-31'
-      Ref: https://rdap.arin.net/registry/entity/AT-88-Z
-      OrgName: Amazon Technologies Inc.
-      OrgId: AT-88-Z
-      Address: 410 Terry Ave N.
-      City: Seattle
-      StateProv: WA
-      PostalCode: '98109'
+      OriginAS: AS3527
+      Organization: National Institutes of Health (NIH)
+      RegDate: 'Updated:        2020-08-11'
+      Updated: '2020-08-11'
+      Ref: https://rdap.arin.net/registry/entity/NIH
+      OrgName: National Institutes of Health
+      OrgId: NIH
+      Address: 6555 Rock Spring Drive
+      City: Bethesda
+      StateProv: MD
+      PostalCode: '20817'
       Country: US
-      Comment: "* Your contact details (phone and email) Without these we will be
-        unable to identify the correct owner of the IP address at that point in time."
-      OrgTechHandle: ANO24-ARIN
-      OrgTechName: Amazon EC2 Network Operations
-      OrgTechPhone: "+1-206-266-4064 "
-      OrgTechEmail: amzn-noc-contact@amazon.com
-      OrgTechRef: https://rdap.arin.net/registry/entity/ANO24-ARIN
-      OrgRoutingHandle: IPROU3-ARIN
-      OrgRoutingName: IP Routing
-      OrgRoutingPhone: "+1-206-266-4064 "
-      OrgRoutingEmail: aws-routing-poc@amazon.com
-      OrgRoutingRef: https://rdap.arin.net/registry/entity/IPROU3-ARIN
-      OrgAbuseHandle: AEA8-ARIN
-      OrgAbuseName: Amazon EC2 Abuse
-      OrgAbusePhone: "+1-206-266-4064 "
-      OrgAbuseEmail: abuse@amazonaws.com
-      OrgAbuseRef: https://rdap.arin.net/registry/entity/AEA8-ARIN
-      OrgNOCHandle: AANO1-ARIN
-      OrgNOCName: Amazon AWS Network Operations
-      OrgNOCPhone: "+1-206-266-4064 "
-      OrgNOCEmail: amzn-noc-contact@amazon.com
-      OrgNOCRef: https://rdap.arin.net/registry/entity/AANO1-ARIN
+      OrgTechHandle: NIHTE-ARIN
+      OrgTechName: NIHtechs
+      OrgTechPhone: "+1-301-402-3141 "
+      OrgTechEmail: citnsarin@mail.nih.gov
+      OrgTechRef: https://rdap.arin.net/registry/entity/NIHTE-ARIN
+      OrgAbuseHandle: NIHIR-ARIN
+      OrgAbuseName: NIH IRT
+      OrgAbusePhone: "+1-301-881-9726 "
+      OrgAbuseEmail: irt@nih.gov
+      OrgAbuseRef: https://rdap.arin.net/registry/entity/NIHIR-ARIN
+      OrgDNSHandle: NDAND-ARIN
+      OrgDNSName: 'NIH DNS Administrators, NIH DNS '
+      OrgDNSPhone: "+1-301-435-1970 "
+      OrgDNSEmail: hostmaster@list.nih.gov
+      OrgDNSRef: https://rdap.arin.net/registry/entity/NDAND-ARIN
+      OrgNOCHandle: NOC228-ARIN
+      OrgNOCName: Network Operations Center
+      OrgNOCPhone: "+1-301-402-3141 "
+      OrgNOCEmail: NIH-DOMAIN-ADMIN@list.nih.gov
+      OrgNOCRef: https://rdap.arin.net/registry/entity/NOC228-ARIN
 title: hearttruth.gov
 ---

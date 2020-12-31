@@ -20,7 +20,7 @@ domain:
   canonically_www: true
   canonically_https: true
   redirect: false
-  hsts: true
+  hsts: false
   hsts_subdomains: false
   hsts_preload_ready: false
 canonical_endpoint:
@@ -29,8 +29,8 @@ canonical_endpoint:
   www: true
   scheme: https
   up: false
-  responds: true
-  timed_out: false
+  responds: false
+  timed_out: true
   redirect: false
   resolves_to: https://www.childwelfare.gov/
   external_redirect: false
@@ -39,44 +39,35 @@ checks:
   cookies: {}
   dns:
     dnssec: false
-    ipv6: false
+    ipv6: true
     cdn:
     cloud_provider:
     google_apps: false
     hostname: ''
     ip: 198.178.200.11
   headers:
-    strict-transport-security: max-age=31536000; includeSubDomains; preload
-    content-security-policy: 'default-src * ''unsafe-inline'' ''unsafe-eval''; connect-src
-      * www.acf.hhs.gov *.addthis.com; script-src * ''unsafe-inline'' ''unsafe-eval''
-      www.acf.hhs.gov *.siteimproveanalytics.io *.siteimprove.com *.google-analytics.com
-      www.googletagmanager.com stats.g.doubleclick.net *.addthis.com; img-src ''self''
-      www.acf.hhs.gov *.siteimprove.com *.siteimproveanalytics.io *.googletagmanager.com
-      *.google-analytics.com stats.g.doubleclick.net *.addthis.com *.adoptuskids.org
-      adoptuskids.org *.childwelfare.gov *.icfwebservices.com *.addsearch.com addsearch.com
-      *.cloudfront.net *.ortussolutions.com *.qualtrics.com *.govdelivery.com data:;
-      font-src ''self'' *.gstatic.com maxcdn.bootstrapcdn.com *.bootstrapcdn.com data:'
-    x-frame-options: SAMEORIGIN
+    strict-transport-security: false
+    content-security-policy: false
+    x-frame-options: false
     server: false
-    x-xss-protection: 1; mode=block
-    x-content-type-options: nosniff
+    x-xss-protection: false
   hsts:
-    valid: true
-    max_age: 31536000
-    include_subdomains: true
-    preload: true
-    enabled: true
-    preload_ready: true
+    valid: false
+    max_age: 0
+    include_subdomains: false
+    preload: false
+    enabled: false
+    preload_ready: false
     preload_list_status: preloaded
   https:
-    valid: true
-    return_code: :ok
+    valid: false
+    return_code: :operation_timedout
   sniffer: {}
   wappalyzer: {}
   wellknown: {}
   whois:
     domain:
-      ">>> Last update of whois database": 2020-12-22T18:14:12Z <<<
+      ">>> Last update of whois database": 2020-12-31T18:09:10Z <<<
     ip:
       "# available at": https://www.arin.net/resources/registry/whois/tou/
       "# https": "//www.arin.net/resources/registry/whois/inaccuracy_reporting/"
@@ -97,21 +88,21 @@ checks:
       StateProv: MD
       PostalCode: '20850'
       Country: US
-      OrgRoutingHandle: KELSC-ARIN
-      OrgRoutingName: 'Kelsch, Nicholas '
-      OrgRoutingPhone: "+1-301-407-6539 "
-      OrgRoutingEmail: nicholas.kelsch@icf.com
-      OrgRoutingRef: https://rdap.arin.net/registry/entity/KELSC-ARIN
       OrgTechHandle: KELSC-ARIN
       OrgTechName: 'Kelsch, Nicholas '
       OrgTechPhone: "+1-301-407-6539 "
       OrgTechEmail: nicholas.kelsch@icf.com
       OrgTechRef: https://rdap.arin.net/registry/entity/KELSC-ARIN
-      OrgAbuseHandle: GST3-ARIN
-      OrgAbuseName: 'Stanton, Gretchen '
-      OrgAbusePhone: "+1-301-407-5000 "
-      OrgAbuseEmail: smetchbud@gmail.com
-      OrgAbuseRef: https://rdap.arin.net/registry/entity/GST3-ARIN
+      OrgAbuseHandle: SISMA1-ARIN
+      OrgAbuseName: 'Sisman, Metin '
+      OrgAbusePhone: "+1-301-640-6480 "
+      OrgAbuseEmail: metin.sisman@icf.com
+      OrgAbuseRef: https://rdap.arin.net/registry/entity/SISMA1-ARIN
+      OrgRoutingHandle: KELSC-ARIN
+      OrgRoutingName: 'Kelsch, Nicholas '
+      OrgRoutingPhone: "+1-301-407-6539 "
+      OrgRoutingEmail: nicholas.kelsch@icf.com
+      OrgRoutingRef: https://rdap.arin.net/registry/entity/KELSC-ARIN
       OrgDNSHandle: KELSC-ARIN
       OrgDNSName: 'Kelsch, Nicholas '
       OrgDNSPhone: "+1-301-407-6539 "
@@ -124,13 +115,13 @@ checks:
       OrgNOCRef: https://rdap.arin.net/registry/entity/KELSC-ARIN
       RAbuseHandle: GG986-ARIN
       RAbuseName: 'Garnett, Guy '
-      RAbusePhone: "+1-404-929-8334 "
+      RAbusePhone: "+1-301-412-9960 "
       RAbuseEmail: guy.garnett@icfi.com
       RAbuseRef: https://rdap.arin.net/registry/entity/GG986-ARIN
       RTechHandle: GST3-ARIN
       RTechName: 'Stanton, Gretchen '
       RTechPhone: "+1-301-407-5000 "
-      RTechEmail: smetchbud@gmail.com
+      RTechEmail: gstanton@icf.com
       RTechRef: https://rdap.arin.net/registry/entity/GST3-ARIN
 title: childwelfare.gov
 ---

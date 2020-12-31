@@ -10,30 +10,30 @@ domain:
   tld: gov
   sld: tvaoig
   trd:
-  up: true
-  responds: true
-  www: true
-  root: true
-  https: true
-  enforces_https: true
+  up: false
+  responds: false
+  www: false
+  root: false
+  https: false
+  enforces_https: false
   downgrades_https: false
   canonically_www: false
-  canonically_https: true
-  redirect: true
-  hsts: true
-  hsts_subdomains: true
-  hsts_preload_ready: true
+  canonically_https: false
+  redirect: false
+  hsts: false
+  hsts_subdomains: false
+  hsts_preload_ready: false
 canonical_endpoint:
-  uri: https://tvaoig.gov/
+  uri: http://tvaoig.gov/
   host: tvaoig.gov
   www: false
-  scheme: https
-  up: true
-  responds: true
+  scheme: http
+  up: false
+  responds: false
   timed_out: false
-  redirect: true
-  resolves_to: https://oig.tva.gov/
-  external_redirect: true
+  redirect: false
+  resolves_to: http://tvaoig.gov/
+  external_redirect: false
 checks:
   content: {}
   cookies: {}
@@ -43,20 +43,25 @@ checks:
     cdn:
     cloud_provider:
     google_apps: false
-    hostname: ns3.tvaoig.gov
-    ip: 173.247.31.131
-  headers: {}
+    hostname: ''
+    ip:
+  headers:
+    strict-transport-security: false
+    content-security-policy: false
+    x-frame-options: false
+    server: false
+    x-xss-protection: false
   hsts:
-    valid: true
-    max_age: 31536000
-    include_subdomains: true
-    preload: true
-    enabled: true
-    preload_ready: true
+    valid: false
+    max_age: 0
+    include_subdomains: false
+    preload: false
+    enabled: false
+    preload_ready: false
     preload_list_status: unknown
   https:
-    valid: true
-    return_code: :ok
+    valid: false
+    return_code: :couldnt_resolve_host
   sniffer: {}
   wappalyzer: {}
   wellknown: {}
@@ -65,59 +70,7 @@ checks:
       Domain Name: TVAOIG.GOV
       Status: ACTIVE
       Security Contact Email: oigittechs@tvaoig.gov
-      ">>> Last update of whois database": 2020-12-21T21:55:05Z <<<
+      ">>> Last update of whois database": 2020-12-30T22:26:51Z <<<
     ip:
-      "# available at": https://www.arin.net/resources/registry/whois/tou/
-      "# https": "//www.arin.net/resources/registry/whois/inaccuracy_reporting/"
-      NetRange: 24.96.81.0 - 24.96.81.255
-      CIDR: 24.96.81.0/24
-      NetName: TN-KNOX
-      NetHandle: NET-24-96-81-0-1
-      Parent: WIDEOPENWEST (NET-24-96-0-0-1)
-      NetType: Reassigned
-      OriginAS: AS12083
-      Organization: WideOpenWest Finance LLC (WOPW)
-      RegDate: '2017-05-18'
-      Updated: '2017-05-18'
-      Ref: https://rdap.arin.net/registry/entity/C06504551
-      OrgName: WideOpenWest Finance LLC
-      OrgId: WOPW
-      Address: 10115 Sherrill Blvd
-      City: Knoxville
-      StateProv: TN
-      PostalCode: '37932'
-      Country: US
-      OrgDNSHandle: JERAL4-ARIN
-      OrgDNSName: DeLong, Jerald A
-      OrgDNSPhone: "+1-813-310-4241 "
-      OrgDNSEmail: Jerry.DeLong@Wowinc.com
-      OrgDNSRef: https://rdap.arin.net/registry/entity/JERAL4-ARIN
-      OrgTechHandle: MIRCH6-ARIN
-      OrgTechName: 'Mirchandani, Chris '
-      OrgTechPhone: "+1-727-386-6138 "
-      OrgTechEmail: christopher.mirchandani@wowinc.com
-      OrgTechRef: https://rdap.arin.net/registry/entity/MIRCH6-ARIN
-      OrgRoutingHandle: JERAL4-ARIN
-      OrgRoutingName: DeLong, Jerald A
-      OrgRoutingPhone: "+1-813-310-4241 "
-      OrgRoutingEmail: Jerry.DeLong@Wowinc.com
-      OrgRoutingRef: https://rdap.arin.net/registry/entity/JERAL4-ARIN
-      OrgNOCHandle: DEMAS26-ARIN
-      OrgNOCName: 'Demas, Armand '
-      OrgNOCPhone: "+1-954-871-1522 "
-      OrgNOCEmail: armand.demas@wowinc.com
-      OrgNOCRef: https://rdap.arin.net/registry/entity/DEMAS26-ARIN
-      OrgAbuseHandle: DEMAS26-ARIN
-      OrgAbuseName: 'Demas, Armand '
-      OrgAbusePhone: "+1-954-871-1522 "
-      OrgAbuseEmail: armand.demas@wowinc.com
-      OrgAbuseRef: https://rdap.arin.net/registry/entity/DEMAS26-ARIN
-      RTechHandle: KRB6-ARIN
-      RTechName: Baker, Kevin R
-      RTechPhone: "+1-678-870-1245 "
-      RTechEmail: kevin.baker@wowinc.com
-      RTechRef: https://rdap.arin.net/registry/entity/KRB6-ARIN
-      Customer: Wide Open West (C06504551)
-      CustName: Wide Open West
 title: tvaoig.gov
 ---

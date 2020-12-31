@@ -43,11 +43,11 @@ checks:
     cdn:
     cloud_provider: :Amazon GovCloud
     google_apps: false
-    hostname: ec2-160-1-50-209.us-gov-west-1.compute.amazonaws.com
-    ip: 160.1.50.209
+    hostname: ec2-52-61-115-130.us-gov-west-1.compute.amazonaws.com
+    ip: 52.61.115.130
   headers: {}
   hsts:
-    valid: true
+    valid: false
     max_age: 0
     include_subdomains: false
     preload: false
@@ -64,15 +64,15 @@ checks:
     domain:
       Domain Name: FAMEP.GOV
       Status: ACTIVE
-      ">>> Last update of whois database": 2020-12-21T21:56:20Z <<<
+      ">>> Last update of whois database": 2020-12-30T21:05:03Z <<<
     ip:
       "# available at": https://www.arin.net/resources/registry/whois/tou/
       "# https": "//www.arin.net/resources/registry/whois/inaccuracy_reporting/"
-      NetRange: 52.61.0.0 - 52.61.255.255
-      CIDR: 52.61.0.0/16
+      NetRange: 160.1.0.0 - 160.1.255.255
+      CIDR: 160.1.0.0/16
       NetName: AMAZON-EC2-USGOVCLD
-      NetHandle: NET-52-61-0-0-1
-      Parent: AT-88-Z (NET-52-32-0-0-1)
+      NetHandle: NET-160-1-0-0-2
+      Parent: AT-88-Z (NET-160-1-0-0-1)
       NetType: Reallocated
       OriginAS: AS8987
       RegDate: '2011-05-10'
@@ -87,16 +87,6 @@ checks:
       Country: US
       Comment: "* Your contact details (phone and email) Without these we will be
         unable to identify the correct owner of the IP address at that point in time."
-      OrgRoutingHandle: ADR29-ARIN
-      OrgRoutingName: AWS Dogfish Routing
-      OrgRoutingPhone: "+1-206-266-4064 "
-      OrgRoutingEmail: aws-dogfish-routing-poc@amazon.com
-      OrgRoutingRef: https://rdap.arin.net/registry/entity/ADR29-ARIN
-      OrgAbuseHandle: AEA8-ARIN
-      OrgAbuseName: Amazon EC2 Abuse
-      OrgAbusePhone: "+1-206-266-4064 "
-      OrgAbuseEmail: abuse@amazonaws.com
-      OrgAbuseRef: https://rdap.arin.net/registry/entity/AEA8-ARIN
       OrgNOCHandle: AANO1-ARIN
       OrgNOCName: Amazon AWS Network Operations
       OrgNOCPhone: "+1-206-266-4064 "
@@ -107,6 +97,16 @@ checks:
       OrgTechPhone: "+1-206-266-4064 "
       OrgTechEmail: amzn-noc-contact@amazon.com
       OrgTechRef: https://rdap.arin.net/registry/entity/ANO24-ARIN
+      OrgRoutingHandle: IPROU3-ARIN
+      OrgRoutingName: IP Routing
+      OrgRoutingPhone: "+1-206-266-4064 "
+      OrgRoutingEmail: aws-routing-poc@amazon.com
+      OrgRoutingRef: https://rdap.arin.net/registry/entity/IPROU3-ARIN
+      OrgAbuseHandle: AEA8-ARIN
+      OrgAbuseName: Amazon EC2 Abuse
+      OrgAbusePhone: "+1-206-266-4064 "
+      OrgAbuseEmail: abuse@amazonaws.com
+      OrgAbuseRef: https://rdap.arin.net/registry/entity/AEA8-ARIN
       Organization: Amazon.com, Inc. (AMAZO-46)
 title: famep.gov
 ---

@@ -44,7 +44,7 @@ checks:
     humans_txt: false
     vulnerability_disclosure_policy: false
     security_txt: false
-    developer_json: false
+    data_json: false
   cookies:
     cookie?: true
     secure?: false
@@ -87,10 +87,12 @@ checks:
     - PHP
     web_frameworks:
     - CodeIgniter
-    tag_managers:
-    - Google Tag Manager
     javascript_libraries:
     - jQuery
+    tag_managers:
+    - Google Tag Manager
+    analytics:
+    - Google Analytics
     cdn:
     - Cloudflare
   wellknown:
@@ -145,7 +147,7 @@ checks:
     webfinger: false
   whois:
     domain:
-      ">>> Last update of whois database": 2020-12-21T21:52:50Z <<<
+      ">>> Last update of whois database": 2020-12-30T21:30:19Z <<<
     ip:
       "# available at": https://www.arin.net/resources/registry/whois/tou/
       "# https": "//www.arin.net/resources/registry/whois/inaccuracy_reporting/"
@@ -183,6 +185,11 @@ checks:
       OrgTechPhone: "+1-650-319-8930 "
       OrgTechEmail: rir@cloudflare.com
       OrgTechRef: https://rdap.arin.net/registry/entity/ADMIN2521-ARIN
+      RTechHandle: ADMIN2521-ARIN
+      RTechName: Admin
+      RTechPhone: "+1-650-319-8930 "
+      RTechEmail: rir@cloudflare.com
+      RTechRef: https://rdap.arin.net/registry/entity/ADMIN2521-ARIN
       RAbuseHandle: ABUSE2916-ARIN
       RAbuseName: Abuse
       RAbusePhone: "+1-650-319-8930 "
@@ -193,10 +200,5 @@ checks:
       RNOCPhone: "+1-650-319-8930 "
       RNOCEmail: noc@cloudflare.com
       RNOCRef: https://rdap.arin.net/registry/entity/NOC11962-ARIN
-      RTechHandle: ADMIN2521-ARIN
-      RTechName: Admin
-      RTechPhone: "+1-650-319-8930 "
-      RTechEmail: rir@cloudflare.com
-      RTechRef: https://rdap.arin.net/registry/entity/ADMIN2521-ARIN
 title: fcsic.gov
 ---

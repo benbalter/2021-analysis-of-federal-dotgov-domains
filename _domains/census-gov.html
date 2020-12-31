@@ -44,29 +44,29 @@ checks:
     humans_txt:
     vulnerability_disclosure_policy:
     security_txt: false
-    developer_json:
+    data_json:
   cookies:
     cookie?: false
     secure?: false
   dns:
-    dnssec: false
-    ipv6: false
+    dnssec: true
+    ipv6: true
     cdn: :akamai
     cloud_provider:
     google_apps: false
-    hostname: a23-67-108-192.deploy.static.akamaitechnologies.com
-    ip: 23.67.108.192
+    hostname: a104-90-71-220.deploy.static.akamaitechnologies.com
+    ip: 104.90.71.220
   headers:
     strict-transport-security: max-age=31536000
     content-security-policy: 'default-src ''self'' ''unsafe-inline'' ''unsafe-eval''
       mailto: data: census.gov *.census.gov http://www.census.gov 2020census.gov *.2020census.gov
       cep.gov house.gov *.house.gov senate.gov *.senate.gov *.sharethis.com *.ytimg.com
-      *.consensu.org *.addthis.com *.moatads.com *.exelator.com *.youtube.com twitter.com
+      *.consensu.org *.addthis.com *.moatads.com *.exelator.com *.youtube.com *.twitter.com
       *.facebook.net *.facebook.com *.google-analytics.com *.google.com *.gstatic.com
       *.googleapis.com *.googlecode.com *.googletagmanager.com *.doubleclick.net *.jquery.com
       *.alicdn.com  *.highcharts.com *.adobe.com *.adobedtm.com *.amsadobe.com *.demdex.net
       *.omtrdc.net *.everesttech.net *.arcgisonline.com *.digitalgov.gov *.calendarwiz.com
-      *.tableau.com;'
+      *.tableau.com *.instagram.com *.go-mpulse.net *.cspan.org;'
     x-frame-options: sameorigin
     server: false
     x-xss-protection: 1; mode=block
@@ -107,12 +107,13 @@ checks:
     - jQuery
     - Modernizr
     - Lodash
+    analytics:
+    - Google Analytics
+    - Adobe Analytics
     marketing_automation:
     - Adobe Target
     tag_managers:
     - Adobe Experience Platform Launch
-    analytics:
-    - Adobe Analytics
     cdn:
     - Akamai
   wellknown:
@@ -167,15 +168,15 @@ checks:
     webfinger:
   whois:
     domain:
-      ">>> Last update of whois database": 2020-12-21T19:57:59Z <<<
+      ">>> Last update of whois database": 2020-12-30T22:10:05Z <<<
     ip:
       "# available at": https://www.arin.net/resources/registry/whois/tou/
       "# https": "//www.arin.net/resources/registry/whois/inaccuracy_reporting/"
-      NetRange: 23.32.0.0 - 23.67.255.255
-      CIDR: 23.64.0.0/14, 23.32.0.0/11
+      NetRange: 104.64.0.0 - 104.127.255.255
+      CIDR: 104.64.0.0/10
       NetName: AKAMAI
-      NetHandle: NET-23-32-0-0-1
-      Parent: NET23 (NET-23-0-0-0-0)
+      NetHandle: NET-104-64-0-0-1
+      Parent: NET104 (NET-104-0-0-0-0)
       NetType: Direct Allocation
       OriginAS: 'Organization:   Akamai Technologies, Inc. (AKAMAI)'
       RegDate: '1999-01-21'
@@ -188,15 +189,15 @@ checks:
       StateProv: MA
       PostalCode: '02142'
       Country: US
-      OrgTechHandle: IPADM11-ARIN
-      OrgTechName: ipadmin
-      OrgTechPhone: "+1-617-444-0017 "
-      OrgTechEmail: ip-admin@akamai.com
-      OrgTechRef: https://rdap.arin.net/registry/entity/IPADM11-ARIN
       OrgAbuseHandle: NUS-ARIN
       OrgAbuseName: NOC United States
       OrgAbusePhone: "+1-617-444-2535 "
       OrgAbuseEmail: abuse@akamai.com
       OrgAbuseRef: https://rdap.arin.net/registry/entity/NUS-ARIN
+      OrgTechHandle: YKS-ARIN
+      OrgTechName: 'Yeung, Kam Sze '
+      OrgTechPhone: "+852-22718527 "
+      OrgTechEmail: ip-admin@akamai.com
+      OrgTechRef: https://rdap.arin.net/registry/entity/YKS-ARIN
 title: census.gov
 ---

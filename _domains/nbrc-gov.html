@@ -44,7 +44,7 @@ checks:
     humans_txt: false
     vulnerability_disclosure_policy: false
     security_txt: false
-    developer_json: false
+    data_json: false
   cookies:
     cookie?: true
     secure?: false
@@ -55,7 +55,7 @@ checks:
     cloud_provider:
     google_apps: false
     hostname: ''
-    ip: 75.101.173.14
+    ip: 54.164.99.243
   headers:
     strict-transport-security: false
     content-security-policy: false
@@ -64,7 +64,7 @@ checks:
     x-xss-protection: 1; mode=block
     x-powered-by: PHP/7.2.34
   hsts:
-    valid: true
+    valid: false
     max_age: 0
     include_subdomains: false
     preload: false
@@ -90,13 +90,13 @@ checks:
     - Apache
     widgets:
     - OWL Carousel
-    analytics:
-    - Google Analytics
     font_scripts:
     - Font Awesome
     javascript_libraries:
     - jQuery UI
     - jQuery
+    analytics:
+    - Google Analytics
     webmail:
     - Microsoft 365
   wellknown:
@@ -151,48 +151,62 @@ checks:
     webfinger: false
   whois:
     domain:
-      ">>> Last update of whois database": 2020-12-21T20:15:00Z <<<
+      ">>> Last update of whois database": 2020-12-30T22:52:38Z <<<
     ip:
       "# available at": https://www.arin.net/resources/registry/whois/tou/
       "# https": "//www.arin.net/resources/registry/whois/inaccuracy_reporting/"
-      NetRange: 54.160.0.0 - 54.175.255.255
-      CIDR: 54.160.0.0/12
-      NetName: AMAZON-2011L
-      NetHandle: NET-54-160-0-0-1
-      Parent: NET54 (NET-54-0-0-0-0)
-      NetType: Direct Allocation
-      OriginAS: 'Organization:   Amazon Technologies Inc. (AT-88-Z)'
-      RegDate: '2011-12-08'
-      Updated: '2020-03-31'
-      Ref: https://rdap.arin.net/registry/entity/AT-88-Z
-      OrgName: Amazon Technologies Inc.
-      OrgId: AT-88-Z
-      Address: 410 Terry Ave N.
-      City: Seattle
-      StateProv: WA
-      PostalCode: '98109'
+      NetRange: 75.101.128.0 - 75.101.255.255
+      CIDR: 75.101.128.0/17
+      NetName: AMAZON-IAD
+      NetHandle: NET-75-101-128-0-2
+      Parent: AMAZON-EC2-4 (NET-75-101-128-0-1)
+      NetType: Reallocated
+      OriginAS: 'Organization:   Amazon Data Services NoVa (ADSN-1)'
+      RegDate: '2018-04-25'
+      Updated: '2019-08-02'
+      Comment: http://ec2.amazonaws.com
+      Ref: https://rdap.arin.net/registry/entity/ADSN-1
+      OrgName: Amazon Data Services NoVa
+      OrgId: ADSN-1
+      Address: 13200 Woodland Park Road
+      City: Herndon
+      StateProv: VA
+      PostalCode: '20171'
       Country: US
-      Comment: "* Your contact details (phone and email) Without these we will be
-        unable to identify the correct owner of the IP address at that point in time."
-      OrgRoutingHandle: ADR29-ARIN
-      OrgRoutingName: AWS Dogfish Routing
-      OrgRoutingPhone: "+1-206-266-4064 "
-      OrgRoutingEmail: aws-dogfish-routing-poc@amazon.com
-      OrgRoutingRef: https://rdap.arin.net/registry/entity/ADR29-ARIN
-      OrgAbuseHandle: AEA8-ARIN
-      OrgAbuseName: Amazon EC2 Abuse
-      OrgAbusePhone: "+1-206-266-4064 "
-      OrgAbuseEmail: abuse@amazonaws.com
-      OrgAbuseRef: https://rdap.arin.net/registry/entity/AEA8-ARIN
       OrgNOCHandle: AANO1-ARIN
       OrgNOCName: Amazon AWS Network Operations
       OrgNOCPhone: "+1-206-266-4064 "
       OrgNOCEmail: amzn-noc-contact@amazon.com
       OrgNOCRef: https://rdap.arin.net/registry/entity/AANO1-ARIN
+      OrgAbuseHandle: AEA8-ARIN
+      OrgAbuseName: Amazon EC2 Abuse
+      OrgAbusePhone: "+1-206-266-4064 "
+      OrgAbuseEmail: abuse@amazonaws.com
+      OrgAbuseRef: https://rdap.arin.net/registry/entity/AEA8-ARIN
+      OrgRoutingHandle: IPROU3-ARIN
+      OrgRoutingName: IP Routing
+      OrgRoutingPhone: "+1-206-266-4064 "
+      OrgRoutingEmail: aws-routing-poc@amazon.com
+      OrgRoutingRef: https://rdap.arin.net/registry/entity/IPROU3-ARIN
       OrgTechHandle: ANO24-ARIN
       OrgTechName: Amazon EC2 Network Operations
       OrgTechPhone: "+1-206-266-4064 "
       OrgTechEmail: amzn-noc-contact@amazon.com
       OrgTechRef: https://rdap.arin.net/registry/entity/ANO24-ARIN
+      RTechHandle: ANO24-ARIN
+      RTechName: Amazon EC2 Network Operations
+      RTechPhone: "+1-206-266-4064 "
+      RTechEmail: amzn-noc-contact@amazon.com
+      RTechRef: https://rdap.arin.net/registry/entity/ANO24-ARIN
+      RAbuseHandle: AEA8-ARIN
+      RAbuseName: Amazon EC2 Abuse
+      RAbusePhone: "+1-206-266-4064 "
+      RAbuseEmail: abuse@amazonaws.com
+      RAbuseRef: https://rdap.arin.net/registry/entity/AEA8-ARIN
+      RNOCHandle: ANO24-ARIN
+      RNOCName: Amazon EC2 Network Operations
+      RNOCPhone: "+1-206-266-4064 "
+      RNOCEmail: amzn-noc-contact@amazon.com
+      RNOCRef: https://rdap.arin.net/registry/entity/ANO24-ARIN
 title: nbrc.gov
 ---

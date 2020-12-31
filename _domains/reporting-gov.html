@@ -44,13 +44,13 @@ checks:
     humans_txt: false
     vulnerability_disclosure_policy: false
     security_txt: false
-    developer_json: false
+    data_json: false
   cookies:
     cookie?: false
     secure?: false
   dns:
-    dnssec: false
-    ipv6: false
+    dnssec: true
+    ipv6: true
     cdn:
     cloud_provider:
     google_apps: false
@@ -63,8 +63,8 @@ checks:
     server: false
     x-xss-protection: 1; mode=block
     x-content-type-options: nosniff
-    x-b3-traceid: 31be0fc00eee4dc4
-    x-b3-spanid: 31be0fc00eee4dc4
+    x-b3-traceid: cc03602e4cb476f4
+    x-b3-spanid: cc03602e4cb476f4
     x-b3-sampled: '0'
     x-powered-by: Salesforce.com ApexPages
   hsts:
@@ -149,7 +149,7 @@ checks:
     webfinger: false
   whois:
     domain:
-      ">>> Last update of whois database": 2020-12-22T17:35:10Z <<<
+      ">>> Last update of whois database": 2020-12-30T22:59:23Z <<<
     ip:
       "# available at": https://www.arin.net/resources/registry/whois/tou/
       "# https": "//www.arin.net/resources/registry/whois/inaccuracy_reporting/"
@@ -176,35 +176,35 @@ checks:
       OrgAbusePhone: "+1-703-463-3219 "
       OrgAbuseEmail: abuse@salesforce.com
       OrgAbuseRef: https://rdap.arin.net/registry/entity/SAN76-ARIN
-      OrgTechHandle: NOC1403-ARIN
-      OrgTechName: Network Operations Center
-      OrgTechPhone: "+1-415-901-7000 "
-      OrgTechEmail: neteng@salesforce.com
-      OrgTechRef: https://rdap.arin.net/registry/entity/NOC1403-ARIN
       OrgDNSHandle: SFDCP-ARIN
       OrgDNSName: SFDC-PubDNS
       OrgDNSPhone: "+1-415-901-7000 "
       OrgDNSEmail: public-dns@salesforce.com
       OrgDNSRef: https://rdap.arin.net/registry/entity/SFDCP-ARIN
+      OrgTechHandle: NOC1403-ARIN
+      OrgTechName: Network Operations Center
+      OrgTechPhone: "+1-415-901-7000 "
+      OrgTechEmail: global-ip-alloc@salesforce.com
+      OrgTechRef: https://rdap.arin.net/registry/entity/NOC1403-ARIN
       OrgNOCHandle: NOC1403-ARIN
       OrgNOCName: Network Operations Center
       OrgNOCPhone: "+1-415-901-7000 "
-      OrgNOCEmail: neteng@salesforce.com
+      OrgNOCEmail: global-ip-alloc@salesforce.com
       OrgNOCRef: https://rdap.arin.net/registry/entity/NOC1403-ARIN
-      RTechHandle: NOC1403-ARIN
-      RTechName: Network Operations Center
-      RTechPhone: "+1-415-901-7000 "
-      RTechEmail: neteng@salesforce.com
-      RTechRef: https://rdap.arin.net/registry/entity/NOC1403-ARIN
-      RNOCHandle: NOC1403-ARIN
-      RNOCName: Network Operations Center
-      RNOCPhone: "+1-415-901-7000 "
-      RNOCEmail: neteng@salesforce.com
-      RNOCRef: https://rdap.arin.net/registry/entity/NOC1403-ARIN
       RAbuseHandle: SAN76-ARIN
       RAbuseName: Salesforce Abuse NOC
       RAbusePhone: "+1-703-463-3219 "
       RAbuseEmail: abuse@salesforce.com
       RAbuseRef: https://rdap.arin.net/registry/entity/SAN76-ARIN
+      RNOCHandle: NOC1403-ARIN
+      RNOCName: Network Operations Center
+      RNOCPhone: "+1-415-901-7000 "
+      RNOCEmail: global-ip-alloc@salesforce.com
+      RNOCRef: https://rdap.arin.net/registry/entity/NOC1403-ARIN
+      RTechHandle: NOC1403-ARIN
+      RTechName: Network Operations Center
+      RTechPhone: "+1-415-901-7000 "
+      RTechEmail: global-ip-alloc@salesforce.com
+      RTechRef: https://rdap.arin.net/registry/entity/NOC1403-ARIN
 title: reporting.gov
 ---

@@ -12,7 +12,7 @@ domain:
   trd:
   up: true
   responds: true
-  www: true
+  www: false
   root: true
   https: true
   enforces_https: true
@@ -44,17 +44,17 @@ checks:
     humans_txt: false
     vulnerability_disclosure_policy: false
     security_txt: false
-    developer_json: false
+    data_json: false
   cookies:
     cookie?: true
     secure?: true
   dns:
-    dnssec: false
+    dnssec: true
     ipv6: false
     cdn:
     cloud_provider:
     google_apps: false
-    hostname: myrapk.fiscal.treasury.gov
+    hostname: www.myra.gov
     ip: 166.123.218.15
   headers:
     strict-transport-security: max-age=31536000; includeSubDomains
@@ -80,11 +80,11 @@ checks:
     javascript:
     advertising:
   wappalyzer:
-    tag_managers:
-    - Google Tag Manager
     analytics:
     - Webtrends
     - Google Analytics
+    tag_managers:
+    - Google Tag Manager
   wellknown:
     acme_challenge: false
     amphtml: false
@@ -140,7 +140,7 @@ checks:
       Domain Name: MYRA.GOV
       Status: ACTIVE
       Security Contact Email: domainsecurity@treasury.gov
-      ">>> Last update of whois database": 2020-12-21T21:52:20Z <<<
+      ">>> Last update of whois database": 2020-12-30T22:08:20Z <<<
     ip:
       "# available at": https://www.arin.net/resources/registry/whois/tou/
       "# https": "//www.arin.net/resources/registry/whois/inaccuracy_reporting/"
@@ -162,11 +162,6 @@ checks:
       StateProv: DC
       PostalCode: '20006'
       Country: US
-      OrgNOCHandle: SOC35-ARIN
-      OrgNOCName: Security Operations Center
-      OrgNOCPhone: "+1-202-927-9777 "
-      OrgNOCEmail: soc@gsoc.treas.gov
-      OrgNOCRef: https://rdap.arin.net/registry/entity/SOC35-ARIN
       OrgTechHandle: DLS46-ARIN
       OrgTechName: Smicker, Daniel L
       OrgTechPhone: "+1-304-480-7779 "
@@ -177,6 +172,11 @@ checks:
       OrgAbusePhone: "+1-202-927-9777 "
       OrgAbuseEmail: soc@gsoc.treas.gov
       OrgAbuseRef: https://rdap.arin.net/registry/entity/SOC35-ARIN
+      OrgNOCHandle: SOC35-ARIN
+      OrgNOCName: Security Operations Center
+      OrgNOCPhone: "+1-202-927-9777 "
+      OrgNOCEmail: soc@gsoc.treas.gov
+      OrgNOCRef: https://rdap.arin.net/registry/entity/SOC35-ARIN
       RTechHandle: DLS46-ARIN
       RTechName: Smicker, Daniel L
       RTechPhone: "+1-304-480-7779 "

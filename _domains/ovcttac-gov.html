@@ -38,8 +38,8 @@ checks:
   content: {}
   cookies: {}
   dns:
-    dnssec: false
-    ipv6: false
+    dnssec: true
+    ipv6: true
     cdn:
     cloud_provider:
     google_apps: false
@@ -47,7 +47,7 @@ checks:
     ip: 198.178.200.22
   headers: {}
   hsts:
-    valid: true
+    valid: false
     max_age: 0
     include_subdomains: false
     preload: false
@@ -62,7 +62,7 @@ checks:
   wellknown: {}
   whois:
     domain:
-      ">>> Last update of whois database": 2020-12-21T22:28:22Z <<<
+      ">>> Last update of whois database": 2020-12-31T18:52:57Z <<<
     ip:
       "# available at": https://www.arin.net/resources/registry/whois/tou/
       "# https": "//www.arin.net/resources/registry/whois/inaccuracy_reporting/"
@@ -83,21 +83,21 @@ checks:
       StateProv: MD
       PostalCode: '20850'
       Country: US
-      OrgAbuseHandle: SAUER64-ARIN
-      OrgAbuseName: 'Sauer, Tom '
-      OrgAbusePhone: "+1-651-442-2060 "
-      OrgAbuseEmail: tom.sauer@icf.com
-      OrgAbuseRef: https://rdap.arin.net/registry/entity/SAUER64-ARIN
-      OrgTechHandle: KELSC-ARIN
-      OrgTechName: 'Kelsch, Nicholas '
-      OrgTechPhone: "+1-301-407-6539 "
-      OrgTechEmail: nicholas.kelsch@icf.com
-      OrgTechRef: https://rdap.arin.net/registry/entity/KELSC-ARIN
       OrgRoutingHandle: KELSC-ARIN
       OrgRoutingName: 'Kelsch, Nicholas '
       OrgRoutingPhone: "+1-301-407-6539 "
       OrgRoutingEmail: nicholas.kelsch@icf.com
       OrgRoutingRef: https://rdap.arin.net/registry/entity/KELSC-ARIN
+      OrgTechHandle: KELSC-ARIN
+      OrgTechName: 'Kelsch, Nicholas '
+      OrgTechPhone: "+1-301-407-6539 "
+      OrgTechEmail: nicholas.kelsch@icf.com
+      OrgTechRef: https://rdap.arin.net/registry/entity/KELSC-ARIN
+      OrgAbuseHandle: GST3-ARIN
+      OrgAbuseName: 'Stanton, Gretchen '
+      OrgAbusePhone: "+1-301-407-5000 "
+      OrgAbuseEmail: gretchen.stanton@icf.com
+      OrgAbuseRef: https://rdap.arin.net/registry/entity/GST3-ARIN
       OrgDNSHandle: KELSC-ARIN
       OrgDNSName: 'Kelsch, Nicholas '
       OrgDNSPhone: "+1-301-407-6539 "
@@ -116,7 +116,7 @@ checks:
       RTechHandle: GST3-ARIN
       RTechName: 'Stanton, Gretchen '
       RTechPhone: "+1-301-407-5000 "
-      RTechEmail: gstanton@icf.com
+      RTechEmail: gretchen.stanton@icf.com
       RTechRef: https://rdap.arin.net/registry/entity/GST3-ARIN
 title: ovcttac.gov
 ---

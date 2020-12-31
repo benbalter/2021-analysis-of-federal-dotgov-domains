@@ -44,7 +44,7 @@ checks:
     humans_txt: false
     vulnerability_disclosure_policy: false
     security_txt: false
-    developer_json: false
+    data_json: true
   cookies:
     cookie?: true
     secure?: true
@@ -54,8 +54,8 @@ checks:
     cdn: :cloudfront
     cloud_provider:
     google_apps: false
-    hostname: server-52-85-144-115.iad89.r.cloudfront.net
-    ip: 52.85.144.115
+    hostname: server-52-85-144-101.iad89.r.cloudfront.net
+    ip: 52.85.144.101
   headers:
     strict-transport-security: max-age=31536000
     content-security-policy: 'default-src ''self'' *.fec.gov *.app.cloud.gov; connect-src
@@ -69,11 +69,11 @@ checks:
     x-frame-options: SAMEORIGIN
     server: false
     x-xss-protection: 1; mode=block
-    x-vcap-request-id: 624628f5-d6e4-49bf-40b5-256d2449e106
+    x-vcap-request-id: ab1ad514-1983-4b1a-4f5e-aecab9e61927
     x-content-type-options: nosniff
     x-cache: Hit from cloudfront
     x-amz-cf-pop: IAD89-C3
-    x-amz-cf-id: iVdYDmmL2OX3OOsDVZYW3ACWPx2fsk-VrCA97UNA1biuePDs7Sm8Qw==
+    x-amz-cf-id: B4uJtCiloOza8P7uTmxG06zPQJQ6yMF81dPRjshd7utMDVJSAVpopQ==
   hsts:
     valid: true
     max_age: 31536000
@@ -172,7 +172,7 @@ checks:
     webfinger: false
   whois:
     domain:
-      ">>> Last update of whois database": 2020-12-22T18:12:57Z <<<
+      ">>> Last update of whois database": 2020-12-30T21:06:33Z <<<
     ip:
       "# available at": https://www.arin.net/resources/registry/whois/tou/
       "# https": "//www.arin.net/resources/registry/whois/inaccuracy_reporting/"
@@ -196,11 +196,6 @@ checks:
       Country: US
       Comment: "-----BEGIN CERTIFICATE-----MIICljCCAX4CCQDvS1je1Bd4uzANBgkqhkiG9w0BAQsFADANMQswCQYDVQQGEwJVUzAeFw0yMDA4MjYxODQ1NThaFw0yMTA4MjYxODQ1NThaMA0xCzAJBgNVBAYTAlVTMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA5geQJL7KoQhQLaTteXnFj0xsze15HgB9cpHPoL6khWVUthOg6AYCBHCcVJWeuEHuYGJcnrtW1tyLWpgfrxaw5E4ZtunSHElzO6BIp2u0215mbSGPQUt3TMR64nvXvEAY4qBP/p2+j0ud2eI47eA3s2ykFztEJPb7eZh8lVCGj5n2msRxeFiYwoB7/u3TDnW0/BwNLnJgyGkAWYUlk68hR10LHoBqGPezn7mPuiLHNa6JQP0WTYBz/80kS3m/4oZ7NS20PMieXqFjfYEgW6fPg7uJKhH3aYVVveZpBS5cRzm360HyT5hj1rUJh34nVCLMlvP+400w1wxr9buLnQzVlwIDAQABMA0GCSqGSIb3DQEBCwUAA4IBAQCZD7ERFb2LpeLdQgyji/ZqZ7lDXR8wq4m+ihMiqpPcwTVs1dfBfKDvZ4K6Ddyzkfd1NQYPWiV47nvqgJxwdISa7vN011RxBEGkYdJ8cNaRXW7aCGfQ8ZSQL6mbXsm4sbvDQNHiWJcdUB0KTzR/wpbXf9+24TbPGaOsZvfnKtd1lZhY5xFiOVCOdI59c/XyDH9aqOKNE0pOeATX55I3bU5PKeK5CM8oAtD2sFAQ956Uvj7/vFDs8QP3upzf53R+erSU10L1fTQBWHjNUCcf9wviS+U4hsaCcBZMlw6d5Q84GYX1tS+YwtA0Fv/NQcOWr9RJT+JVnpbyAxEyjI37XOqH-----END
         CERTIFICATE-----"
-      OrgNOCHandle: AANO1-ARIN
-      OrgNOCName: Amazon AWS Network Operations
-      OrgNOCPhone: "+1-206-266-4064 "
-      OrgNOCEmail: amzn-noc-contact@amazon.com
-      OrgNOCRef: https://rdap.arin.net/registry/entity/AANO1-ARIN
       OrgTechHandle: ANO24-ARIN
       OrgTechName: Amazon EC2 Network Operations
       OrgTechPhone: "+1-206-266-4064 "
@@ -216,5 +211,10 @@ checks:
       OrgAbusePhone: "+1-206-266-4064 "
       OrgAbuseEmail: abuse@amazonaws.com
       OrgAbuseRef: https://rdap.arin.net/registry/entity/AEA8-ARIN
+      OrgNOCHandle: AANO1-ARIN
+      OrgNOCName: Amazon AWS Network Operations
+      OrgNOCPhone: "+1-206-266-4064 "
+      OrgNOCEmail: amzn-noc-contact@amazon.com
+      OrgNOCRef: https://rdap.arin.net/registry/entity/AANO1-ARIN
 title: fec.gov
 ---

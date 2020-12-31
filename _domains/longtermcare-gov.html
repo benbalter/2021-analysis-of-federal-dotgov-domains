@@ -38,7 +38,7 @@ checks:
   content: {}
   cookies: {}
   dns:
-    dnssec: false
+    dnssec: true
     ipv6: false
     cdn:
     cloud_provider:
@@ -47,7 +47,7 @@ checks:
     ip: 40.90.236.0
   headers: {}
   hsts:
-    valid: true
+    valid: false
     max_age: 0
     include_subdomains: false
     preload: false
@@ -65,13 +65,13 @@ checks:
       Domain Name: LONGTERMCARE.GOV
       Status: ACTIVE
       Security Contact Email: responsibledisclosure@hhs.gov
-      ">>> Last update of whois database": 2020-12-21T21:44:50Z <<<
+      ">>> Last update of whois database": 2020-12-31T18:41:12Z <<<
     ip:
       "# available at": https://www.arin.net/resources/registry/whois/tou/
       "# https": "//www.arin.net/resources/registry/whois/inaccuracy_reporting/"
       NetRange: 40.74.0.0 - 40.125.127.255
-      CIDR: 40.80.0.0/12, 40.124.0.0/16, 40.120.0.0/14, 40.96.0.0/12, 40.74.0.0/15,
-        40.76.0.0/14, 40.125.0.0/17, 40.112.0.0/13
+      CIDR: 40.124.0.0/16, 40.96.0.0/12, 40.76.0.0/14, 40.112.0.0/13, 40.74.0.0/15,
+        40.120.0.0/14, 40.125.0.0/17, 40.80.0.0/12
       NetName: MSFT
       NetHandle: NET-40-74-0-0-1
       Parent: NET40 (NET-40-0-0-0-0)
@@ -88,15 +88,15 @@ checks:
       PostalCode: '98052'
       Country: US
       Comment: "* IOC@microsoft.com"
-      OrgAbuseHandle: MAC74-ARIN
-      OrgAbuseName: Microsoft Abuse Contact
-      OrgAbusePhone: "+1-425-882-8080 "
-      OrgAbuseEmail: abuse@microsoft.com
-      OrgAbuseRef: https://rdap.arin.net/registry/entity/MAC74-ARIN
       OrgTechHandle: MRPD-ARIN
       OrgTechName: Microsoft Routing, Peering, and DNS
       OrgTechPhone: "+1-425-882-8080 "
       OrgTechEmail: IOC@microsoft.com
       OrgTechRef: https://rdap.arin.net/registry/entity/MRPD-ARIN
+      OrgAbuseHandle: MAC74-ARIN
+      OrgAbuseName: Microsoft Abuse Contact
+      OrgAbusePhone: "+1-425-882-8080 "
+      OrgAbuseEmail: abuse@microsoft.com
+      OrgAbuseRef: https://rdap.arin.net/registry/entity/MAC74-ARIN
 title: longtermcare.gov
 ---

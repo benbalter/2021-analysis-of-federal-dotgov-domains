@@ -13,7 +13,7 @@ domain:
   up: true
   responds: true
   www: true
-  root: true
+  root: false
   https: true
   enforces_https: true
   downgrades_https: false
@@ -21,7 +21,7 @@ domain:
   canonically_https: true
   redirect: false
   hsts: true
-  hsts_subdomains: true
+  hsts_subdomains: false
   hsts_preload_ready: false
 canonical_endpoint:
   uri: https://www.ethicsburg.gov/
@@ -44,17 +44,17 @@ checks:
     humans_txt: false
     vulnerability_disclosure_policy: false
     security_txt: false
-    developer_json: false
+    data_json: false
   cookies:
     cookie?: false
     secure?: false
   dns:
     dnssec: false
-    ipv6: false
+    ipv6: true
     cdn:
     cloud_provider:
     google_apps: false
-    hostname: www.ethicsburg.gov
+    hostname: w.ethicsburg.com
     ip: 166.123.208.136
   headers:
     strict-transport-security: max-age=31536000; includeSubDomains
@@ -133,7 +133,7 @@ checks:
     webfinger: false
   whois:
     domain:
-      ">>> Last update of whois database": 2020-12-21T21:08:03Z <<<
+      ">>> Last update of whois database": 2020-12-30T21:39:49Z <<<
     ip:
       "# available at": https://www.arin.net/resources/registry/whois/tou/
       "# https": "//www.arin.net/resources/registry/whois/inaccuracy_reporting/"
@@ -155,11 +155,6 @@ checks:
       StateProv: DC
       PostalCode: '20006'
       Country: US
-      OrgTechHandle: DLS46-ARIN
-      OrgTechName: Smicker, Daniel L
-      OrgTechPhone: "+1-304-480-7779 "
-      OrgTechEmail: ecb-hosting@bpd.treas.gov
-      OrgTechRef: https://rdap.arin.net/registry/entity/DLS46-ARIN
       OrgAbuseHandle: SOC35-ARIN
       OrgAbuseName: Security Operations Center
       OrgAbusePhone: "+1-202-927-9777 "
@@ -170,6 +165,11 @@ checks:
       OrgNOCPhone: "+1-202-927-9777 "
       OrgNOCEmail: soc@gsoc.treas.gov
       OrgNOCRef: https://rdap.arin.net/registry/entity/SOC35-ARIN
+      OrgTechHandle: DLS46-ARIN
+      OrgTechName: Smicker, Daniel L
+      OrgTechPhone: "+1-304-480-7779 "
+      OrgTechEmail: ecb-hosting@bpd.treas.gov
+      OrgTechRef: https://rdap.arin.net/registry/entity/DLS46-ARIN
       RTechHandle: DLS46-ARIN
       RTechName: Smicker, Daniel L
       RTechPhone: "+1-304-480-7779 "

@@ -44,12 +44,12 @@ checks:
     humans_txt: false
     vulnerability_disclosure_policy: false
     security_txt: false
-    developer_json: false
+    data_json: false
   cookies:
     cookie?: false
     secure?: false
   dns:
-    dnssec: false
+    dnssec: true
     ipv6: false
     cdn:
     cloud_provider:
@@ -83,6 +83,8 @@ checks:
     - Windows Server
     web_servers:
     - IIS
+    analytics:
+    - Google Analytics
     ssl/tls_certificate_authorities:
     - Sectigo
   wellknown:
@@ -140,7 +142,7 @@ checks:
       Domain Name: ADR.GOV
       Status: ACTIVE
       Security Contact Email: webmaster@fmcs.gov
-      ">>> Last update of whois database": 2020-12-21T21:29:19Z <<<
+      ">>> Last update of whois database": 2020-12-30T22:09:50Z <<<
     ip:
       "# available at": https://www.arin.net/resources/registry/whois/tou/
       "# https": "//www.arin.net/resources/registry/whois/inaccuracy_reporting/"
@@ -163,21 +165,21 @@ checks:
       StateProv: VA
       PostalCode: '20147'
       Country: US
-      OrgTechHandle: SWIPP-ARIN
-      OrgTechName: swipper
-      OrgTechPhone: "+1-800-900-0241 "
-      OrgTechEmail: swipper@verizonbusiness.com
-      OrgTechRef: https://rdap.arin.net/registry/entity/SWIPP-ARIN
-      OrgNOCHandle: OA12-ARIN
-      OrgNOCName: 'UUnet Technologies, Inc., Technologies '
-      OrgNOCPhone: "+1-800-900-0241 "
-      OrgNOCEmail: help4u@verizonbusiness.com
-      OrgNOCRef: https://rdap.arin.net/registry/entity/OA12-ARIN
       OrgAbuseHandle: ABUSE3-ARIN
       OrgAbuseName: abuse
       OrgAbusePhone: "+1-800-900-0241 "
       OrgAbuseEmail: abuse-mail@verizonbusiness.com
       OrgAbuseRef: https://rdap.arin.net/registry/entity/ABUSE3-ARIN
+      OrgNOCHandle: OA12-ARIN
+      OrgNOCName: 'UUnet Technologies, Inc., Technologies '
+      OrgNOCPhone: "+1-800-900-0241 "
+      OrgNOCEmail: help4u@verizonbusiness.com
+      OrgNOCRef: https://rdap.arin.net/registry/entity/OA12-ARIN
+      OrgTechHandle: SWIPP-ARIN
+      OrgTechName: swipper
+      OrgTechPhone: "+1-800-900-0241 "
+      OrgTechEmail: swipper@verizonbusiness.com
+      OrgTechRef: https://rdap.arin.net/registry/entity/SWIPP-ARIN
       RAbuseHandle: ABUSE5603-ARIN
       RAbuseName: Abuse
       RAbusePhone: "+1-800-900-0241 "

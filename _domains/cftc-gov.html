@@ -44,12 +44,12 @@ checks:
     humans_txt: false
     vulnerability_disclosure_policy: false
     security_txt: false
-    developer_json: false
+    data_json: false
   cookies:
     cookie?: false
     secure?: false
   dns:
-    dnssec: false
+    dnssec: true
     ipv6: false
     cdn:
     cloud_provider:
@@ -67,7 +67,7 @@ checks:
     x-content-type-options: nosniff
     x-generator: Drupal 8 (https://www.drupal.org)
     x-drupal-cache: HIT
-    x-request-id: v-f76be1f8-43d2-11eb-9ded-bfab14ae73d5
+    x-request-id: v-dc8d3274-4b98-11eb-8a52-d3c32b9998a5
     x-ah-environment: prod
     x-cache: MISS
   hsts:
@@ -103,16 +103,15 @@ checks:
     - Nginx
     paas:
     - Cloud Platform
-    tag_managers:
-    - Google Tag Manager
-    cdn:
-    - Cloudflare
     javascript_libraries:
     - jQuery UI
     - jQuery
     - Lodash
     analytics:
     - New Relic
+    - Google Analytics
+    tag_managers:
+    - Google Tag Manager
   wellknown:
     acme_challenge: false
     amphtml: false
@@ -168,7 +167,7 @@ checks:
       Domain Name: CFTC.GOV
       Status: ACTIVE
       Security Contact Email: Security_VDP@cftc.gov
-      ">>> Last update of whois database": 2020-12-21T21:25:03Z <<<
+      ">>> Last update of whois database": 2020-12-31T18:49:12Z <<<
     ip:
       "# available at": https://www.arin.net/resources/registry/whois/tou/
       "# https": "//www.arin.net/resources/registry/whois/inaccuracy_reporting/"
@@ -191,11 +190,6 @@ checks:
       Country: US
       Comment: "* Your contact details (phone and email) Without these we will be
         unable to identify the correct owner of the IP address at that point in time."
-      OrgRoutingHandle: IPROU3-ARIN
-      OrgRoutingName: IP Routing
-      OrgRoutingPhone: "+1-206-266-4064 "
-      OrgRoutingEmail: aws-routing-poc@amazon.com
-      OrgRoutingRef: https://rdap.arin.net/registry/entity/IPROU3-ARIN
       OrgNOCHandle: AANO1-ARIN
       OrgNOCName: Amazon AWS Network Operations
       OrgNOCPhone: "+1-206-266-4064 "
@@ -206,6 +200,11 @@ checks:
       OrgTechPhone: "+1-206-266-4064 "
       OrgTechEmail: amzn-noc-contact@amazon.com
       OrgTechRef: https://rdap.arin.net/registry/entity/ANO24-ARIN
+      OrgRoutingHandle: IPROU3-ARIN
+      OrgRoutingName: IP Routing
+      OrgRoutingPhone: "+1-206-266-4064 "
+      OrgRoutingEmail: aws-routing-poc@amazon.com
+      OrgRoutingRef: https://rdap.arin.net/registry/entity/IPROU3-ARIN
       OrgAbuseHandle: AEA8-ARIN
       OrgAbuseName: Amazon EC2 Abuse
       OrgAbusePhone: "+1-206-266-4064 "

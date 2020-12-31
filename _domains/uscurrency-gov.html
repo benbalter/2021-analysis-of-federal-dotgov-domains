@@ -44,18 +44,18 @@ checks:
     humans_txt: false
     vulnerability_disclosure_policy: false
     security_txt: false
-    developer_json: false
+    data_json: false
   cookies:
     cookie?: false
     secure?: false
   dns:
-    dnssec: false
-    ipv6: false
+    dnssec: true
+    ipv6: true
     cdn: :cloudfront
     cloud_provider:
     google_apps: false
-    hostname: server-99-84-105-86.iad79.r.cloudfront.net
-    ip: 99.84.105.86
+    hostname: server-13-32-204-103.iad66.r.cloudfront.net
+    ip: 13.32.204.103
   headers:
     strict-transport-security: max-age=31536000; includeSubDomains; preload
     content-security-policy: frame-ancestors 'self';
@@ -69,8 +69,8 @@ checks:
     x-ua-compatible: IE=edge
     x-drupal-cache: HIT
     x-cache: Miss from cloudfront
-    x-amz-cf-pop: IAD79-C2
-    x-amz-cf-id: "-XNaD4AAwIIZxw2fAEnQuvpkedO3AHRVunoiNZvE4usZFR1wCVj9wQ=="
+    x-amz-cf-pop: IAD66-C1
+    x-amz-cf-id: 5Mr6UpKDomo21YWU3DrHiNw53E4pO6tNz9FJ5c59DK9CarPjH0MIvw==
   hsts:
     valid: true
     max_age: 31536000
@@ -98,14 +98,16 @@ checks:
     - Amazon Web Services
     web_servers:
     - Apache
-    tag_managers:
-    - Google Tag Manager
     font_scripts:
     - Google Font API
     javascript_libraries:
     - jQuery UI
     - jQuery
     - Modernizr
+    tag_managers:
+    - Google Tag Manager
+    analytics:
+    - Google Analytics
     ssl/tls_certificate_authorities:
     - DigiCert
     cdn:
@@ -162,18 +164,17 @@ checks:
     webfinger: false
   whois:
     domain:
-      ">>> Last update of whois database": 2020-12-21T20:43:32Z <<<
+      ">>> Last update of whois database": 2020-12-30T22:52:23Z <<<
     ip:
       "# available at": https://www.arin.net/resources/registry/whois/tou/
       "# https": "//www.arin.net/resources/registry/whois/inaccuracy_reporting/"
-      NetRange: 99.84.0.0 - 99.84.255.255
-      CIDR: 99.84.0.0/16
+      NetRange: 13.32.0.0 - 13.33.255.255
+      CIDR: 13.32.0.0/15
       NetName: AMAZO-CF
-      NetHandle: NET-99-84-0-0-1
-      Parent: AMAZO-4 (NET-99-83-64-0-1)
+      NetHandle: NET-13-32-0-0-2
+      Parent: AT-88-Z (NET-13-32-0-0-1)
       NetType: Reallocated
-      OriginAS: 'Organization:   Amazon.com, Inc. (AMAZON-4)'
-      Organization: Amazon.com, Inc. (AMAZO-4)
+      OriginAS: AS16509
       RegDate: '1995-01-23'
       Updated: '2020-03-31'
       Ref: https://rdap.arin.net/registry/entity/AMAZON-4
@@ -184,26 +185,28 @@ checks:
       StateProv: WA
       PostalCode: 98101-1244
       Country: US
-      Comment: http://ec2.amazonaws.com
+      Comment: "* Your contact details (phone and email) Without these we will be
+        unable to identify the correct owner of the IP address at that point in time."
       OrgNOCHandle: AANO1-ARIN
       OrgNOCName: Amazon AWS Network Operations
       OrgNOCPhone: "+1-206-266-4064 "
       OrgNOCEmail: amzn-noc-contact@amazon.com
       OrgNOCRef: https://rdap.arin.net/registry/entity/AANO1-ARIN
-      OrgAbuseHandle: AEA8-ARIN
-      OrgAbuseName: Amazon EC2 Abuse
-      OrgAbusePhone: "+1-206-266-4064 "
-      OrgAbuseEmail: abuse@amazonaws.com
-      OrgAbuseRef: https://rdap.arin.net/registry/entity/AEA8-ARIN
-      OrgRoutingHandle: IPROU3-ARIN
-      OrgRoutingName: IP Routing
-      OrgRoutingPhone: "+1-206-266-4064 "
-      OrgRoutingEmail: aws-routing-poc@amazon.com
-      OrgRoutingRef: https://rdap.arin.net/registry/entity/IPROU3-ARIN
       OrgTechHandle: ANO24-ARIN
       OrgTechName: Amazon EC2 Network Operations
       OrgTechPhone: "+1-206-266-4064 "
       OrgTechEmail: amzn-noc-contact@amazon.com
       OrgTechRef: https://rdap.arin.net/registry/entity/ANO24-ARIN
+      OrgRoutingHandle: ADR29-ARIN
+      OrgRoutingName: AWS Dogfish Routing
+      OrgRoutingPhone: "+1-206-266-4064 "
+      OrgRoutingEmail: aws-dogfish-routing-poc@amazon.com
+      OrgRoutingRef: https://rdap.arin.net/registry/entity/ADR29-ARIN
+      OrgAbuseHandle: AEA8-ARIN
+      OrgAbuseName: Amazon EC2 Abuse
+      OrgAbusePhone: "+1-206-266-4064 "
+      OrgAbuseEmail: abuse@amazonaws.com
+      OrgAbuseRef: https://rdap.arin.net/registry/entity/AEA8-ARIN
+      Organization: Amazon.com, Inc. (AMAZON-4)
 title: uscurrency.gov
 ---
