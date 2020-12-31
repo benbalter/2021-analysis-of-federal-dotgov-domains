@@ -18,7 +18,7 @@
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="Analysis of federal .gov domains" />
 <script type="application/ld+json">
-{"description":"Analysis of what technologies power federal .gov websites - 2021 edition.","headline":"Analysis of federal .gov domains","url":"https://ben.balter.com/2021-analysis-of-federal-dotgov-domains/","@type":"WebSite","name":"Analysis of federal .gov domains","@context":"https://schema.org"}</script>
+{"headline":"Analysis of federal .gov domains","description":"Analysis of what technologies power federal .gov websites - 2021 edition.","url":"https://ben.balter.com/2021-analysis-of-federal-dotgov-domains/","@type":"WebSite","name":"Analysis of federal .gov domains","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
     <meta name="robots" content="noindex, nofollow">
@@ -78,33 +78,29 @@
             Note: This is a work-in-progress effort intended to be released in January 2021.
           </em>
         </p>
-        <h3 id="highlights">Highlights</h3>
+        <p>Download the raw data as <a href="/2021-analysis-of-federal-dotgov-domains/data.csv">CSV</a>, or <a href="/2021-analysis-of-federal-dotgov-domains/data.json">JSON</a>, see a <a href="/2021-analysis-of-federal-dotgov-domains/technologies/">breakdown by technology</a>, or view detailed results for any individual domain using the search box above.</p>
+
+<h3 id="highlights">Highlights</h3>
 
 <ul>
-  <li>There are 1121 federally-managed .gov domains. That’s about 250 fewer than there was five years ago.</li>
-  <li>Of those domains, 936 (83.5%) are live. That’s about the same percentage as we saw in 2014 and 2015, and has gone up about 10% over the past 10 years.</li>
-  <li>Of those live domains, 864 (92.31%) are reachable without the <code class="language-plaintext highlighter-rouge">www.</code> prefix. That’s 20 fewer than in 2015, but about a 17% increase.</li>
-  <li>892 (95.3%) domains support HTTPS, a 2.5x increase since the last analysis, and an incredible jump from the one in four we last saw. Even more surprisingly 860 (91.88%) <em>enforce</em> HTTPS, up from one in 10 last time.</li>
-  <li>1118 (99.73%) support HSTS, with 497 (44.34%) .govs on the HSTS preload list.</li>
-  <li>263 (28.1%) domains simply redirect to another domain.</li>
-  <li>Of those live, non-redirected domains, 203 (30.16%) use the Drupal CMS, up from 10% in 2015. Usage of WordPress doubled in percentage going from 29 to 39 (4.17%) sites since 2015. Joomla usage went from 8 to 5 (0.53%) domains.</li>
-  <li>389 (57.8%) unique domains use Google Analytics. Up from about one in four in 2014 and just 86 ten years ago.</li>
-  <li>It’s not always possible to detect the hosting provider, but at least 111 (11.86%) live domains use AWS (up from just 10 in 2011), 6 (0.64%) uses Azure, and 1 (0.11%) uses GitHub Pages.</li>
-  <li>In terms of mail providers, 105 (9.37%) use Office 365 and 33 (2.94%) use GSuite.</li>
-  <li>541 (57.8%) of live domains used some form of detectable open source software (operating system, server, or framework), meaning overall, federal domains relied on 2.8 open source projects on average, with those relying on at least one open source project relying on just shy of 5 open source projects on average.</li>
-  <li>305 (32.59%) had a detectable CMS (up from 13% in 2015). Of them, 251 (82.3%) relied on an open source CMS.</li>
+  <li><strong>Overall</strong> - There are 1121 federally-managed .gov domains. That’s about 250 fewer than there was five years ago. Of those domains, 926 (82.6%) are live. That’s about the same percentage as we saw in 2014 and 2015, and has gone up about 10% over the past 10 years.</li>
+  <li><strong>Redirects</strong> - 264 (28.51%) domains simply redirect to another domain.</li>
+  <li><strong>www</strong> - Of those live domains, 845 (91.25%) are reachable without the <code class="language-plaintext highlighter-rouge">www.</code> prefix. That’s 20 fewer than in 2015, but about a 17% increase.</li>
+  <li><strong>HTTPS</strong> - 883 (95.36%) domains support HTTPS, a 2.5x increase since the last analysis, and an incredible jump from the one in four we last saw. Even more surprisingly 849 (91.68%) <em>enforce</em> HTTPS, up from one in 10 last time. 770 (68.69%) support HSTS, with 497 (44.34%) .govs on the HSTS preload list.</li>
+  <li><strong>CMS</strong> - Of those live, non-redirected domains, 305 (32.94%) had a detectable CMS (up from 13% in 2015). Of them, 251 (82.3%) relied on an open source CMS. 202 (30.51%) domains use the Drupal CMS, up from 10% in 2015. Usage of WordPress doubled in percentage going from 29 to 37 (4.0%) sites since 2015. Joomla usage went from 8 to 5 (0.54%) domains.</li>
+  <li><strong>Analytics</strong> - 479 (72.36%) unique domains use Google Analytics. Up from about one in four in 2014 and just 86 ten years ago.</li>
+  <li><strong>Host</strong> - It’s not always possible to detect the hosting provider, but at least 109 (11.77%) live domains use AWS (up from just 10 in 2011), 5 (0.54%) uses Azure, and 1 (0.11%) uses GitHub Pages.</li>
+  <li><strong>Mail</strong> - In terms of mail providers, 105 (9.37%) use Office 365 and 34 (3.03%) use GSuite.</li>
+  <li><strong>Open source</strong> - 541 (58.42%) of live domains used some form of detectable open source software (operating system, server, or framework), meaning overall, federal domains relied on 2.8 open source projects on average, with those relying on at least one open source project relying on just shy of 5 open source projects on average.</li>
+  <li><strong>Common files</strong> - 501 (75.68%) domains return proper 404s, making it possible to check for the existence of certain files. Of them, 11 (2.2%) have a vulnerability disclosure policy and 46 (9.18%) have a <code class="language-plaintext highlighter-rouge">data.json</code> file.</li>
+  <li><strong>IPV6</strong> - 669 (72.25%) domains returned a <code class="language-plaintext highlighter-rouge">AAAA</code> record, indicating they supported IPv6 traffic.</li>
+  <li><strong>DNSSEC</strong> - 844 (75.29%) domains returned a DNSSEC record.</li>
+  <li><strong>CDN</strong> - 41 (6.19%) use the Akamai content distribution network and 74 (11.18%) use Amazon Cloudfront.</li>
 </ul>
 
 <h3 id="methodology">Methodology</h3>
 
-<h3 id="to-investigate">To investigate</h3>
-<ul>
-  <li>IPV6: 0 (0.0%)</li>
-  <li>DNSSEC: 0 (0.0%)</li>
-  <li>CDN</li>
-  <li>Developer.json, data.json, etc.</li>
-</ul>
-
+<p>The General Services Administration maintains <a href="https://github.com/GSA/data/tree/master/dotgov-domains">a publicly available list</a> of all registered <code class="language-plaintext highlighter-rouge">.gov</code> domains. This analysis is the result of running the open source tool <a href="https://github.com/benbalter/site-inspector">site inspector</a> on every Federal domain on that list and aggregating the results. For each domain, site inspector makes a series of (public) HTTP(S) and DNS calls to gather information about the response and attempt to learn more about the server’s technologies and capabilities.</p>
 
 
         <div class="navbar navbar-expand-lg border-top navbar-light justify-content-end">
