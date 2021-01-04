@@ -78,7 +78,7 @@
             Note: This is a work-in-progress effort intended to be released in January 2021.
           </em>
         </p>
-        <p>Download the raw data as <a href="/2021-analysis-of-federal-dotgov-domains/data.csv">CSV</a>, or <a href="/2021-analysis-of-federal-dotgov-domains/data.json">JSON</a>, see a <a href="/2021-analysis-of-federal-dotgov-domains/technologies/">breakdown by technology</a>, or view detailed results for any individual domain using the search box above.</p>
+        <p>Download the data as <a href="/2021-analysis-of-federal-dotgov-domains/data.csv">CSV</a> or <a href="/2021-analysis-of-federal-dotgov-domains/data.json">JSON</a>, see a <a href="/2021-analysis-of-federal-dotgov-domains/technologies/">breakdown by technology</a>, <a href="/2021-analysis-of-federal-dotgov-domains/domains/">browse all domains</a> or view details for any domain using the search above.</p>
 
 <h3 id="highlights">Highlights</h3>
 
@@ -98,9 +98,10 @@
   <li><strong>CDN</strong> - 41 (6.19%) use the Akamai content distribution network and 74 (11.18%) use Amazon Cloudfront.</li>
 </ul>
 
+<p>Curious how the above counts are calculated? You can see <a href="https://raw.githubusercontent.com//benbalter/2021-analysis-of-federal-dotgov-domains/main/index.md">the specific queries</a> and if you have any improvements, <a href="https://github.com//benbalter/2021-analysis-of-federal-dotgov-domains/edit/main/index.md">contributions are welcome</a>.</p>
 <h3 id="methodology">Methodology</h3>
 
-<p>The General Services Administration maintains <a href="https://github.com/GSA/data/tree/master/dotgov-domains">a publicly available list</a> of all registered <code class="language-plaintext highlighter-rouge">.gov</code> domains. This analysis is the result of running the open source tool <a href="https://github.com/benbalter/site-inspector">site inspector</a> on every Federal domain on that list and aggregating the results. For each domain, site inspector makes a series of (public) HTTP(S) and DNS calls and a headless browser to gather information about the response and attempt to learn more about the server’s technologies and capabilities. The that generates this site is also <a href="https://github.com//benbalter/2021-analysis-of-federal-dotgov-domains">open source</a>.</p>
+<p>The General Services Administration maintains <a href="https://github.com/GSA/data/tree/master/dotgov-domains">a publicly available list</a> of all registered <code class="language-plaintext highlighter-rouge">.gov</code> domains. This analysis is the result of running the open source tool <a href="https://github.com/benbalter/site-inspector">site inspector</a> on every Federal domain on that list and aggregating the results. For each domain, site inspector makes a series of (public) HTTP(S) and DNS calls and uses <a href="https://github.com/AliasIO/wappalyzer">a headless browser</a> to gather information about the response and attempt to learn more about the server’s technologies and capabilities. The that generates this site is also <a href="https://github.com//benbalter/2021-analysis-of-federal-dotgov-domains">open source</a>.</p>
 
 
         <div class="navbar navbar-expand-lg border-top navbar-light justify-content-end">
