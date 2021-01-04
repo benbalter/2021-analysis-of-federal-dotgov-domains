@@ -29,6 +29,7 @@ defaults:
       type: domains
     values:
       layout: domain
+      date: "2020-01-01"
 
 plugins:
   - jekyll-seo-tag
