@@ -3,19 +3,21 @@ permalink: /domains/
 fields:
   domain:
    - www
+   - https
    - hsts
   checks:
     content:
+      - proper_404s
       - vulnerability_disclosure_policy
-      - security_txt
       - data_json
     dns:
       - dnssec
       - ipv6
     hsts:
-      - preload
+      - preload_list_status
     wappalyzer:
       - cms
+      - cdn
       - programming_languages
       - paas
       - web_servers
@@ -24,7 +26,7 @@ fields:
 ---
 
 <p>
-  The following is an interactive list of all live, non-redirect .gov domains:link
+  The following is an interactive list of all live, non-redirect .gov domains:
 </p>
 
 <table class="table table-striped" id="table" 
