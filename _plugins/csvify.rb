@@ -15,7 +15,6 @@ module Jekyll
         headers = []
         headers << 'domain_name'
         headers << 'agency'
-        headers << 'detail_view'
 
         headers << site.data['fields']['domain'].map { |k| "domain_#{k}" }
         headers << site.data['fields']['canonical_endpoint'].map { |k| "canonical_endpoint_#{k}" }
@@ -31,7 +30,6 @@ module Jekyll
           row = []
           row.push document['domain_name']
           row.push document['agency']
-          row.push document['url']
 
           site.data['fields']['domain'].each do |field|
             row.push document['domain'][field]
