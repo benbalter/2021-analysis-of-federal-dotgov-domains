@@ -5,7 +5,7 @@ layout: default
 
 {%- assign num_domains = site.domains | size -%}
 {%- assign num_live_domains = site.domains | where: "domain.up", true | size -%}
-{%- assign num_live_non_redirect_domains = site.domains | where: "domain.up", true |  where: "domain.redirect", false | size -%}
+{%- assign num_live_non_redirect_domains = site.domains | where: "domain.up", true | where: "domain.redirect", false | size -%}
 {%- assign num_root = site.domains | where: "domain.root", true | size -%}
 {%- assign num_ipv6 = site.domains | where: "checks.dns.ipv6", true | size -%}
 {%- assign num_https = site.domains | where: "domain.https", true | size -%}
@@ -29,7 +29,7 @@ layout: default
 {%- assign num_akamai = site.domains | where_exp:"domain", "domain.checks.wappalyzer.cdn contains 'Akamai'" | size -%}
 {%- assign num_cloudfront = site.domains | where_exp:"domain", "domain.checks.wappalyzer.cdn contains 'Amazon Cloudfront'" | size -%}
 
-Download the raw data as [CSV]({{ "data.csv" | relative_url }}), or [JSON]({{ "data.json" | relative_url }}), see a [breakdown by technology]({{ "technologies/" | relative_url }}), or view detailed results for any individual domain using the search box above.
+Download the data as [CSV]({{ "data.csv" | relative_url }}) or [JSON]({{ "data.json" | relative_url }}), see a [breakdown by technology]({{ "technologies/" | relative_url }}), [browse all domains]({{ "domains/" | relative_url }}) or view details for any domain using the search above.
 
 ### Highlights 
 
@@ -46,7 +46,8 @@ Download the raw data as [CSV]({{ "data.csv" | relative_url }}), or [JSON]({{ "d
 * **IPV6** - {% include num-with-percent.html num=num_ipv6 denom=num_live_domains %} domains returned a `AAAA` record, indicating they supported IPv6 traffic.
 * **DNSSEC** - {% include num-with-percent.html num=num_dnssec denom=num_domains %} domains returned a DNSSEC record.
 * **CDN** - {% include num-with-percent.html num=num_akamai denom=num_live_non_redirect_domains %} use the Akamai content distribution network and {% include num-with-percent.html num=num_cloudfront denom=num_live_non_redirect_domains %} use Amazon Cloudfront.
-  
+
+Curious how the above counts are calculated? You can see [the specific queries](https://raw.githubusercontent.com/{{ site.repository }}/main/index.md) and if you have any improvements, [contributions are welcome](https://github.com/{{ site.repository }}/edit/main/index.md).  
 ### Methodology
 
-The General Services Administration maintains [a publicly available list](https://github.com/GSA/data/tree/master/dotgov-domains) of all registered `.gov` domains. This analysis is the result of running the open source tool [site inspector](https://github.com/benbalter/site-inspector) on every Federal domain on that list and aggregating the results. For each domain, site inspector makes a series of (public) HTTP(S) and DNS calls and a headless browser to gather information about the response and attempt to learn more about the server's technologies and capabilities. The that generates this site is also [open source](https://github.com//benbalter/2021-analysis-of-federal-dotgov-domains).
+The General Services Administration maintains [a publicly available list](https://github.com/GSA/data/tree/master/dotgov-domains) of all registered `.gov` domains. This analysis is the result of running the open source tool [site inspector](https://github.com/benbalter/site-inspector) on every Federal domain on that list and aggregating the results. For each domain, site inspector makes a series of (public) HTTP(S) and DNS calls and uses [a headless browser](https://github.com/AliasIO/wappalyzer) to gather information about the response and attempt to learn more about the server's technologies and capabilities. The that generates this site is also [open source](https://github.com//benbalter/2021-analysis-of-federal-dotgov-domains).
